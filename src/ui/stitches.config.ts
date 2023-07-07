@@ -1,18 +1,64 @@
 import { createStitches } from "@stitches/react";
 
-export const { styled, getCssText } = createStitches({
+import {
+  Plus_Jakarta_Sans as PlusJakartaSans,
+  Anek_Tamil as AnekTamil,
+} from "next/font/google";
+
+const plusJakartaSans = PlusJakartaSans({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+});
+
+const anekTamil = AnekTamil({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+});
+
+export const { styled, getCssText, globalCss } = createStitches({
   theme: {
     fonts: {
-      system: "system-ui",
+      primary: plusJakartaSans.style.fontFamily,
+      secondary: anekTamil.style.fontFamily,
     },
     colors: {
-      hiContrast: "hsl(206,10%,5%)",
-      loContrast: "white",
+      purple100: "#b285dd",
+      purple200: "#a464de",
+      purple300: "#9743df",
+      purple400: "#8921df",
+      purple500: "#7b00e0",
     },
     fontSizes: {
-      1: "13px",
-      2: "15px",
-      3: "17px",
+      "6xl": "72px",
+      "5xl": "60px",
+      "4xl": "48px",
+      "3xl": "36px",
+      "2xl": "30px",
+      "1xl": "24px",
+      xl: "20px",
+      lg: "18px",
+      md: "16px",
+      sm: "14px",
+      xs: "12px",
+    },
+    lineHeights: {
+      "6xl": "90px",
+      "5xl": "72px",
+      "4xl": "60px",
+      "3xl": "44px",
+      "2xl": "38px",
+      "1xl": "32px",
+      xl: "30px",
+      lg: "28px",
+      md: "24px",
+      sm: "20px",
+      xs: "18px",
+    },
+    fontWeights: {
+      regular: 400,
+      medium: 500,
+      semiBold: 600,
+      bold: 700,
     },
     space: {
       px: "1px",
@@ -56,5 +102,46 @@ export const { styled, getCssText } = createStitches({
       top: 2,
       fixed: 3,
     },
+  },
+});
+
+export const globalStyles = globalCss({
+  "*": {
+    margin: 0,
+    padding: 0,
+    outline: 0,
+    boxSizing: "border-box",
+  },
+
+  html: {
+    overflowX: "hidden",
+  },
+
+  body: {
+    backgroundColor: "$gray900",
+    color: "$white",
+
+    fontSize: "$md",
+    lineHeight: "$md",
+    fontWeight: "$regular",
+
+    overflowX: "hidden",
+    fontFamily: "$primary",
+
+    width: "100vw",
+    minHeight: "100vh",
+  },
+
+  button: {
+    cursor: "pointer",
+    fontFamily: "$primary",
+  },
+
+  ul: {
+    listStyle: "none",
+  },
+
+  a: {
+    textDecoration: "none",
   },
 });
