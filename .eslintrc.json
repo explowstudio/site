@@ -1,0 +1,6 @@
+{
+  "extends": [
+    "@explowstudio/eslint-config/next",
+    "plugin:storybook/recommended"
+  ]
+}
