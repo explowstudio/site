@@ -1,3 +1,5 @@
+import { globalStyles } from '../src/ui/stitches.config'
+
 import type { Preview } from "@storybook/react";
 
 const preview: Preview = {
@@ -9,7 +11,15 @@ const preview: Preview = {
         date: /Date$/,
       },
     },
+    backgrounds: {
+      default: "dark",
+    }
   },
+  decorators: [(Story) => {
+    globalStyles()
+
+    return Story()
+  }]
 };
 
 export default preview;
