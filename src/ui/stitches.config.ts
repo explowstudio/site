@@ -27,6 +27,25 @@ export const { styled, getCssText, globalCss } = createStitches({
       purple300: "#9743df",
       purple400: "#8921df",
       purple500: "#7b00e0",
+
+      salmon100: "#f7bcb2",
+      salmon200: "#faaf9d",
+      salmon300: "#faa38e",
+      salmon400: "#fb9a81",
+      salmon500: "#fc9173",
+
+      gray50: "#f8f8f8",
+      gray100: "#dedede",
+      gray200: "#c3c3c3",
+      gray300: "#a9a9a9",
+      gray400: "#8e8e8e",
+      gray500: "#747474",
+      gray600: "#595959",
+      gray700: "#3f3f3f",
+      gray800: "#242424",
+
+      white: "#ffffff",
+      black: "#000000",
     },
     fontSizes: {
       "6xl": "72px",
