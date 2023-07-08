@@ -20,19 +20,4 @@ export const White: Story = {
   args: {
     color: "white",
   },
-  decorators: [
-    (Story) => (
-      <div
-        style={{
-          display: "flex",
-          alignItems: "center",
-          background: "black",
-          padding: "24px",
-          borderRadius: "8px",
-        }}
-      >
-        <Story />
-      </div>
-    ),
-  ],
 };
