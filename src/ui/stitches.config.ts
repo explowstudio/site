@@ -1,25 +1,10 @@
 import { createStitches } from "@stitches/react";
 
-import {
-  Plus_Jakarta_Sans as PlusJakartaSans,
-  Anek_Tamil as AnekTamil,
-} from "next/font/google";
-
-const plusJakartaSans = PlusJakartaSans({
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-});
-
-const anekTamil = AnekTamil({
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-});
-
 export const { styled, getCssText, globalCss } = createStitches({
   theme: {
     fonts: {
-      primary: plusJakartaSans.style.fontFamily,
-      secondary: anekTamil.style.fontFamily,
+      primary: "Plus Jakarta Sans",
+      secondary: "Anek Tamil",
     },
     colors: {
       purple100: "#b285dd",
@@ -121,6 +106,10 @@ export const { styled, getCssText, globalCss } = createStitches({
       top: 2,
       fixed: 3,
     },
+    transitions: {
+      default: "0.3s ease-in-out",
+      easeOutCubic: "cubic-bezier(0.215, 0.610, 0.355, 1.000)",
+    },
   },
 });
 
@@ -130,6 +119,8 @@ export const globalStyles = globalCss({
     padding: 0,
     outline: 0,
     boxSizing: "border-box",
+
+    "-webkit-font-smoothing": "antialiased",
   },
 
   html: {
@@ -138,7 +129,7 @@ export const globalStyles = globalCss({
 
   body: {
     backgroundColor: "$gray900",
-    color: "$white",
+    color: "$black",
 
     fontSize: "$md",
     lineHeight: "$md",
