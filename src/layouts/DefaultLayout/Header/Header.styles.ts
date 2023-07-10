@@ -1,13 +1,12 @@
+import { Grid } from "@/ui";
+
 import { styled } from "@/ui/stitches.config";
 
 export const Container = styled("header", {
   background: "$gray50",
 });
 
-export const Content = styled("div", {
-  maxWidth: "1225px",
-  marginInline: "auto",
-
+export const Content = styled(Grid, {
   height: "82px",
 
   display: "flex",
