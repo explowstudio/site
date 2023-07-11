@@ -1,9 +1,8 @@
 import { ArrowRight, CaretDown } from "@phosphor-icons/react";
 
-import { Button, Logo } from "@/ui";
+import { Button, Link, Logo } from "@/ui";
 
 import * as S from "./Header.styles";
-import Link from "next/link";
 
 export function Header() {
   return (
@@ -12,19 +11,13 @@ export function Header() {
         <Logo />
         <nav>
           <S.NavigationList>
-            <S.NavigationItem as={Link} href="/">
-              Home
-            </S.NavigationItem>
-            <S.NavigationItem as={Link} href="/">
-              Quem somos
-            </S.NavigationItem>
-            <S.NavigationItem as={Link} href="/" linkUnderline={false}>
+            <Link href="/">Home</Link>
+            <Link href="/">Quem somos</Link>
+            <Link href="/" linkUnderline={false}>
               Expertise
               <CaretDown />
-            </S.NavigationItem>
-            <S.NavigationItem as={Link} href="/">
-              Cases
-            </S.NavigationItem>
+            </Link>
+            <Link href="/">Cases</Link>
           </S.NavigationList>
         </nav>
         <Button>
