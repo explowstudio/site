@@ -3,6 +3,7 @@ import { ArrowRight } from "@phosphor-icons/react";
 import { Section } from "@/layouts";
 import { Button } from "@/ui";
 
+import { Cases } from "./Cases";
 import * as S from "./OurCustomers.styles";
 
 export function OurCustomers() {
@@ -22,6 +23,7 @@ export function OurCustomers() {
           <ArrowRight />
         </Button>
       </S.Header>
+      <Cases />
     </S.Container>
   );
 }
