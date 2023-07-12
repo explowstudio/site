@@ -31,7 +31,7 @@ export default function Home() {
         <OurMethodology />
         <WhyWeAre />
         <OurCustomers />
-        <Grid>
+        <Grid as="section">
           <Faq />
         </Grid>
       </DefaultLayout>
