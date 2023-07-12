@@ -1,8 +1,10 @@
 import { Grid } from "@/ui";
-
 import { styled } from "@/ui/stitches.config";
 
 export const Container = styled("header", {
+  position: "sticky",
+  top: 0,
+
   background: "$gray50",
 });
 
