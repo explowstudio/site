@@ -1,17 +1,13 @@
-import Link from "next/link";
-
 import {
   Asterisk,
   Code,
-  InstagramLogo,
   Lightning,
   MouseSimple,
   Palette,
   RocketLaunch,
 } from "@phosphor-icons/react";
 
-import { Divider, Grid, IconButton, SocialButtonGroup } from "@/ui";
-import { MediumLogo, LinkedInLogo } from "@/ui/_icons";
+import { Divider, Grid, SocialButtonGroup } from "@/ui";
 
 import * as S from "./Introduction.styles";
 
