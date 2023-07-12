@@ -1,14 +1,16 @@
 import { ArrowRight, Lightning } from "@phosphor-icons/react";
 
+import { SmallTitle } from "@/ui";
+
 import * as S from "./LeftSide.styles";
 
 export function LeftSide() {
   return (
     <div>
-      <S.SmallTitle>
+      <SmallTitle variant="secondary">
         <ArrowRight />
         Nossos serviços
-      </S.SmallTitle>
+      </SmallTitle>
       <S.Title>Como podemos ajudar a sua empresa</S.Title>
 
       <S.Row>

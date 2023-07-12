@@ -1,18 +1,5 @@
 import { styled } from "@/ui/stitches.config";
 
-export const SmallTitle = styled("small", {
-  display: "inline-flex",
-  alignItems: "center",
-  gap: "$2",
-
-  fontSize: "$sm",
-  lineHeight: "$sm",
-  fontWeight: "$medium",
-
-  color: "$gray200",
-  textTransform: "uppercase",
-});
-
 export const Title = styled("h1", {
   fontSize: "$3xl",
   lineHeight: "$3xl",
