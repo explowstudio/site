@@ -1,0 +1,17 @@
+import { Grid } from "@/ui";
+
+import { styled } from "@/ui/stitches.config";
+
+export const Container = styled(Grid, {
+  paddingBlock: "$48",
+});
+
+export const Header = styled("div", {
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "space-between",
+});
+
+export const SectionTitle = styled("div", {
+  maxWidth: "447px",
+});

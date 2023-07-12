@@ -5,21 +5,6 @@ export const Container = styled(Grid, {
   paddingBlock: "$24",
 });
 
-export const Title = styled("h1", {
-  fontSize: "$3xl",
-  lineHeight: "$3xl",
-  fontWeight: "$semiBold",
-
-  marginTop: "$5",
-  maxWidth: "520px",
-});
-
-export const Description = styled("p", {
-  color: "$gray500",
-  maxWidth: "624px",
-  marginTop: "$6",
-});
-
 export const Partners = styled("ul", {
   display: "grid",
   gridTemplateColumns: "repeat(3, 1fr)",

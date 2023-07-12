@@ -1,17 +1,18 @@
-import { ArrowRight, Lightning } from "@phosphor-icons/react";
+import { Lightning } from "@phosphor-icons/react";
 
-import { SmallTitle } from "@/ui";
+import { Section } from "@/layouts";
 
 import * as S from "./LeftSide.styles";
 
 export function LeftSide() {
   return (
     <div>
-      <SmallTitle variant="secondary">
-        <ArrowRight />
+      <Section.SmallTitle variant="secondary">
         Nossos serviços
-      </SmallTitle>
-      <S.Title>Como podemos ajudar a sua empresa</S.Title>
+      </Section.SmallTitle>
+      <Section.Title variant="secondary">
+        Como podemos ajudar a sua empresa
+      </Section.Title>
 
       <S.Row>
         <S.Copyright>Explow studio © 2023</S.Copyright>

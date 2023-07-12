@@ -1,22 +1,20 @@
-import { ArrowRight } from "@phosphor-icons/react";
+import Image from "next/image";
 
-import { Logo, SmallTitle } from "@/ui";
+import { Section } from "@/layouts";
 
 import * as S from "./OurPartners.styles";
-import Image from "next/image";
 
 export function OurPartners() {
   return (
     <S.Container as="section">
-      <SmallTitle>
-        <ArrowRight />
-        Nossos clientes
-      </SmallTitle>
-      <S.Title>Conheça alguns parceiros que cresceram com a Explow</S.Title>
-      <S.Description>
+      <Section.SmallTitle>Nossos clientes</Section.SmallTitle>
+      <Section.Title>
+        Conheça alguns parceiros que cresceram com a Explow
+      </Section.Title>
+      <Section.Description>
         Queremos ser parceiros de empresas que entendem que um desenvolvimento
         bem estruturado pode fazer a diferença. E estamos aqui para isso.
-      </S.Description>
+      </Section.Description>
       <S.Partners>
         <S.Partner>
           <Image

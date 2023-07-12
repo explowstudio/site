@@ -1,14 +1,5 @@
 import { styled } from "@/ui/stitches.config";
 
-export const Title = styled("h1", {
-  fontSize: "$3xl",
-  lineHeight: "$3xl",
-  fontWeight: "$semiBold",
-
-  marginTop: "$5",
-  color: "$white",
-});
-
 export const Row = styled("div", {
   display: "flex",
   alignItems: "center",
