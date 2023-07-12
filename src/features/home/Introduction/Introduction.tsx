@@ -10,7 +10,7 @@ import {
   RocketLaunch,
 } from "@phosphor-icons/react";
 
-import { Divider, Grid, IconButton } from "@/ui";
+import { Divider, Grid, IconButton, SocialButtonGroup } from "@/ui";
 import { MediumLogo, LinkedInLogo } from "@/ui/_icons";
 
 import * as S from "./Introduction.styles";
@@ -54,31 +54,7 @@ export function Introduction() {
             <MouseSimple size={20} />
             <span>Continue explorando</span>
           </S.KeepExploring>
-          <nav>
-            <S.SocialMedia>
-              <IconButton
-                as={Link}
-                href="https://www.instagram.com/explow.studio/"
-                target="_blank"
-              >
-                <InstagramLogo size={24} />
-              </IconButton>
-              <IconButton
-                as={Link}
-                href="https://www.linkedin.com/company/explow-studio/"
-                target="_blank"
-              >
-                <LinkedInLogo size={18} />
-              </IconButton>
-              <IconButton
-                as={Link}
-                href="https://www.instagram.com/explow.studio/"
-                target="_blank"
-              >
-                <MediumLogo size={20} />
-              </IconButton>
-            </S.SocialMedia>
-          </nav>
+          <SocialButtonGroup />
         </S.Row>
       </Grid>
     </S.Container>
