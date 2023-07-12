@@ -40,6 +40,7 @@ export const Document = styled("div", {
 export const Navigation = styled("nav", {
   display: "flex",
   gap: "$48",
+  marginRight: "$40",
 });
 
 export const NavigationList = styled("ul", {

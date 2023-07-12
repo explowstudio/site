@@ -2,6 +2,7 @@ import { ReactNode } from "react";
 
 import { Header } from "./Header";
 import { Footer } from "./Footer";
+import { Faq } from "./Faq";
 
 type Props = {
   children: ReactNode;

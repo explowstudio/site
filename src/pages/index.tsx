@@ -1,6 +1,6 @@
 import Head from "next/head";
 
-import { DefaultLayout } from "@/layouts";
+import { DefaultLayout, Faq } from "@/layouts";
 import {
   Introduction,
   OurCustomers,
@@ -11,6 +11,7 @@ import {
   Testimonials,
   WhyWeAre,
 } from "@/features/home";
+import { Grid } from "@/ui";
 
 export default function Home() {
   return (
@@ -30,6 +31,9 @@ export default function Home() {
         <OurMethodology />
         <WhyWeAre />
         <OurCustomers />
+        <Grid>
+          <Faq />
+        </Grid>
       </DefaultLayout>
     </>
   );
