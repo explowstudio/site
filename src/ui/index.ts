@@ -4,3 +4,4 @@ export * from "./Grid";
 export * from "./IconButton";
 export * from "./Link";
 export * from "./Logo";
+export * from "./SocialButtonGroup";
