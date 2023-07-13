@@ -7,3 +7,4 @@ export * from "./Link";
 export * from "./Logo";
 export * from "./SmallTitle";
 export * from "./SocialButtonGroup";
+export * from "./Dropdown";
