@@ -1,7 +1,8 @@
-import { ArrowRight, CaretDown } from "@phosphor-icons/react";
+import { ArrowRight } from "@phosphor-icons/react";
 
-import { Button, Link, Logo, Dropdown } from "@/ui";
+import { Button, Link, Logo } from "@/ui";
 
+import { Dropdown } from "./Dropdown";
 import * as S from "./Header.styles";
 
 export function Header() {
@@ -14,12 +15,11 @@ export function Header() {
             <S.NavigationList>
               <Link href="/">Home</Link>
               <Link href="/">Quem somos</Link>
-              <S.NavItemDrop>
-                <Link href="/" linkUnderline={false}>
-                  Expertise
-                  <S.CaretDownIcon />
-                </Link>
-              </S.NavItemDrop>
+              <S.NavigationItemWithDropdown>
+                Expertise
+                <S.CaretDownIcon />
+                <Dropdown />
+              </S.NavigationItemWithDropdown>
               <Link href="/">Cases</Link>
             </S.NavigationList>
           </nav>
@@ -29,7 +29,6 @@ export function Header() {
           </Button>
         </S.Content>
       </S.Container>
-      <Dropdown />
     </>
   );
 }
