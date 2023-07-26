@@ -1,6 +1,11 @@
+import { Grid } from "@/ui";
 import { styled } from "@/ui/stitches.config";
 
-export const Container = styled("footer", {
+export const Wrapper = styled("footer", {
+  paddingTop: "$20",
+});
+
+export const Container = styled("div", {
   paddingBlock: "$28 $8",
 });
 
@@ -62,5 +67,26 @@ export const DownSide = styled("div", {
     "> b": {
       color: "$black",
     },
+  },
+});
+
+export const Box = styled(Grid, {
+  background: "$black",
+
+  display: "grid",
+  placeItems: "center",
+  textAlign: "center",
+
+  padding: "$20",
+  borderRadius: "16px",
+
+  "> h1": {
+    fontSize: "$6xl",
+    lineHeight: "$6xl",
+    fontWeight: "$semiBold",
+    color: "$white",
+
+    maxWidth: "856px",
+    marginBottom: "$12",
   },
 });
