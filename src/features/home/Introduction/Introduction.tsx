@@ -7,7 +7,7 @@ import {
   RocketLaunch,
 } from "@phosphor-icons/react";
 
-import { Divider, Grid, SocialButtonGroup } from "@/ui";
+import { Divider, Grid, IconOnTitle, SocialButtonGroup } from "@/ui";
 
 import * as S from "./Introduction.styles";
 
@@ -17,14 +17,7 @@ export function Introduction() {
       <Grid>
         <S.Title>
           Estúdio de
-          <S.TitleWithIcon>
-            <S.TitleIcon color="salmon">
-              <Lightning size={28} weight="fill" />
-            </S.TitleIcon>
-            <S.TitleIcon color="purple">
-              <Asterisk size={28} />
-            </S.TitleIcon>
-          </S.TitleWithIcon>
+          <IconOnTitle />
         </S.Title>
         <S.Title>design e tecnologia</S.Title>
         <S.Row css={{ marginTop: "$20", alignItems: "flex-start" }}>
