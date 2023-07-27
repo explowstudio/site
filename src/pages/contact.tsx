@@ -1,8 +1,7 @@
 import Head from "next/head";
 
-import { DefaultLayout, Faq } from "@/layouts";
-import { Introduction } from "@/features/contact";
-import { Grid } from "@/ui";
+import { ContactForm, Introduction } from "@/features/contact";
+import { ContactLayout } from "@/layouts/ContactLayout";
 
 export default function Contact() {
   return (
@@ -13,12 +12,10 @@ export default function Contact() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <DefaultLayout>
+      <ContactLayout>
         <Introduction />
-        <Grid as="section">
-          <Faq />
-        </Grid>
-      </DefaultLayout>
+        <ContactForm />
+      </ContactLayout>
     </>
   );
 }
