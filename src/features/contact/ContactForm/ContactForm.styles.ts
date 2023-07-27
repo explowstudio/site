@@ -1,21 +1,4 @@
-import { Grid } from "@/ui";
 import { styled } from "@/ui/stitches.config";
-
-export const Container = styled(Grid, {
-  paddingBlock: "$16",
-});
-
-export const Title = styled("h1", {
-  fontSize: "$3xl",
-  lineHeight: "$3xl",
-});
-
-export const Description = styled("p", {
-  color: "$gray500",
-  fontSize: "$md",
-  lineHeight: "$md",
-  marginTop: "$5",
-});
 
 export const Form = styled("form", {
   display: "flex",

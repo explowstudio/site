@@ -6,7 +6,10 @@ import { Button, Link, Logo } from "@/ui";
 import { Dropdown } from "./Dropdown";
 import * as S from "./Header.styles";
 
-export function Header({ color, ...rest }: ComponentProps<typeof S.Container>) {
+export function Header({
+  color = "primary",
+  ...rest
+}: ComponentProps<typeof S.Container>) {
   return (
     <S.Container color={color} {...rest}>
       <S.Content>

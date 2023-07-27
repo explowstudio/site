@@ -1,6 +1,6 @@
 import Head from "next/head";
 
-import { ContactForm, Introduction } from "@/features/contact";
+import { ContactForm, Introduction, Rules } from "@/features/contact";
 import { ContactLayout } from "@/layouts/ContactLayout";
 
 export default function Contact() {
@@ -14,7 +14,22 @@ export default function Contact() {
       </Head>
       <ContactLayout>
         <Introduction />
-        <ContactForm />
+        <ContactLayout.Section>
+          <div>
+            <ContactLayout.Title>
+              Nos conte sobre o seu projeto 🛸
+            </ContactLayout.Title>
+            <ContactLayout.Description>
+              Nos conte um pouco sobre o seu projeto e como poderemos te ajudar,
+              entraremos em contato com você hoje pelo seu número de WhatsApp
+              para desenvolver um projeto de outro mundo!
+            </ContactLayout.Description>
+          </div>
+          <ContactLayout.FormGroup>
+            <ContactForm />
+            <Rules />
+          </ContactLayout.FormGroup>
+        </ContactLayout.Section>
       </ContactLayout>
     </>
   );

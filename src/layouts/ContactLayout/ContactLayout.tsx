@@ -7,6 +7,8 @@ import { Faq } from "@/layouts/DefaultLayout/Faq";
 
 import { Grid } from "@/ui";
 
+import * as S from "./ContactLayout.styles";
+
 type Props = {
   children: ReactNode;
 };
@@ -26,3 +28,8 @@ export function ContactLayout({ children }: Props) {
     </>
   );
 }
+
+ContactLayout.Section = S.Section;
+ContactLayout.Title = S.Title;
+ContactLayout.Description = S.Description;
+ContactLayout.FormGroup = S.FormGroup;
