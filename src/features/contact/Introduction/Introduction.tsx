@@ -23,7 +23,7 @@ export function Introduction() {
               <Link
                 href="https://cal.com/explow/bate-papo"
                 target="_blank"
-                color="tertiary"
+                color="secondary"
               >
                 Agende com a Gio
               </Link>
@@ -31,7 +31,7 @@ export function Introduction() {
           </S.ScheduleMeeting>
           <S.InformationContainer>
             <span>E-mail</span>
-            <Link href="mailto:contato@explow.studio" color="tertiary">
+            <Link href="mailto:contato@explow.studio" color="secondary">
               contato@explow.studio
             </Link>
           </S.InformationContainer>
@@ -40,7 +40,7 @@ export function Introduction() {
             <Link
               href="https://api.whatsapp.com/send?phone=5511970419304"
               target="_blank"
-              color="tertiary"
+              color="secondary"
             >
               (11) 97041-9304
             </Link>
