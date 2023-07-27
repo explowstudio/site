@@ -1,3 +1,4 @@
+import { ComponentProps } from "react";
 import { ArrowRight } from "@phosphor-icons/react";
 
 import { Button, Link, Logo } from "@/ui";
@@ -5,30 +6,34 @@ import { Button, Link, Logo } from "@/ui";
 import { Dropdown } from "./Dropdown";
 import * as S from "./Header.styles";
 
-export function Header() {
+export function Header({ color, ...rest }: ComponentProps<typeof S.Container>) {
   return (
-    <>
-      <S.Container>
-        <S.Content>
-          <Logo />
-          <nav>
-            <S.NavigationList>
-              <Link href="/">Home</Link>
-              <Link href="/">Quem somos</Link>
-              <S.NavigationItemWithDropdown>
-                Expertise
-                <S.CaretDownIcon />
-                <Dropdown />
-              </S.NavigationItemWithDropdown>
-              <Link href="/">Cases</Link>
-            </S.NavigationList>
-          </nav>
-          <Button>
-            Conheça a Explow
-            <ArrowRight size={18} weight="bold" />
-          </Button>
-        </S.Content>
-      </S.Container>
-    </>
+    <S.Container color={color} {...rest}>
+      <S.Content>
+        <Logo color={color === "primary" ? "black" : "white"} />
+        <nav>
+          <S.NavigationList>
+            <Link href="/" color={color}>
+              Home
+            </Link>
+            <Link href="/" color={color}>
+              Quem somos
+            </Link>
+            <S.NavigationItemWithDropdown color={color}>
+              Expertise
+              <S.CaretDownIcon />
+              <Dropdown />
+            </S.NavigationItemWithDropdown>
+            <Link href="/" color={color}>
+              Cases
+            </Link>
+          </S.NavigationList>
+        </nav>
+        <Button variant={color}>
+          Conheça a Explow
+          <ArrowRight size={18} weight="bold" />
+        </Button>
+      </S.Content>
+    </S.Container>
   );
 }

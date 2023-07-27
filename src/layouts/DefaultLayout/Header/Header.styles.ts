@@ -10,7 +10,20 @@ export const Container = styled("header", {
   top: 0,
   zIndex: "$fixed",
 
-  background: "$gray50",
+  variants: {
+    color: {
+      primary: {
+        background: "$gray50",
+      },
+      secondary: {
+        background: "$black",
+      },
+    },
+  },
+
+  defaultVariants: {
+    color: "primary",
+  },
 });
 
 export const Content = styled(Grid, {
@@ -44,6 +57,17 @@ export const NavigationItemWithDropdown = styled("li", {
     [`${Dropdown}`]: {
       opacity: 1,
       visibility: "visible !important",
+    },
+  },
+
+  variants: {
+    color: {
+      primary: {
+        color: "$black",
+      },
+      secondary: {
+        color: "$gray100",
+      },
     },
   },
 });

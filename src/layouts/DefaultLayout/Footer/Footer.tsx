@@ -25,40 +25,40 @@ export function Footer() {
             <S.Navigation>
               <S.NavigationList>
                 <strong>Navegação</strong>
-                <Link href="/" color="secondary">
+                <Link href="/" color="tertiary">
                   Quem somos
                 </Link>
-                <Link href="/" color="secondary">
+                <Link href="/" color="tertiary">
                   Cases
                 </Link>
-                <Link href="/" color="secondary">
+                <Link href="/" color="tertiary">
                   Expertises
                 </Link>
-                <Link href="/" color="secondary">
+                <Link href="/" color="tertiary">
                   Contato
                 </Link>
               </S.NavigationList>
               <S.NavigationList>
                 <strong>Social</strong>
-                <Link href="/" color="secondary">
+                <Link href="/" color="tertiary">
                   Behance
                 </Link>
                 <Link
-                  color="secondary"
+                  color="tertiary"
                   href="https://www.instagram.com/explow.studio/"
                   target="_blank"
                 >
                   Instagram
                 </Link>
                 <Link
-                  color="secondary"
+                  color="tertiary"
                   href="https://www.linkedin.com/company/explow-studio/"
                   target="_blank"
                 >
                   LinkedIn
                 </Link>
                 <Link
-                  color="secondary"
+                  color="tertiary"
                   href="https://www.instagram.com/explow.studio/"
                   target="_blank"
                 >
