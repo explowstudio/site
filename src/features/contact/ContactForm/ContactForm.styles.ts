@@ -46,6 +46,13 @@ export const Input = styled("input", {
   },
 });
 
+export const ErrorMessage = styled("small", {
+  color: "$gray300",
+  fontSize: "$sm",
+  lineHeight: "$sm",
+  marginTop: "$2",
+});
+
 export const TextArea = styled("textarea", {
   height: "175px",
   paddingInline: "$7",

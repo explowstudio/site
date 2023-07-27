@@ -1,11 +1,19 @@
-import { MouseEvent, useState } from "react";
+import { FormEvent, MouseEvent, useState } from "react";
 
 import { ArrowRight } from "@phosphor-icons/react";
 import * as RadioGroup from "@radix-ui/react-radio-group";
+import InputMask from "react-input-mask";
 
 import { Button, Checkbox, Radio } from "@/ui";
 
 import * as S from "./ContactForm.styles";
+import { SendContactResolver } from "./ContactForm.schema";
+import { fromZodError } from "zod-validation-error";
+
+type FormError = {
+  field: string;
+  message: string;
+};
 
 export function ContactForm() {
   const [name, setName] = useState("");
@@ -15,8 +23,10 @@ export function ContactForm() {
   const [content, setContent] = useState("");
 
   const [amount, setAmount] = useState<string | null>(null);
-  const [deadline, setDeadline] = useState<string>("");
+  const [deadline, setDeadline] = useState<string | null>(null);
   const [scope, setScope] = useState<string[]>([]);
+
+  const [errors, setErrors] = useState<Record<string, string>>();
 
   function handleAmount(event: MouseEvent<HTMLButtonElement>) {
     event.preventDefault();
@@ -36,8 +46,37 @@ export function ContactForm() {
     setScope((state) => [...state, newValue]);
   }
 
+  function handleSubmit(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+
+    const payload = {
+      name,
+      email,
+      company,
+      phoneNumber,
+      content,
+      amount,
+      deadline,
+      scope,
+    };
+
+    const result = SendContactResolver.safeParse(payload);
+
+    if (!result.success) {
+      const fromZod = result.error.errors.reduce(
+        (acc, error) => ({
+          ...acc,
+          [error.path[0]]: error.message,
+        }),
+        {},
+      );
+
+      setErrors(fromZod);
+    }
+  }
+
   return (
-    <S.Form>
+    <S.Form onSubmit={handleSubmit}>
       <S.FieldGroup>
         <S.Field>
           <S.Label htmlFor="name">Nome</S.Label>
@@ -46,6 +85,7 @@ export function ContactForm() {
             value={name}
             onChange={(event) => setName(event.currentTarget.value)}
           />
+          {errors?.name && <S.ErrorMessage>{errors.name}</S.ErrorMessage>}
         </S.Field>
         <S.Field>
           <S.Label htmlFor="company">Nome da empresa</S.Label>
@@ -54,6 +94,7 @@ export function ContactForm() {
             value={company}
             onChange={(event) => setCompany(event.currentTarget.value)}
           />
+          {errors?.company && <S.ErrorMessage>{errors.company}</S.ErrorMessage>}
         </S.Field>
         <S.Field>
           <S.Label htmlFor="email">E-mail</S.Label>
@@ -63,15 +104,22 @@ export function ContactForm() {
             value={email}
             onChange={(event) => setEmail(event.currentTarget.value)}
           />
+          {errors?.email && <S.ErrorMessage>{errors.email}</S.ErrorMessage>}
         </S.Field>
         <S.Field>
           <S.Label htmlFor="whatsapp">WhatsApp</S.Label>
           <S.Input
+            as={InputMask}
+            mask="(99) 99999-9999"
+            maskChar={null}
             id="whatsapp"
             placeholder="DDD + Número"
             value={phoneNumber}
-            onChange={(event) => setPhoneNumber(event.currentTarget.value)}
+            onChange={(event) => setPhoneNumber(event.target.value)}
           />
+          {errors?.phoneNumber && (
+            <S.ErrorMessage>{errors.phoneNumber}</S.ErrorMessage>
+          )}
         </S.Field>
       </S.FieldGroup>
       <S.Field>
@@ -86,10 +134,14 @@ export function ContactForm() {
           <Checkbox name="Programação web" label="Programação web" />
           <Checkbox name="Programação de app" label="Programação de app" />
         </S.FieldGroup>
+        {errors?.scope && <S.ErrorMessage>{errors.scope}</S.ErrorMessage>}
       </S.Field>
       <S.Field>
         <label>Qual o prazo que temos para a entrega?</label>
-        <RadioGroup.Root value={deadline} onValueChange={setDeadline}>
+        <RadioGroup.Root
+          value={deadline ?? undefined}
+          onValueChange={setDeadline}
+        >
           <S.FieldGroup css={{ rowGap: "$6", marginTop: "$3" }}>
             <Radio label="1 a 2 meses" value="1 a 2 meses" />
             <Radio label="3 a 4 meses" value="3 a 4 meses" />
@@ -100,6 +152,7 @@ export function ContactForm() {
             />
           </S.FieldGroup>
         </RadioGroup.Root>
+        {errors?.deadline && <S.ErrorMessage>{errors.deadline}</S.ErrorMessage>}
       </S.Field>
       <S.Field>
         <label>Quanto você espera investir?</label>
@@ -120,6 +173,7 @@ export function ContactForm() {
             </S.Tag>
           ))}
         </S.TagGroup>
+        {errors?.amount && <S.ErrorMessage>{errors.amount}</S.ErrorMessage>}
       </S.Field>
       <S.Field>
         <S.Label htmlFor="content">
@@ -130,6 +184,7 @@ export function ContactForm() {
           value={content}
           onChange={(event) => setContent(event.currentTarget.value)}
         />
+        {errors?.content && <S.ErrorMessage>{errors.content}</S.ErrorMessage>}
       </S.Field>
       <Button type="submit" css={{ marginRight: "auto" }}>
         Enviar
