@@ -47,17 +47,17 @@ export const Link = styled(NextLink, {
         },
       },
       secondary: {
-        color: "$gray500",
-
-        "&::after": {
-          background: "$gray500",
-        },
-      },
-      tertiary: {
         color: "$gray100",
 
         "&::after": {
           background: "$gray100",
+        },
+      },
+      tertiary: {
+        color: "$gray500",
+
+        "&::after": {
+          background: "$gray500",
         },
       },
     },
