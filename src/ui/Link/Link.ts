@@ -53,6 +53,13 @@ export const Link = styled(NextLink, {
           background: "$gray500",
         },
       },
+      tertiary: {
+        color: "$gray100",
+
+        "&::after": {
+          background: "$gray100",
+        },
+      },
     },
   },
 
