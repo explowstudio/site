@@ -10,7 +10,7 @@ export const SendContactResolver = z.object(
     }),
     company: z.string().min(1, { message: REQUIRED_ERROR }),
     phoneNumber: z.string().min(1, { message: REQUIRED_ERROR }),
-    content: z.string().max(1000, {
+    content: z.string().min(1, { message: REQUIRED_ERROR }).max(1000, {
       message: "O limite nesse campo é de 1000 caracteres.",
     }),
     amount: z.string({

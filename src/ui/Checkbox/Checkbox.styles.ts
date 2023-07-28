@@ -20,6 +20,10 @@ export const Root = styled(Checkbox.Root, {
     border: "3px solid rgba(35, 55, 55, 0.05)",
   },
 
+  "&:focus": {
+    borderColor: "$gray400",
+  },
+
   '&[data-state="checked"]': {
     borderColor: "$gray800",
     backgroundColor: "$gray800",

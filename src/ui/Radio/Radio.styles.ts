@@ -21,6 +21,10 @@ export const Container = styled(RadioGroup.Item, {
 
   transition: "all 0.2s",
 
+  "&:focus": {
+    borderColor: "$gray400",
+  },
+
   '&:hover, &[data-state="checked"]': {
     borderColor: "$gray800",
   },

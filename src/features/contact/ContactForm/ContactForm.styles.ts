@@ -44,10 +44,14 @@ export const Input = styled("input", {
   "&::placeholder": {
     color: "$gray400",
   },
+
+  "&:focus": {
+    borderColor: "$gray400",
+  },
 });
 
 export const ErrorMessage = styled("small", {
-  color: "$gray300",
+  color: "$gray400",
   fontSize: "$sm",
   lineHeight: "$sm",
   marginTop: "$2",
