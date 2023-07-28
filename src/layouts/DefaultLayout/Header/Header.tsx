@@ -26,7 +26,7 @@ export function Header({
             <S.NavigationItemWithDropdown color={color}>
               Expertise
               <S.CaretDownIcon />
-              <Dropdown />
+              <Dropdown color={color} />
             </S.NavigationItemWithDropdown>
             <Link href="/" color={color}>
               Cases

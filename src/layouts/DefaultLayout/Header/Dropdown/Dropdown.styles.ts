@@ -18,11 +18,25 @@ export const Wrapper = styled("div", {
 export const Paper = styled("nav", {
   height: "418px",
 
-  backgroundColor: "$gray50",
-  borderBottom: "1px solid $gray100",
-
   marginTop: "$3",
   paddingBlock: "$16",
+
+  variants: {
+    color: {
+      primary: {
+        backgroundColor: "$gray50",
+        borderBottom: "1px solid $gray100",
+      },
+      secondary: {
+        backgroundColor: "$black",
+        borderBottom: "1px solid $gray800",
+      },
+    },
+  },
+
+  defaultVariants: {
+    color: "primary",
+  },
 });
 
 export const Content = styled(Grid, {
@@ -47,8 +61,32 @@ export const Title = styled("h1", {
 export const Text = styled("span", {
   fontSize: "$md",
   lineHeight: "$md",
-  color: "$gray700",
   marginBottom: "$3",
+  transition: "$default",
+  cursor: "default",
+
+  variants: {
+    color: {
+      primary: {
+        color: "$gray600",
+
+        "&:hover": {
+          color: "$black",
+        },
+      },
+      secondary: {
+        color: "$gray200",
+
+        "&:hover": {
+          color: "$white",
+        },
+      },
+    },
+  },
+
+  defaultVariants: {
+    color: "primary",
+  },
 });
 
 export const Row = styled("div", {
