@@ -8,27 +8,27 @@ export function Introduction() {
     <S.Container>
       <S.Content>
         <S.UpSide>
-          <S.TitleGroup>
-            <S.SmallTitle>Queremos ser seus parceiros 🛸</S.SmallTitle>
+          <S.SmallTitle>Queremos ser seus parceiros 🛸</S.SmallTitle>
+          <S.TextGroup>
             <S.Title>
               Somos uma equipe enxuta,
               <br />
               de mentes inquietas e criativas.
             </S.Title>
-          </S.TitleGroup>
-          <S.DescriptionGroup>
-            <S.Description>
-              Desde o início, estabelecemos como lema a palavra
-              <b>&quot;explorar&quot;</b>. Acreditamos que a exploração é a
-              chave para a descoberta de novos horizontes e o desbloqueio de
-              ideias criativas.
-            </S.Description>
-            <S.Description>
-              Nosso <b>espírito</b> curioso e aventureiro nos impulsiona a
-              buscar constantemente por <b>abordagens inovadoras</b> e soluções
-              originais para cada projeto que assumimos.
-            </S.Description>
-          </S.DescriptionGroup>
+            <S.DescriptionGroup>
+              <S.Description>
+                Desde o início, estabelecemos como lema a palavra
+                <b>&quot;explorar&quot;</b>. Acreditamos que a exploração é a
+                chave para a descoberta de novos horizontes e o desbloqueio de
+                ideias criativas.
+              </S.Description>
+              <S.Description>
+                Nosso <b>espírito</b> curioso e aventureiro nos impulsiona a
+                buscar constantemente por <b>abordagens inovadoras</b> e
+                soluções originais para cada projeto que assumimos.
+              </S.Description>
+            </S.DescriptionGroup>
+          </S.TextGroup>
         </S.UpSide>
         <S.BottomSide>
           <SocialButtonGroup direction="column" />

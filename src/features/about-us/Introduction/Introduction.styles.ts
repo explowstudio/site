@@ -14,7 +14,13 @@ export const Content = styled(Grid, {
 
 export const UpSide = styled("div", {
   display: "flex",
-  alignItems: "flex-end",
+  flexDirection: "column",
+  gap: "$4",
+});
+
+export const TextGroup = styled("div", {
+  display: "flex",
+  alignItems: "flex-start",
   justifyContent: "space-between",
 });
 
@@ -39,7 +45,7 @@ export const Title = styled("h1", {
 export const DescriptionGroup = styled("div", {
   display: "flex",
   flexDirection: "column",
-  gap: "$6",
+  gap: "$4",
   maxWidth: "465px",
 });
 
@@ -52,6 +58,10 @@ export const BottomSide = styled("div", {
   display: "flex",
   alignItems: "center",
   justifyContent: "space-between",
+
+  "> img": {
+    pointerEvents: "none",
+  },
 });
 
 export const TextureGroup = styled("div", {
