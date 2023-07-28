@@ -60,7 +60,7 @@ export const ErrorMessage = styled("small", {
 export const TextArea = styled("textarea", {
   height: "175px",
   paddingInline: "$7",
-  paddingTop: "$3",
+  paddingTop: "$6",
 
   border: "1px solid $gray100",
   color: "$black",
@@ -107,4 +107,11 @@ export const TagGroup = styled("div", {
   display: "flex",
   gap: "$5",
   marginTop: "$3",
+});
+
+export const SubmitGroup = styled("div", {
+  display: "flex",
+  alignItems: "center",
+  marginRight: "auto",
+  gap: "$4",
 });

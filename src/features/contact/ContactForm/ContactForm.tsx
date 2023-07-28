@@ -1,27 +1,39 @@
 import { FormEvent, MouseEvent, useCallback, useEffect, useState } from "react";
+import { useRouter } from "next/router";
 
 import { ArrowRight } from "@phosphor-icons/react";
 import * as RadioGroup from "@radix-ui/react-radio-group";
 import InputMask from "react-input-mask";
 
+import { api } from "@/client";
 import { Button, Checkbox, Radio } from "@/ui";
 
+import { FailedEmailAlert } from "./FailedEmailAlert";
+import { WarningInvestAmountAlert } from "./WarningInvestAmountAlert";
 import { SendContactResolver } from "./ContactForm.schema";
 import * as S from "./ContactForm.styles";
 
 export function ContactForm() {
+  const router = useRouter();
+
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [company, setCompany] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
-  const [content, setContent] = useState("");
+  const [additionalInformation, setAdditionalInformation] = useState("");
 
-  const [amount, setAmount] = useState<string | null>(null);
+  const [investAmount, setInvestAmount] = useState<string | null>(null);
   const [deadline, setDeadline] = useState<string | null>(null);
   const [scope, setScope] = useState<string[]>([]);
 
   const [errors, setErrors] = useState<Record<string, string>>();
   const [isSubmitted, setIsSubmitted] = useState(false);
+
+  const [isLoading, setIsLoading] = useState(false);
+  const [isFailedEmailAlertVisible, setIsFailedEmailAlertVisible] =
+    useState(false);
+
+  const isWarningInvestAmountAlertVisible = deadline === "Preciso com urgência";
 
   const zodResolver = useCallback(() => {
     const payload = {
@@ -29,8 +41,8 @@ export function ContactForm() {
       email,
       company,
       phoneNumber,
-      content,
-      amount,
+      additionalInformation,
+      investAmount,
       deadline,
       scope,
     };
@@ -38,7 +50,16 @@ export function ContactForm() {
     const result = SendContactResolver.safeParse(payload);
 
     return result;
-  }, [name, email, company, phoneNumber, content, amount, deadline, scope]);
+  }, [
+    name,
+    email,
+    company,
+    phoneNumber,
+    additionalInformation,
+    investAmount,
+    deadline,
+    scope,
+  ]);
 
   useEffect(() => {
     const result = zodResolver();
@@ -59,7 +80,7 @@ export function ContactForm() {
   function handleAmount(event: MouseEvent<HTMLButtonElement>) {
     event.preventDefault();
 
-    setAmount(event.currentTarget.name);
+    setInvestAmount(event.currentTarget.name);
   }
 
   function handleScope(event: MouseEvent<HTMLButtonElement>) {
@@ -74,16 +95,36 @@ export function ContactForm() {
     setScope((state) => [...state, newValue]);
   }
 
-  function handleSubmit(event: FormEvent<HTMLFormElement>) {
+  async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
 
     setIsSubmitted(true);
+    setIsFailedEmailAlertVisible(false);
 
     const result = zodResolver();
 
     if (!result.success) return;
 
-    console.log("send e-mail");
+    setIsLoading(true);
+
+    try {
+      await api.post("/contact", {
+        name,
+        email,
+        company,
+        phoneNumber,
+        additionalInformation,
+        investAmount,
+        deadline,
+        scope,
+      });
+
+      router.push("/success");
+    } catch {
+      setIsFailedEmailAlertVisible(true);
+    } finally {
+      setIsLoading(false);
+    }
   }
 
   return (
@@ -157,10 +198,7 @@ export function ContactForm() {
             <Radio label="1 a 2 meses" value="1 a 2 meses" />
             <Radio label="3 a 4 meses" value="3 a 4 meses" />
             <Radio label="Prazo não é problema" value="Prazo não é problema" />
-            <Radio
-              label="Preciso com urgência*"
-              value="Preciso com urgência*"
-            />
+            <Radio label="Preciso com urgência*" value="Preciso com urgência" />
           </S.FieldGroup>
         </RadioGroup.Root>
         {errors?.deadline && <S.ErrorMessage>{errors.deadline}</S.ErrorMessage>}
@@ -177,7 +215,7 @@ export function ContactForm() {
             <S.Tag
               key={tagAmount}
               name={tagAmount}
-              selected={amount === tagAmount}
+              selected={investAmount === tagAmount}
               onClick={handleAmount}
             >
               {tagAmount}
@@ -187,20 +225,30 @@ export function ContactForm() {
         {errors?.amount && <S.ErrorMessage>{errors.amount}</S.ErrorMessage>}
       </S.Field>
       <S.Field>
-        <S.Label htmlFor="content">
+        <S.Label htmlFor="additionalInformation">
           E pra finalizar, nos conte detalhes sobre seu projeto
         </S.Label>
         <S.TextArea
-          id="content"
-          value={content}
-          onChange={(event) => setContent(event.currentTarget.value)}
+          id="additionalInformation"
+          value={additionalInformation}
+          onChange={(event) =>
+            setAdditionalInformation(event.currentTarget.value)
+          }
         />
         {errors?.content && <S.ErrorMessage>{errors.content}</S.ErrorMessage>}
       </S.Field>
-      <Button type="submit" css={{ marginRight: "auto" }}>
-        Enviar
-        <ArrowRight />
-      </Button>
+      {isFailedEmailAlertVisible && <FailedEmailAlert />}
+      <S.SubmitGroup>
+        <Button
+          type="submit"
+          disabled={isLoading}
+          css={{ marginRight: "auto" }}
+        >
+          {isLoading ? "Enviando..." : "Enviar"}
+          <ArrowRight />
+        </Button>
+        {isWarningInvestAmountAlertVisible && <WarningInvestAmountAlert />}
+      </S.SubmitGroup>
     </S.Form>
   );
 }

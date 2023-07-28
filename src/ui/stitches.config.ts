@@ -20,6 +20,12 @@ export const { theme, styled, getCssText, globalCss, keyframes } =
         salmon400: "#fb9a81",
         salmon500: "#fc9173",
 
+        red100: "#fff2f0",
+        red300: "#ffccc7",
+
+        yellow100: "#fffbe6",
+        yellow300: "#ffe58f",
+
         gray50: "#f8f8f8",
         gray100: "#dedede",
         gray200: "#c3c3c3",
@@ -141,6 +147,10 @@ export const globalStyles = globalCss({
 
     width: "100vw",
     minHeight: "100vh",
+  },
+
+  "input, textarea": {
+    fontFamily: "$primary",
   },
 
   button: {
