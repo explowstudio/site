@@ -1,3 +1,5 @@
+import { ComponentProps } from "react";
+
 import Link from "next/link";
 import { InstagramLogo } from "@phosphor-icons/react";
 
@@ -6,9 +8,9 @@ import { LinkedInLogo, MediumLogo } from "@/ui/_icons";
 
 import * as S from "./SocialButtonGroup.styles";
 
-export function SocialButtonGroup() {
+export function SocialButtonGroup(props: ComponentProps<typeof S.Container>) {
   return (
-    <S.Container>
+    <S.Container {...props}>
       <IconButton
         as={Link}
         href="https://www.instagram.com/explow.studio/"
