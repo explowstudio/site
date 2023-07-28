@@ -1,5 +1,6 @@
 import { ComponentProps } from "react";
 import { ArrowRight } from "@phosphor-icons/react";
+import NextLink from "next/link";
 
 import { Button, Link, Logo } from "@/ui";
 
@@ -32,7 +33,7 @@ export function Header({
             </Link>
           </S.NavigationList>
         </nav>
-        <Button variant={color}>
+        <Button variant={color} as={NextLink} href="/contact">
           Conheça a Explow
           <ArrowRight size={18} weight="bold" />
         </Button>

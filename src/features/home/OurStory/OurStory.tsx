@@ -2,6 +2,7 @@ import { Button, Divider, Grid, SmallTitle } from "@/ui";
 import { ArrowRight } from "@phosphor-icons/react";
 
 import * as S from "./OurStory.styles";
+import Link from "next/link";
 
 export function OurStory() {
   return (
@@ -19,7 +20,7 @@ export function OurStory() {
       </S.Content>
       <Divider css={{ marginBlock: "$16" }} />
       <S.CallToAction>
-        <Button>
+        <Button as={Link} href="/contact">
           Conheça a Explow
           <ArrowRight />
         </Button>

@@ -1,4 +1,5 @@
 import { ArrowRight } from "@phosphor-icons/react";
+import NextLink from "next/link";
 
 import { Grid, Logo, Link, Divider, Button } from "@/ui";
 
@@ -9,7 +10,7 @@ export function Footer() {
     <S.Wrapper>
       <S.Box>
         <h1>Vamos fazer sua marca decolar no digital</h1>
-        <Button variant="secondary">
+        <Button variant="secondary" as={NextLink} href="/contact">
           Iniciar projeto
           <ArrowRight />
         </Button>
