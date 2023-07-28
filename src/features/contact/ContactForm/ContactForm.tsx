@@ -1,4 +1,4 @@
-import { FormEvent, MouseEvent, useState } from "react";
+import { FormEvent, MouseEvent, useCallback, useEffect, useState } from "react";
 
 import { ArrowRight } from "@phosphor-icons/react";
 import * as RadioGroup from "@radix-ui/react-radio-group";
@@ -6,14 +6,8 @@ import InputMask from "react-input-mask";
 
 import { Button, Checkbox, Radio } from "@/ui";
 
-import * as S from "./ContactForm.styles";
 import { SendContactResolver } from "./ContactForm.schema";
-import { fromZodError } from "zod-validation-error";
-
-type FormError = {
-  field: string;
-  message: string;
-};
+import * as S from "./ContactForm.styles";
 
 export function ContactForm() {
   const [name, setName] = useState("");
@@ -27,6 +21,40 @@ export function ContactForm() {
   const [scope, setScope] = useState<string[]>([]);
 
   const [errors, setErrors] = useState<Record<string, string>>();
+  const [isSubmitted, setIsSubmitted] = useState(false);
+
+  const zodResolver = useCallback(() => {
+    const payload = {
+      name,
+      email,
+      company,
+      phoneNumber,
+      content,
+      amount,
+      deadline,
+      scope,
+    };
+
+    const result = SendContactResolver.safeParse(payload);
+
+    return result;
+  }, [name, email, company, phoneNumber, content, amount, deadline, scope]);
+
+  useEffect(() => {
+    const result = zodResolver();
+
+    if (!result.success && isSubmitted) {
+      const fromZod = result.error.errors.reduce(
+        (acc, error) => ({
+          ...acc,
+          [error.path[0]]: error.message,
+        }),
+        {},
+      );
+
+      setErrors(fromZod);
+    }
+  }, [isSubmitted, zodResolver]);
 
   function handleAmount(event: MouseEvent<HTMLButtonElement>) {
     event.preventDefault();
@@ -49,30 +77,13 @@ export function ContactForm() {
   function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
 
-    const payload = {
-      name,
-      email,
-      company,
-      phoneNumber,
-      content,
-      amount,
-      deadline,
-      scope,
-    };
+    setIsSubmitted(true);
 
-    const result = SendContactResolver.safeParse(payload);
+    const result = zodResolver();
 
-    if (!result.success) {
-      const fromZod = result.error.errors.reduce(
-        (acc, error) => ({
-          ...acc,
-          [error.path[0]]: error.message,
-        }),
-        {},
-      );
+    if (!result.success) return;
 
-      setErrors(fromZod);
-    }
+    console.log("send e-mail");
   }
 
   return (
