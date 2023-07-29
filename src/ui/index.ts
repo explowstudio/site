@@ -12,3 +12,4 @@ export * from "./Marquee";
 export * from "./Radio";
 export * from "./SmallTitle";
 export * from "./SocialButtonGroup";
+export * from "./Tag";
