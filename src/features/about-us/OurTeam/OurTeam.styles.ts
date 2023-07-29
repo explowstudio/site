@@ -2,7 +2,7 @@ import { styled } from "@/ui/stitches.config";
 
 export const Container = styled("section", {
   background: "$black",
-  paddingBlock: "$20",
+  paddingBlock: "$36 $20",
 });
 
 export const TitleGroup = styled("div", {
@@ -56,6 +56,19 @@ export const FullName = styled("strong", {
   color: "$white",
 
   marginTop: "$6",
+
+  display: "inline-flex",
+  alignItems: "flex-end",
+  justifyContent: "space-between",
+
+  "> a": {
+    color: "$white",
+    transition: "$default",
+
+    "&:hover": {
+      color: "$salmon500",
+    },
+  },
 });
 
 export const Role = styled("small", {

@@ -1,6 +1,8 @@
 import { Grid, Tag } from "@/ui";
 
 import * as S from "./OurTeam.styles";
+import Link from "next/link";
+import { LinkedinLogo } from "@phosphor-icons/react";
 
 export function OurTeam() {
   return (
@@ -18,7 +20,15 @@ export function OurTeam() {
         <S.TeamList>
           <S.TeamListItem>
             <img src="/team/giovanna.png" alt="Giovanna" />
-            <S.FullName>Giovanna Souza</S.FullName>
+            <S.FullName>
+              Giovanna Souza
+              <Link
+                href="https://linkedin.com/in/eugiovannasouza"
+                target="_blank"
+              >
+                <LinkedinLogo size={20} />
+              </Link>
+            </S.FullName>
             <S.Role>Fundadora</S.Role>
 
             <S.Description>
@@ -28,7 +38,15 @@ export function OurTeam() {
           </S.TeamListItem>
           <S.TeamListItem>
             <img src="/team/gabriel.png" alt="Gabriel" />
-            <S.FullName>Gabriel Teodoro</S.FullName>
+            <S.FullName>
+              Gabriel Teodoro
+              <Link
+                href="https://linkedin.com/in/oigabrielteodoro"
+                target="_blank"
+              >
+                <LinkedinLogo size={20} />
+              </Link>
+            </S.FullName>
             <S.Role>Co-Fundador</S.Role>
 
             <S.Description>
@@ -38,7 +56,15 @@ export function OurTeam() {
           </S.TeamListItem>
           <S.TeamListItem>
             <img src="/team/kennedy.png" alt="Kennedy" />
-            <S.FullName>Kennedy Barros</S.FullName>
+            <S.FullName>
+              Kennedy Barros
+              <Link
+                href="https://linkedin.com/in/kennedybarros"
+                target="_blank"
+              >
+                <LinkedinLogo size={20} />
+              </Link>
+            </S.FullName>
             <S.Role>UI/UX Designer | Product Designer</S.Role>
 
             <S.Description>
@@ -48,7 +74,12 @@ export function OurTeam() {
           </S.TeamListItem>
           <S.TeamListItem>
             <img src="/team/thales.png" alt="Thales" />
-            <S.FullName>Thales Menzner</S.FullName>
+            <S.FullName>
+              Thales Menzner
+              <Link href="https://linkedin.com/in/thales" target="_blank">
+                <LinkedinLogo size={20} />
+              </Link>
+            </S.FullName>
             <S.Role>Front-End Developer</S.Role>
 
             <S.Description>
@@ -58,7 +89,12 @@ export function OurTeam() {
           </S.TeamListItem>
           <S.TeamListItem>
             <img src="/team/marcos.png" alt="Marcos" />
-            <S.FullName>Marcos Paulo</S.FullName>
+            <S.FullName>
+              Marcos Paulo
+              <Link href="https://linkedin.com/in/marcos" target="_blank">
+                <LinkedinLogo size={20} />
+              </Link>
+            </S.FullName>
             <S.Role>Back-End Developer</S.Role>
 
             <S.Description>
@@ -68,7 +104,12 @@ export function OurTeam() {
           </S.TeamListItem>
           <S.TeamListItem>
             <img src="/team/pedro.png" alt="Pedro" />
-            <S.FullName>Pedro Silva</S.FullName>
+            <S.FullName>
+              Pedro Silva
+              <Link href="https://linkedin.com/in/pedro" target="_blank">
+                <LinkedinLogo size={20} />
+              </Link>
+            </S.FullName>
             <S.Role>UI/UX Designer | Product Designer </S.Role>
 
             <S.Description>
