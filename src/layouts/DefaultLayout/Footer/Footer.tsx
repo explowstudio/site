@@ -26,10 +26,10 @@ export function Footer() {
             <S.Navigation>
               <S.NavigationList>
                 <strong>Navegação</strong>
-                <Link href="/" color="tertiary">
+                <Link href="/about-us" color="tertiary">
                   Quem somos
                 </Link>
-                <Link href="/" color="tertiary">
+                <Link href="/#cases" color="tertiary">
                   Cases
                 </Link>
                 <Link href="/" color="tertiary">

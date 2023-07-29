@@ -20,7 +20,7 @@ export function Header({
             <Link href="/" color={color}>
               Home
             </Link>
-            <Link href="/" color={color}>
+            <Link href="/about-us" color={color}>
               Quem somos
             </Link>
             <S.NavigationItemWithDropdown color={color}>
@@ -28,7 +28,7 @@ export function Header({
               <S.CaretDownIcon />
               <Dropdown color={color} />
             </S.NavigationItemWithDropdown>
-            <Link href="/" color={color}>
+            <Link href="/#cases" color={color}>
               Cases
             </Link>
           </S.NavigationList>
