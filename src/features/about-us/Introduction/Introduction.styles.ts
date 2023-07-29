@@ -61,6 +61,7 @@ export const BottomSide = styled("div", {
 
   "> img": {
     pointerEvents: "none",
+    height: "305px",
   },
 });
 
