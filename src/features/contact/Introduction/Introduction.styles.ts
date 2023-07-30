@@ -10,7 +10,7 @@ export const Container = styled("section", {
 });
 
 export const Title = styled("h1", {
-  fontSize: "128px",
+  fontSize: "110px",
   lineHeight: "100%",
   fontWeight: "$semiBold",
 
