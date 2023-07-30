@@ -84,7 +84,7 @@ export function ContactForm() {
   }
 
   function handleScope(event: MouseEvent<HTMLButtonElement>) {
-    const newValue = event.currentTarget.name;
+    const newValue = event.currentTarget.id;
 
     if (scope.includes(newValue)) {
       return setScope((state) =>
@@ -182,9 +182,21 @@ export function ContactForm() {
             label="UI/UX Design"
             onClick={handleScope}
           />
-          <Checkbox name="Identidade visual" label="Identidade visual" />
-          <Checkbox name="Programação web" label="Programação web" />
-          <Checkbox name="Programação de app" label="Programação de app" />
+          <Checkbox
+            name="Identidade visual"
+            label="Identidade visual"
+            onClick={handleScope}
+          />
+          <Checkbox
+            name="Programação web"
+            label="Programação web"
+            onClick={handleScope}
+          />
+          <Checkbox
+            name="Programação de app"
+            label="Programação de app"
+            onClick={handleScope}
+          />
         </S.FieldGroup>
         {errors?.scope && <S.ErrorMessage>{errors.scope}</S.ErrorMessage>}
       </S.Field>
