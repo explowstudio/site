@@ -6,6 +6,10 @@ export const Container = styled("section", {
   background: "$black",
   paddingBlock: "$20",
   marginBottom: "$36",
+
+  "@md": {
+    display: "none",
+  },
 });
 
 export const Row = styled(Grid, {

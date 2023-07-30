@@ -16,7 +16,7 @@ export default function AboutUs() {
       <Companies />
       <OurCulture />
       <OurTeam />
-      {/* <WhatWeDoForYou /> */}
+      <WhatWeDoForYou />
       <Grid as="section">
         <Faq />
       </Grid>
