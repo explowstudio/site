@@ -41,7 +41,7 @@ export const NavigationList = styled("ul", {
   alignItems: "center",
   gap: "$9",
 
-  "@md": {
+  "@sm": {
     display: "none",
   },
 });
