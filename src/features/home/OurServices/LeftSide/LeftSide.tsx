@@ -10,7 +10,7 @@ export function LeftSide() {
       <Section.SmallTitle variant="secondary">
         Nossos serviços
       </Section.SmallTitle>
-      <Section.Title variant="secondary">
+      <Section.Title variant="secondary" css={{ maxWidth: "435px" }}>
         Como podemos ajudar a sua empresa
       </Section.Title>
 

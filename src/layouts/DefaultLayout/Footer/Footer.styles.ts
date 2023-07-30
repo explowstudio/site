@@ -13,6 +13,11 @@ export const UpSide = styled("div", {
   display: "flex",
   alignItems: "flex-start",
   justifyContent: "space-between",
+
+  "@md": {
+    flexDirection: "column",
+    gap: "$14",
+  },
 });
 
 export const Document = styled("div", {
@@ -46,6 +51,11 @@ export const Navigation = styled("nav", {
   display: "flex",
   gap: "$48",
   marginRight: "$40",
+
+  "@md": {
+    marginRight: 0,
+    gap: "$16",
+  },
 });
 
 export const NavigationList = styled("ul", {
@@ -59,6 +69,12 @@ export const DownSide = styled("div", {
   alignItems: "center",
   justifyContent: "space-between",
 
+  "@md": {
+    flexDirection: "column-reverse",
+    textAlign: "center",
+    gap: "$6",
+  },
+
   "> small": {
     fontSize: "$sm",
     lineHeight: "$sm",
@@ -66,11 +82,15 @@ export const DownSide = styled("div", {
 
     "> b": {
       color: "$black",
+
+      "@md": {
+        fontWeight: "$semiBold",
+      },
     },
   },
 });
 
-export const Box = styled(Grid, {
+export const Box = styled("div", {
   background: "$black",
 
   display: "grid",
@@ -80,6 +100,10 @@ export const Box = styled(Grid, {
   padding: "$20",
   borderRadius: "16px",
 
+  "@md": {
+    padding: "$10 $7",
+  },
+
   "> h1": {
     fontSize: "$6xl",
     lineHeight: "$6xl",
@@ -88,5 +112,10 @@ export const Box = styled(Grid, {
 
     maxWidth: "856px",
     marginBottom: "$12",
+
+    "@md": {
+      fontSize: "$2xl",
+      lineHeight: "$2xl",
+    },
   },
 });

@@ -13,6 +13,11 @@ export const Title = styled("h2", {
   lineHeight: "$3xl",
   fontWeight: "$medium",
 
+  "@sm": {
+    fontSize: "$lg",
+    lineHeight: "$lg",
+  },
+
   "> span": {
     color: "$white",
   },
@@ -22,4 +27,9 @@ export const Description = styled("p", {
   color: "$white",
   fontSize: "$xl",
   lineHeight: "$xl",
+
+  "@md": {
+    fontSize: "$lg",
+    lineHeight: "$lg",
+  },
 });

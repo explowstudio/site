@@ -118,6 +118,14 @@ export const { theme, styled, getCssText, globalCss, keyframes } =
         easeOutCubic: "cubic-bezier(0.215, 0.610, 0.355, 1.000)",
       },
     },
+    media: {
+      xs: "(max-width: 320px)",
+      sm: "(max-width: 667px)",
+      md: "(max-width: 767px)",
+      lg: "(max-width: 991px)",
+      "1xl": "(max-width: 1200px)",
+      "2xl": "(max-width: 1400px)",
+    },
   });
 
 export const globalStyles = globalCss({

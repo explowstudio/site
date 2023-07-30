@@ -3,6 +3,10 @@ import { styled } from "@/ui/stitches.config";
 export const Container = styled("section", {
   paddingTop: "$20",
   background: "$black",
+
+  "@md": {
+    display: "none",
+  },
 });
 
 export const Row = styled("div", {

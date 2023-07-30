@@ -26,6 +26,20 @@ export const CaseItem = styled("li", {
   flexDirection: "column",
 
   maxWidth: "550px",
+
+  "@md": {
+    maxWidth: "350px",
+  },
+});
+
+export const CaseItemImage = styled("img", {
+  width: "550px",
+  height: "640px",
+
+  "@md": {
+    width: "350px",
+    height: "406px",
+  },
 });
 
 export const CaseItemTitle = styled("strong", {

@@ -7,6 +7,7 @@ export const Title = styled("strong", {
 
   display: "flex",
   alignItems: "center",
+  textAlign: "left",
 });
 
 export const Column = styled("div", {

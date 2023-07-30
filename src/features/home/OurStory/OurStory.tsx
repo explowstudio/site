@@ -18,7 +18,7 @@ export function OurStory() {
         cliente. Pesquisa, foco no usuário e desenvolvimento criativo garantem{" "}
         <span>resultados</span> impactantes.
       </S.Content>
-      <Divider css={{ marginBlock: "$16" }} />
+      <Divider css={{ marginBlock: "$16", "@md": { marginBlock: "$8" } }} />
       <S.CallToAction>
         <Button as={Link} href="/contact">
           Conheça a Explow

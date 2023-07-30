@@ -88,7 +88,12 @@ const FAQ = [
 export function Faq() {
   return (
     <>
-      <Section.Title css={{ marginBottom: "$16" }}>
+      <Section.Title
+        css={{
+          marginBottom: "$16",
+          "@md": { fontSize: "$2xl", lineHeight: "$2xl", marginBottom: "$8" },
+        }}
+      >
         Perguntas frequentes
       </Section.Title>
       <Accordion.Root collapsible type="single">

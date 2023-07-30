@@ -8,13 +8,15 @@ import * as S from "./Footer.styles";
 export function Footer() {
   return (
     <S.Wrapper>
-      <S.Box>
-        <h1>Vamos fazer sua marca decolar no digital</h1>
-        <Button variant="secondary" as={NextLink} href="/contact">
-          Iniciar projeto
-          <ArrowRight />
-        </Button>
-      </S.Box>
+      <Grid>
+        <S.Box>
+          <h1>Vamos fazer sua marca decolar no digital</h1>
+          <Button variant="secondary" as={NextLink} href="/contact">
+            Iniciar projeto
+            <ArrowRight />
+          </Button>
+        </S.Box>
+      </Grid>
       <S.Container>
         <Grid>
           <S.UpSide>

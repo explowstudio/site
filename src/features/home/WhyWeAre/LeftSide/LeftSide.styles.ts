@@ -12,4 +12,8 @@ export const Slogan = styled("span", {
 
   maxWidth: "128px",
   marginBlock: "$44 $14",
+
+  "@md": {
+    marginBlock: "$10",
+  },
 });

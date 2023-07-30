@@ -22,7 +22,7 @@ export function OurMethodology() {
             concepção até o lançamento.
           </S.Description>
         </S.Row>
-        <img src="/sections/methodology.svg" alt="Methodology" />
+        <img src="/sections/methodology.svg" alt="Methodology" width="100%" />
       </Grid>
       <S.BottomText>Design /// Code & Business</S.BottomText>
     </S.Container>

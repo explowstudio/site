@@ -13,12 +13,16 @@ export function OurCustomers() {
         <S.SectionTitle>
           <Section.SmallTitle>Nossos clientes</Section.SmallTitle>
           <Section.Title>Conheça nossos projetos</Section.Title>
-          <Section.Description>
+          <Section.Description
+            css={{
+              "@md": { fontSize: "$md", lineHeight: "$md", maxWidth: "353px" },
+            }}
+          >
             Designers e desenvolvedores trabalhando lado a lado para entregarem
             projetos com excelência.
           </Section.Description>
         </S.SectionTitle>
-        <Button>
+        <Button css={{ "@sm": { display: "none" } }}>
           Confira todos os cases
           <ArrowRight />
         </Button>

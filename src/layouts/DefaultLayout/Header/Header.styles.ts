@@ -1,14 +1,16 @@
+import { CaretDown } from "@phosphor-icons/react";
+
 import { Grid } from "@/ui";
 import { styled } from "@/ui/stitches.config";
 
 import { Wrapper as Dropdown } from "./Dropdown/Dropdown.styles";
-import { CaretDown } from "@phosphor-icons/react";
 
 export const Container = styled("header", {
   width: "100%",
   position: "sticky",
   top: 0,
   zIndex: "$fixed",
+  paddingInline: "$2",
 
   variants: {
     color: {
@@ -38,6 +40,10 @@ export const NavigationList = styled("ul", {
   display: "flex",
   alignItems: "center",
   gap: "$9",
+
+  "@md": {
+    display: "none",
+  },
 });
 
 export const CaretDownIcon = styled(CaretDown, {

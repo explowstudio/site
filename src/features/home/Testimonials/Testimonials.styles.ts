@@ -1,5 +1,5 @@
 import { Grid } from "@/ui";
-
+import { Quote } from "@/ui/_icons/Quote";
 import { styled } from "@/ui/stitches.config";
 
 export const Container = styled(Grid, {
@@ -7,6 +7,21 @@ export const Container = styled(Grid, {
   flexDirection: "column",
   gap: "$8",
   paddingBottom: "$24",
+
+  "@md": {
+    paddingBlock: "$10",
+  },
+});
+
+export const QuoteIcon = styled(Quote, {
+  width: "55px",
+  height: "55px",
+  color: "$gray100",
+
+  "@md": {
+    width: "32px",
+    height: "32px",
+  },
 });
 
 export const Content = styled("p", {
@@ -14,18 +29,37 @@ export const Content = styled("p", {
   lineHeight: "$3xl",
 
   maxWidth: "90%",
+
+  "@md": {
+    fontSize: "$md",
+    lineHeight: "$md",
+  },
+
+  "@media (min-width: 667px) and (max-width: 888px)": {
+    fontSize: "$1xl",
+    lineHeight: "$1xl",
+  },
 });
 
 export const Person = styled("div", {
   display: "flex",
   flexDirection: "column",
   gap: "$8",
+
+  "@md": {
+    gap: "$3",
+  },
 });
 
 export const PersonTitle = styled("strong", {
   fontSize: "$3xl",
   lineHeight: "$3xl",
   fontWeight: "$medium",
+
+  "@md": {
+    fontSize: "$2xl",
+    lineHeight: "$2xl",
+  },
 });
 
 export const PersonDescription = styled("span", {

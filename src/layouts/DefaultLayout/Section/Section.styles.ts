@@ -8,6 +8,11 @@ export const Title = styled("h1", {
   marginTop: "$5",
   maxWidth: "520px",
 
+  "@sm": {
+    fontSize: "$xl",
+    lineHeight: "$xl",
+  },
+
   variants: {
     variant: {
       primary: {
@@ -28,6 +33,11 @@ export const Description = styled("p", {
   color: "$gray500",
   maxWidth: "624px",
   marginTop: "$6",
+
+  "@md": {
+    fontSize: "$sm",
+    lineHeight: "$sm",
+  },
 
   variants: {
     variant: {

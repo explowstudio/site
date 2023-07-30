@@ -33,7 +33,16 @@ export function Header({
             </Link>
           </S.NavigationList>
         </nav>
-        <Button variant={color} as={NextLink} href="/contact">
+        <Button
+          variant={color}
+          as={NextLink}
+          href="/contact"
+          css={{
+            "@md": {
+              display: "none",
+            },
+          }}
+        >
           Conheça a Explow
           <ArrowRight size={18} weight="bold" />
         </Button>

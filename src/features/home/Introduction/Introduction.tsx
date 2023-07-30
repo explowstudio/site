@@ -19,13 +19,17 @@ export function Introduction() {
           Estúdio de
           <IconOnTitle />
         </S.Title>
-        <S.Title>design e tecnologia</S.Title>
-        <S.Row css={{ marginTop: "$20", alignItems: "flex-start" }}>
+        <S.Title css={{ "@md": { marginTop: "-$3" } }}>
+          design e tecnologia
+        </S.Title>
+        <S.Content>
           <S.DesignAndCodeAndBusiness>
             <span>design & code & business</span>
-            <Code size={20} />
-            <Palette size={20} />
-            <RocketLaunch size={20} />
+            <S.IconGroup>
+              <Code size={20} />
+              <Palette size={20} />
+              <RocketLaunch size={20} />
+            </S.IconGroup>
           </S.DesignAndCodeAndBusiness>
           <S.Description>
             <h2>
@@ -36,15 +40,17 @@ export function Introduction() {
               excelente.
             </p>
           </S.Description>
-        </S.Row>
-        <Divider css={{ marginBlock: "$20 $10" }} />
-        <S.Row>
+        </S.Content>
+        <Divider
+          css={{ marginBlock: "$20 $10", "@md": { marginBlock: "$8" } }}
+        />
+        <S.BaseRow>
           <S.KeepExploring>
             <MouseSimple size={20} />
             <span>Continue explorando</span>
           </S.KeepExploring>
           <SocialButtonGroup />
-        </S.Row>
+        </S.BaseRow>
       </Grid>
     </S.Container>
   );

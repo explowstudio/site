@@ -42,7 +42,7 @@ export function Cases() {
       onMouseLeave={() => setIsDragging(false)}
     >
       <S.CaseItem>
-        <Image src="/cases/captei.svg" alt="Captei" width={550} height={640} />
+        <S.CaseItemImage src="/cases/captei.svg" alt="Captei" />
         <S.CaseItemTitle>Captei</S.CaseItemTitle>
         <S.CaseItemDescription>
           Lorem ipsum dolor sit amet consectetur. Quam facilisi habitasse
@@ -55,7 +55,7 @@ export function Cases() {
         </S.Tags>
       </S.CaseItem>
       <S.CaseItem>
-        <Image
+        <S.CaseItemImage
           src="/cases/easygroup.svg"
           alt="Captei"
           width={550}
@@ -73,7 +73,7 @@ export function Cases() {
         </S.Tags>
       </S.CaseItem>
       <S.CaseItem>
-        <Image src="/cases/captei.svg" alt="Captei" width={550} height={640} />
+        <S.CaseItemImage src="/cases/captei.svg" alt="Captei" />
         <S.CaseItemTitle>Finbits</S.CaseItemTitle>
         <S.CaseItemDescription>
           Lorem ipsum dolor sit amet consectetur. Quam facilisi habitasse
@@ -86,7 +86,7 @@ export function Cases() {
         </S.Tags>
       </S.CaseItem>
       <S.CaseItem>
-        <Image src="/cases/captei.svg" alt="Captei" width={550} height={640} />
+        <S.CaseItemImage src="/cases/captei.svg" alt="Captei" />
         <S.CaseItemTitle>Skina</S.CaseItemTitle>
         <S.CaseItemDescription>
           Lorem ipsum dolor sit amet consectetur. Quam facilisi habitasse
@@ -99,7 +99,7 @@ export function Cases() {
         </S.Tags>
       </S.CaseItem>
       <S.CaseItem>
-        <Image src="/cases/captei.svg" alt="Captei" width={550} height={640} />
+        <S.CaseItemImage src="/cases/captei.svg" alt="Captei" />
         <S.CaseItemTitle>Eztraordinário</S.CaseItemTitle>
         <S.CaseItemDescription>
           Lorem ipsum dolor sit amet consectetur. Quam facilisi habitasse
@@ -112,7 +112,7 @@ export function Cases() {
         </S.Tags>
       </S.CaseItem>
       <S.CaseItem>
-        <Image src="/cases/captei.svg" alt="Captei" width={550} height={640} />
+        <S.CaseItemImage src="/cases/captei.svg" alt="Captei" />
         <S.CaseItemTitle>adv.co</S.CaseItemTitle>
         <S.CaseItemDescription>
           Lorem ipsum dolor sit amet consectetur. Quam facilisi habitasse

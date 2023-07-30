@@ -4,13 +4,24 @@ export const Container = styled("div", {
   display: "flex",
   gap: "$16",
 
-  marginTop: "$16",
+  "@md": {
+    marginTop: "$16",
+  },
+
+  "@sm": {
+    flexDirection: "column",
+  },
 });
 
 export const StatItem = styled("div", {
   display: "flex",
   flexDirection: "column",
   alignItems: "flex-start",
+
+  "@sm": {
+    alignItems: "center",
+    textAlign: "center",
+  },
 });
 
 export const StatItemAmount = styled("h1", {
@@ -39,6 +50,11 @@ export const StatItemTitle = styled("strong", {
   fontSize: "$xl",
   lineHeight: "$xl",
   fontWeight: "$medium",
+
+  "@md": {
+    fontSize: "$lg",
+    lineHeight: "$lg",
+  },
 });
 
 export const StatItemDescription = styled("small", {
@@ -47,4 +63,9 @@ export const StatItemDescription = styled("small", {
   color: "$gray500",
 
   marginTop: "$1",
+
+  "@md": {
+    fontSize: "$sm",
+    lineHeight: "$sm",
+  },
 });

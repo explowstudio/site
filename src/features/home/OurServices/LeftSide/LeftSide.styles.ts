@@ -6,6 +6,10 @@ export const Row = styled("div", {
   gap: "$6",
 
   marginTop: "$60",
+
+  "@md": {
+    marginTop: "$24",
+  },
 });
 
 export const Copyright = styled("span", {

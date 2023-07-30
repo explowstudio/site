@@ -1,8 +1,5 @@
 import { useState } from "react";
 
-import { Quote } from "@/ui/_icons/Quote";
-import { theme } from "@/ui/stitches.config";
-
 import * as S from "./Testimonials.styles";
 
 const testimonials = [
@@ -47,7 +44,7 @@ export function Testimonials() {
 
   return (
     <S.Container as="section">
-      <Quote size={55} color={theme.colors.gray100.value} />
+      <S.QuoteIcon />
       <S.Content>{testimonial.content}</S.Content>
       <S.Person>
         <S.PersonTitle>{testimonial.person.title}</S.PersonTitle>
