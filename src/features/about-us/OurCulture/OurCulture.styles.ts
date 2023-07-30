@@ -3,6 +3,10 @@ import { styled } from "@/ui/stitches.config";
 export const Container = styled("section", {
   background: "$black",
   paddingTop: "$36",
+
+  "@md": {
+    paddingTop: "$20",
+  },
 });
 
 export const Title = styled("h1", {
@@ -12,6 +16,17 @@ export const Title = styled("h1", {
   color: "$white",
 
   maxWidth: "958px",
+
+  "@md": {
+    fontSize: "$1xl",
+    lineHeight: "$1xl",
+    maxWidth: "450px",
+  },
+
+  "@sm": {
+    fontSize: "$xl",
+    lineHeight: "$xl",
+  },
 });
 
 export const Content = styled("div", {
@@ -20,6 +35,18 @@ export const Content = styled("div", {
   alignItems: "center",
 
   marginTop: "$24",
+
+  "@lg": {
+    alignItems: "flex-start",
+    flexDirection: "column",
+    gap: "$20",
+    marginTop: "$12",
+  },
+
+  "> img": {
+    width: "100%",
+    height: "fit-content",
+  },
 });
 
 export const CultureList = styled("ul", {

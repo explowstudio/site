@@ -1,7 +1,8 @@
-import { Grid, SocialButtonGroup } from "@/ui";
+import { Heart } from "@phosphor-icons/react";
+
+import { SocialButtonGroup } from "@/ui";
 
 import * as S from "./Introduction.styles";
-import { Heart } from "@phosphor-icons/react";
 
 export function Introduction() {
   return (
@@ -31,7 +32,9 @@ export function Introduction() {
           </S.TextGroup>
         </S.UpSide>
         <S.BottomSide>
-          <SocialButtonGroup direction="column" />
+          <SocialButtonGroup
+            direction={{ "@initial": "column", "@1xl": "row" }}
+          />
 
           <img src="/textures/explow.svg" alt="Explow" />
         </S.BottomSide>

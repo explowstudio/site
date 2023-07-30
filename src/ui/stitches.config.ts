@@ -123,7 +123,7 @@ export const { theme, styled, getCssText, globalCss, keyframes } =
       sm: "(max-width: 667px)",
       md: "(max-width: 767px)",
       lg: "(max-width: 991px)",
-      "1xl": "(max-width: 1200px)",
+      "1xl": "(max-width: 1250px)",
       "2xl": "(max-width: 1400px)",
     },
   });

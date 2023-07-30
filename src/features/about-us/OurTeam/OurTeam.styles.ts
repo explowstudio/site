@@ -3,6 +3,11 @@ import { styled } from "@/ui/stitches.config";
 export const Container = styled("section", {
   background: "$black",
   paddingBlock: "$36 $20",
+
+  "@md": {
+    paddingBlock: "$20 $28",
+    marginBottom: "$20",
+  },
 });
 
 export const TitleGroup = styled("div", {
@@ -18,6 +23,11 @@ export const Title = styled("h1", {
   color: "$white",
 
   maxWidth: "760px",
+
+  "@md": {
+    fontSize: "$1xl",
+    lineHeight: "$1xl",
+  },
 });
 
 export const SubTitle = styled("h3", {
@@ -34,6 +44,16 @@ export const TeamList = styled("ul", {
   gridTemplateColumns: "repeat(3, 1fr)",
   columnGap: "$36",
   rowGap: "$10",
+
+  "@1xl": {
+    columnGap: "$8",
+    gridTemplateColumns: "repeat(2, 1fr)",
+  },
+
+  "@md": {
+    gridTemplateColumns: "1fr",
+    marginTop: "$24",
+  },
 });
 
 export const TeamListItem = styled("li", {
@@ -46,6 +66,20 @@ export const TeamListItem = styled("li", {
 
   "&:nth-child(3n+3)": {
     paddingTop: "110px",
+  },
+
+  "@1xl": {
+    "&:nth-child(1n+2)": {
+      paddingTop: "62px",
+    },
+
+    "&:nth-child(2n)": {
+      paddingTop: "110px",
+    },
+  },
+
+  "@lg": {
+    paddingTop: "0 !important",
   },
 });
 
