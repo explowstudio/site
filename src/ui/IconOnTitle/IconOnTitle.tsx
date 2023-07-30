@@ -1,8 +1,10 @@
+import { ComponentProps } from "react";
+
 import * as S from "./IconOnTitle.styles";
 
-export function IconOnTitle() {
+export function IconOnTitle(props: ComponentProps<typeof S.TitleWithIcon>) {
   return (
-    <S.TitleWithIcon>
+    <S.TitleWithIcon {...props}>
       <S.TitleIcon color="salmon">
         <S.LightningIcon weight="fill" />
       </S.TitleIcon>

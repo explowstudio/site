@@ -11,6 +11,10 @@ export const FieldGroup = styled("div", {
   display: "grid",
   gridTemplateColumns: "repeat(2, 1fr)",
   gap: "$12 $5",
+
+  "@md": {
+    gridTemplateColumns: "1fr",
+  },
 });
 
 export const Field = styled("fieldset", {
@@ -20,6 +24,10 @@ export const Field = styled("fieldset", {
   flexDirection: "column",
 
   border: 0,
+
+  "@md": {
+    width: "100%",
+  },
 });
 
 export const Label = styled("label", {
@@ -107,6 +115,10 @@ export const TagGroup = styled("div", {
   display: "flex",
   gap: "$5",
   marginTop: "$3",
+
+  "@md": {
+    flexWrap: "wrap",
+  },
 });
 
 export const SubmitGroup = styled("div", {

@@ -8,6 +8,11 @@ export const Section = styled(Grid, {
 export const Title = styled("h1", {
   fontSize: "$3xl",
   lineHeight: "$3xl",
+
+  "@md": {
+    fontSize: "$xl",
+    lineHeight: "$xl",
+  },
 });
 
 export const Description = styled("p", {
@@ -17,10 +22,20 @@ export const Description = styled("p", {
   marginTop: "$5",
 
   maxWidth: "696px",
+
+  "@md": {
+    fontSize: "$sm",
+    lineHeight: "$sm",
+  },
 });
 
 export const FormGroup = styled("div", {
   display: "grid",
   gridTemplateColumns: "2fr 1fr",
   gap: "$32",
+
+  "@md": {
+    gridTemplateColumns: "1fr",
+    gap: "$10",
+  },
 });
