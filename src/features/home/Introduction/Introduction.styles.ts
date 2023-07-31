@@ -43,6 +43,7 @@ export const BaseRow = styled("div", {
 export const Content = styled(BaseRow, {
   marginTop: "$20",
   alignItems: "flex-start",
+  gap: "$6",
 
   "@sm": {
     flexDirection: "column-reverse",
