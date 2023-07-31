@@ -8,18 +8,22 @@ import {
   OurTeam,
   WhatWeDoForYou,
 } from "@/features/about-us";
+import { SEO } from "@/lib";
 
 export default function AboutUs() {
   return (
-    <DefaultLayout>
-      <Introduction />
-      <Companies />
-      <OurCulture />
-      <OurTeam />
-      <WhatWeDoForYou />
-      <Grid as="section">
-        <Faq />
-      </Grid>
-    </DefaultLayout>
+    <>
+      <SEO title="Explow | Studio design e tecnologia" />
+      <DefaultLayout>
+        <Introduction />
+        <Companies />
+        <OurCulture />
+        <OurTeam />
+        <WhatWeDoForYou />
+        <Grid as="section">
+          <Faq />
+        </Grid>
+      </DefaultLayout>
+    </>
   );
 }
