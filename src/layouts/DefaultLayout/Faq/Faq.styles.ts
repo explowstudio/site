@@ -4,6 +4,7 @@ export const Title = styled("strong", {
   fontSize: "$lg",
   lineHeight: "$lg",
   fontWeight: "$semiBold",
+  color: "$gray900",
 
   display: "flex",
   alignItems: "center",

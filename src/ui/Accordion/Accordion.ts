@@ -43,7 +43,7 @@ export const Trigger = styled(RadixAccordion.Trigger, {
   },
 
   "&:hover svg": {
-    color: "$neutral900",
+    color: "$gray900",
   },
 });
 
@@ -74,17 +74,17 @@ const MinusCircleIcon = styled(MinusCircle, {
   display: "none",
   transition: "all 300ms",
 
-  color: "$neutral300",
+  color: "$gray300",
   minWidth: "24px",
 
-  "[data-state=open] &": { display: "block", color: "$neutral900" },
+  "[data-state=open] &": { display: "block", color: "$gray900" },
 });
 
 const PlusCircleIcon = styled(PlusCircle, {
   display: "none",
   transition: "all 300ms",
 
-  color: "$neutral400",
+  color: "$gray400",
   minWidth: "24px",
 
   "[data-state=closed] &": { display: "block" },
