@@ -234,7 +234,9 @@ export function ContactForm() {
             </S.Tag>
           ))}
         </S.TagGroup>
-        {errors?.amount && <S.ErrorMessage>{errors.amount}</S.ErrorMessage>}
+        {errors?.investAmount && (
+          <S.ErrorMessage>{errors.investAmount}</S.ErrorMessage>
+        )}
       </S.Field>
       <S.Field>
         <S.Label htmlFor="additionalInformation">
@@ -247,7 +249,9 @@ export function ContactForm() {
             setAdditionalInformation(event.currentTarget.value)
           }
         />
-        {errors?.content && <S.ErrorMessage>{errors.content}</S.ErrorMessage>}
+        {errors?.additionalInformation && (
+          <S.ErrorMessage>{errors.additionalInformation}</S.ErrorMessage>
+        )}
       </S.Field>
       {isFailedEmailAlertVisible && <FailedEmailAlert />}
       <S.SubmitGroup>

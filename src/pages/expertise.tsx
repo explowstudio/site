@@ -1,16 +1,10 @@
-import { Grid } from "@/ui";
-import { Faq } from "@/layouts";
-
-import { ContactLayout } from "@/layouts/ContactLayout";
+import { ExpertiseLayout } from "@/layouts";
 import { WhatWeDoForYou } from "@/features/about-us";
 
 export default function Expertise() {
   return (
-    <ContactLayout>
+    <ExpertiseLayout>
       <WhatWeDoForYou />
-      <Grid as="section">
-        <Faq />
-      </Grid>
-    </ContactLayout>
+    </ExpertiseLayout>
   );
 }
