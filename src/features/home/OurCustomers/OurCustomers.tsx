@@ -8,7 +8,7 @@ import * as S from "./OurCustomers.styles";
 
 export function OurCustomers() {
   return (
-    <S.Container>
+    <S.Container as="section" id="cases">
       <S.Header>
         <S.SectionTitle>
           <Section.SmallTitle>Nossos clientes</Section.SmallTitle>

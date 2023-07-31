@@ -6,6 +6,13 @@ import { Grid, Logo, Link, Divider, Button } from "@/ui";
 import * as S from "./Footer.styles";
 
 export function Footer() {
+  function handleBackToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }
+
   return (
     <S.Wrapper>
       <Grid>
@@ -34,10 +41,10 @@ export function Footer() {
                 <Link href="/#cases" color="tertiary">
                   Cases
                 </Link>
-                <Link href="/" color="tertiary">
+                <Link href="/expertise" color="tertiary">
                   Expertises
                 </Link>
-                <Link href="/" color="tertiary">
+                <Link href="/contact" color="tertiary">
                   Contato
                 </Link>
               </S.NavigationList>
@@ -62,7 +69,7 @@ export function Footer() {
                 </Link>
                 <Link
                   color="tertiary"
-                  href="https://www.instagram.com/explow.studio/"
+                  href="https://medium.com/@explowstudio"
                   target="_blank"
                 >
                   Medium
@@ -77,7 +84,9 @@ export function Footer() {
               © 2023 by <b>Explow</b>. Todos os direitos reservados. Made in São
               Paulo.
             </small>
-            <Link href="/">Voltar ao topo</Link>
+            <Link href="" onClick={handleBackToTop}>
+              Voltar ao topo
+            </Link>
           </S.DownSide>
         </Grid>
       </S.Container>

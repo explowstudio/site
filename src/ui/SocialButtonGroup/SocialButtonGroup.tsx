@@ -27,7 +27,7 @@ export function SocialButtonGroup(props: ComponentProps<typeof S.Container>) {
       </IconButton>
       <IconButton
         as={Link}
-        href="https://www.instagram.com/explow.studio/"
+        href="https://medium.com/@explowstudio"
         target="_blank"
       >
         <MediumLogo size={20} />
