@@ -1,8 +1,9 @@
+import Link from "next/link";
+
 import { Grid, Tag } from "@/ui";
+import { LinkedinLogo } from "@phosphor-icons/react";
 
 import * as S from "./OurTeam.styles";
-import Link from "next/link";
-import { LinkedinLogo } from "@phosphor-icons/react";
 
 export function OurTeam() {
   return (
@@ -76,7 +77,10 @@ export function OurTeam() {
             <img src="/team/thales.png" alt="Thales" />
             <S.FullName>
               Thales Menzner
-              <Link href="https://linkedin.com/in/thales" target="_blank">
+              <Link
+                href="https://linkedin.com/in/thales-menzner"
+                target="_blank"
+              >
                 <LinkedinLogo size={20} />
               </Link>
             </S.FullName>
@@ -88,25 +92,13 @@ export function OurTeam() {
             </S.Description>
           </S.TeamListItem>
           <S.TeamListItem>
-            <img src="/team/marcos.png" alt="Marcos" />
-            <S.FullName>
-              Marcos Paulo
-              <Link href="https://linkedin.com/in/marcos" target="_blank">
-                <LinkedinLogo size={20} />
-              </Link>
-            </S.FullName>
-            <S.Role>Back-End Developer</S.Role>
-
-            <S.Description>
-              Atua nas construções e nas manutenções das infraestruturas dos
-              projetos para alcançarmos soluções eficientes.
-            </S.Description>
-          </S.TeamListItem>
-          <S.TeamListItem>
             <img src="/team/pedro.png" alt="Pedro" />
             <S.FullName>
               Pedro Silva
-              <Link href="https://linkedin.com/in/pedro" target="_blank">
+              <Link
+                href="https://www.linkedin.com/in/pdrosilva/"
+                target="_blank"
+              >
                 <LinkedinLogo size={20} />
               </Link>
             </S.FullName>
