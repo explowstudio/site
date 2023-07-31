@@ -17,13 +17,13 @@ export function ContactLayout({ children }: Props) {
   return (
     <>
       <Header color="secondary" />
-      <main>
+      <S.Root>
         {children}
         <Grid as="section">
           <Faq />
         </Grid>
         <WhatsAppButton />
-      </main>
+      </S.Root>
       <Footer />
     </>
   );

@@ -1,6 +1,10 @@
 import { Grid } from "@/ui";
 import { styled } from "@/ui/stitches.config";
 
+export const Root = styled("main", {
+  marginTop: "82px",
+});
+
 export const Section = styled(Grid, {
   paddingBlock: "$16",
 });

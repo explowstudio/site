@@ -88,7 +88,7 @@ export const BottomSide = styled("div", {
   display: "flex",
   alignItems: "center",
   justifyContent: "space-between",
-  gap: "$6",
+  gap: "$16",
 
   "@1xl": {
     flexDirection: "column",

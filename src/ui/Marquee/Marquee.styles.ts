@@ -28,7 +28,7 @@ export const Root = styled("div", {
           background: "linear-gradient(to right, #101010, #10101000)",
           height: "300px",
           width: "50%",
-          zIndex: "$fixed",
+          zIndex: "$top",
         },
 
         "&::after": {
@@ -38,7 +38,7 @@ export const Root = styled("div", {
           background: "linear-gradient(to left, #101010, #10101000)",
           height: "300px",
           width: "50%",
-          zIndex: "$fixed",
+          zIndex: "$top",
         },
       },
     },

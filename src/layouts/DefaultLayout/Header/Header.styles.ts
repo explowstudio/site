@@ -1,16 +1,20 @@
+import { motion } from "framer-motion";
+
 import { CaretDown } from "@phosphor-icons/react";
 
 import { Grid } from "@/ui";
 import { styled } from "@/ui/stitches.config";
 
-import { Wrapper as Dropdown } from "./Dropdown/Dropdown.styles";
-
-export const Container = styled("header", {
-  width: "100%",
-  position: "sticky",
+export const Container = styled(motion.header, {
+  position: "fixed",
   top: 0,
+  width: "100%",
   zIndex: "$fixed",
-  paddingInline: "$2",
+
+  left: "50%",
+  transform: "translateX(-50%)",
+  transition: "$default",
+  border: "1px solid transparent",
 
   variants: {
     color: {
@@ -48,32 +52,4 @@ export const NavigationList = styled("ul", {
 
 export const CaretDownIcon = styled(CaretDown, {
   transition: "$default",
-});
-
-export const NavigationItemWithDropdown = styled("li", {
-  display: "flex",
-  alignItems: "center",
-  gap: "$2",
-
-  "&:hover": {
-    [`${CaretDownIcon}`]: {
-      transform: "rotate(-180deg)",
-    },
-
-    [`${Dropdown}`]: {
-      opacity: 1,
-      visibility: "visible !important",
-    },
-  },
-
-  variants: {
-    color: {
-      primary: {
-        color: "$black",
-      },
-      secondary: {
-        color: "$gray100",
-      },
-    },
-  },
 });

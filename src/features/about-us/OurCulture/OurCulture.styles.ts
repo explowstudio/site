@@ -46,6 +46,7 @@ export const Content = styled("div", {
   "> img": {
     width: "100%",
     height: "fit-content",
+    maxWidth: "612px",
   },
 });
 

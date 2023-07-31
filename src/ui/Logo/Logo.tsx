@@ -6,7 +6,7 @@ type Props = {
 
 export function Logo({ color = "black" }: Props) {
   return (
-    <Link href="/">
+    <Link href="/" style={{ display: "grid", placeItems: "center" }}>
       <svg
         width="122"
         height="33"
