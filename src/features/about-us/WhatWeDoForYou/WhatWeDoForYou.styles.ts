@@ -8,7 +8,7 @@ export const Container = styled("section", {
   marginBottom: "$36",
 
   "@md": {
-    display: "none",
+    marginBottom: 0,
   },
 });
 
@@ -16,6 +16,12 @@ export const Row = styled(Grid, {
   display: "flex",
   justifyContent: "space-between",
   alignItems: "center",
+
+  "@md": {
+    flexDirection: "column",
+    alignItems: "flex-start",
+    gap: "$8",
+  },
 });
 
 export const Title = styled("h1", {
@@ -56,6 +62,11 @@ export const LargeTitle = styled("h1", {
       },
     },
   },
+
+  "@md": {
+    fontSize: "64px",
+    transform: "translateX(0) !important",
+  },
 });
 
 export const Content = styled("div", {
@@ -69,4 +80,9 @@ export const Content = styled("div", {
 
   maxWidth: "649px",
   width: "100%",
+
+  "@md": {
+    fontSize: "$sm",
+    lineHeight: "$sm",
+  },
 });

@@ -4,6 +4,7 @@ import { useScroll, useTransform } from "framer-motion";
 import { theme } from "@/ui/stitches.config";
 
 import { Container } from "../Header.styles";
+import { useBreakpointMatches } from "@/lib";
 
 type Props = {
   color: ComponentProps<typeof Container>["color"];
@@ -11,6 +12,8 @@ type Props = {
 
 export function useHeader({ color }: Props) {
   const { scrollY } = useScroll();
+
+  const isMatches = useBreakpointMatches("1xl");
 
   const headerStyles = {
     initial: {
@@ -24,7 +27,7 @@ export function useHeader({ color }: Props) {
       borderColor: "transparent",
     },
     animate: {
-      maxWidth: "1225px",
+      maxWidth: isMatches ? "calc(100% - 32px)" : "1225px",
       top: "20px",
       backgroundColor:
         color === "primary"
