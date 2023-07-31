@@ -18,6 +18,7 @@ export const Trigger = styled(RadixAccordion.Trigger, {
   alignItems: "center",
   justifyContent: "space-between",
   marginBottom: "$2",
+  color: "$gray900",
 
   width: "100%",
 
