@@ -1,3 +1,4 @@
+import { FadeIn } from "@/ui/_transitions";
 import { styled } from "@/ui/stitches.config";
 
 export const Container = styled("section", {
@@ -35,7 +36,7 @@ export const Title = styled("h1", {
   },
 });
 
-export const BaseRow = styled("div", {
+export const BaseRow = styled(FadeIn, {
   display: "flex",
   justifyContent: "space-between",
 });

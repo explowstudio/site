@@ -1,5 +1,6 @@
 import { Grid } from "@/ui";
-import { styled } from "@/ui/stitches.config";
+import { FadeIn } from "@/ui/_transitions";
+import { styled, keyframes } from "@/ui/stitches.config";
 
 export const Container = styled(Grid, {
   paddingBlock: "$24",
@@ -9,7 +10,16 @@ export const Container = styled(Grid, {
   },
 });
 
-export const Content = styled("p", {
+const progressiveExpansion = keyframes({
+  from: {
+    width: 0,
+  },
+  to: {
+    width: "100%",
+  },
+});
+
+export const Content = styled(FadeIn.WhileInView, {
   fontSize: "42px",
   lineHeight: "130%",
   marginTop: "$3",
@@ -31,9 +41,10 @@ export const Content = styled("p", {
     "&::after": {
       content: "",
       position: "absolute",
-      width: "100%",
+      width: "0",
       height: "3px",
       background: "linear-gradient(to right, $salmon500, $purple500)",
+      animation: `${progressiveExpansion} 0.8s 1.8s forwards`,
 
       left: 0,
       bottom: 0,
