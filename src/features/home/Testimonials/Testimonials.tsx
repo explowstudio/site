@@ -1,5 +1,9 @@
 import { useState } from "react";
 
+import {
+  dotButtonVariants,
+  dotsHorizontalVariants,
+} from "./Testimonials.animations";
 import * as S from "./Testimonials.styles";
 
 const testimonials = [
@@ -44,21 +48,29 @@ export function Testimonials() {
 
   return (
     <S.Container as="section">
-      <S.QuoteIcon />
-      <S.Content>{testimonial.content}</S.Content>
-      <S.Person>
-        <S.PersonTitle>{testimonial.person.title}</S.PersonTitle>
-        <S.PersonDescription>
-          {testimonial.person.description}
-        </S.PersonDescription>
-      </S.Person>
-      <S.DotsHorizontal>
+      <S.Content viewport={{ amount: "all" }}>
+        <S.QuoteIcon />
+        <S.Description>{testimonial.content}</S.Description>
+        <S.Person>
+          <S.PersonTitle>{testimonial.person.title}</S.PersonTitle>
+          <S.PersonDescription>
+            {testimonial.person.description}
+          </S.PersonDescription>
+        </S.Person>
+      </S.Content>
+      <S.DotsHorizontal
+        initial="hidden"
+        whileInView="show"
+        variants={dotsHorizontalVariants}
+        viewport={{ once: true }}
+      >
         {testimonials.map((testimonial, index) => (
           <S.DotButton
             key={testimonial.content}
             active={index === selectedTestimonialIndex}
             title={`Testemunho de ${testimonial.person.title}`}
             onClick={() => setSelectedTestimonialIndex(index)}
+            variants={dotButtonVariants}
           />
         ))}
       </S.DotsHorizontal>

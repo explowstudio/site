@@ -7,10 +7,38 @@ import { IconButton } from "@/ui";
 import { LinkedInLogo, MediumLogo } from "@/ui/_icons";
 
 import * as S from "./SocialButtonGroup.styles";
+import { Variants, motion } from "framer-motion";
+
+const parentVariants: Variants = {
+  hidden: {
+    opacity: 0,
+  },
+  show: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.2,
+      delayChildren: 0.3,
+    },
+  },
+};
+
+const buttonVariants: Variants = {
+  hidden: {
+    opacity: 0,
+  },
+  show: {
+    opacity: 1,
+  },
+};
 
 export function SocialButtonGroup(props: ComponentProps<typeof S.Container>) {
   return (
-    <S.Container {...props}>
+    <S.Container
+      variants={parentVariants}
+      initial="hidden"
+      animate="show"
+      {...props}
+    >
       <IconButton
         as={Link}
         href="https://www.instagram.com/explow.studio/"
@@ -18,6 +46,7 @@ export function SocialButtonGroup(props: ComponentProps<typeof S.Container>) {
       >
         <InstagramLogo size={24} />
       </IconButton>
+
       <IconButton
         as={Link}
         href="https://www.linkedin.com/company/explow-studio/"

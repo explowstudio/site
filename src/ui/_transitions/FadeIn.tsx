@@ -1,5 +1,5 @@
 import { Target, TargetAndTransition, motion } from "framer-motion";
-import { ComponentElement, ElementType, ReactNode } from "react";
+import { ElementType, ReactNode } from "react";
 
 type Props = {
   children: ReactNode;
@@ -7,6 +7,11 @@ type Props = {
   delay?: number;
   initial?: Target;
   animate?: TargetAndTransition;
+  viewport?: {
+    once?: boolean;
+    margin?: string;
+    amount?: "some" | "all" | number;
+  };
   component?: ElementType;
 };
 
@@ -40,6 +45,7 @@ FadeIn.WhileInView = function WhileInView({
   initial = {},
   animate = {},
   component = "div",
+  viewport,
   ...rest
 }: Props) {
   const MotionComponent = motion(component);
@@ -49,7 +55,7 @@ FadeIn.WhileInView = function WhileInView({
       initial={{ opacity: 0, ...initial }}
       whileInView={{ opacity: 1, ...animate }}
       transition={{ duration, delay }}
-      viewport={{ once: true }}
+      viewport={{ once: true, ...viewport }}
       {...rest}
     >
       {children}

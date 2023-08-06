@@ -1,22 +1,25 @@
 import Image from "next/image";
 
 import { Section } from "@/layouts";
+import { FadeIn } from "@/ui/_transitions";
 
 import * as S from "./OurPartners.styles";
 
 export function OurPartners() {
   return (
     <S.Container as="section">
-      <Section.SmallTitle>Nossos clientes</Section.SmallTitle>
-      <Section.Title>
-        Conheça alguns parceiros que cresceram com a Explow
-      </Section.Title>
-      <Section.Description>
-        Queremos ser parceiros de empresas que entendem que um desenvolvimento
-        bem estruturado pode fazer a diferença. E estamos aqui para isso.
-      </Section.Description>
+      <FadeIn.WhileInView delay={0.2}>
+        <Section.SmallTitle>Nossos clientes</Section.SmallTitle>
+        <Section.Title>
+          Conheça alguns parceiros que cresceram com a Explow
+        </Section.Title>
+        <Section.Description>
+          Queremos ser parceiros de empresas que entendem que um desenvolvimento
+          bem estruturado pode fazer a diferença. E estamos aqui para isso.
+        </Section.Description>
+      </FadeIn.WhileInView>
       <S.Partners>
-        <S.Partner>
+        <S.Partner as={FadeIn.WhileInView}>
           <Image
             src="/partners/skina.svg"
             alt="Skina"
@@ -28,7 +31,7 @@ export function OurPartners() {
             descontos para compras em grupos.
           </S.PartnerDescription>
         </S.Partner>
-        <S.Partner>
+        <S.Partner as={FadeIn.WhileInView} delay={0.4}>
           <Image
             src="/partners/finbits.svg"
             alt="Finbits"
@@ -41,7 +44,7 @@ export function OurPartners() {
             mercado.
           </S.PartnerDescription>
         </S.Partner>
-        <S.Partner>
+        <S.Partner as={FadeIn.WhileInView} delay={0.6}>
           <Image
             src="/partners/advco.svg"
             alt="adv.co"
@@ -53,7 +56,7 @@ export function OurPartners() {
             de um escritório de advocacia para automatizar processos internos.
           </S.PartnerDescription>
         </S.Partner>
-        <S.Partner>
+        <S.Partner as={FadeIn.WhileInView} delay={0.8}>
           <Image
             src="/partners/captei.svg"
             alt="Captei"
@@ -65,7 +68,7 @@ export function OurPartners() {
             mapeando melhorias de usabilidade e passando mais profissionalismo.
           </S.PartnerDescription>
         </S.Partner>
-        <S.Partner>
+        <S.Partner as={FadeIn.WhileInView} delay={1}>
           <Image
             src="/partners/easygroup.svg"
             alt="EasyGroup"
@@ -78,7 +81,7 @@ export function OurPartners() {
             Easy.
           </S.PartnerDescription>
         </S.Partner>
-        <S.Partner>
+        <S.Partner as={FadeIn.WhileInView} delay={1.2}>
           <Image
             src="/partners/eztraordinario.svg"
             alt="Eztraordinário"

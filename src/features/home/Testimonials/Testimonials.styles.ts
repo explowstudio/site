@@ -1,6 +1,9 @@
+import { motion } from "framer-motion";
+
 import { Grid } from "@/ui";
 import { Quote } from "@/ui/_icons/Quote";
 import { styled } from "@/ui/stitches.config";
+import { FadeIn } from "@/ui/_transitions";
 
 export const Container = styled(Grid, {
   display: "flex",
@@ -11,6 +14,12 @@ export const Container = styled(Grid, {
   "@md": {
     paddingBlock: "$10",
   },
+});
+
+export const Content = styled(FadeIn.WhileInView, {
+  display: "flex",
+  flexDirection: "column",
+  gap: "$8",
 });
 
 export const QuoteIcon = styled(Quote, {
@@ -24,7 +33,7 @@ export const QuoteIcon = styled(Quote, {
   },
 });
 
-export const Content = styled("p", {
+export const Description = styled("p", {
   fontSize: "$3xl",
   lineHeight: "$3xl",
 
@@ -68,13 +77,13 @@ export const PersonDescription = styled("span", {
   color: "$gray500",
 });
 
-export const DotsHorizontal = styled("div", {
+export const DotsHorizontal = styled(motion.div, {
   display: "flex",
   alignItems: "center",
   gap: "$3",
 });
 
-export const DotButton = styled("button", {
+export const DotButton = styled(motion.button, {
   height: "10px",
   width: "10px",
 

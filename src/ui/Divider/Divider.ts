@@ -1,8 +1,9 @@
 import { opacify } from "polished";
+import { motion } from "framer-motion";
 
 import { styled, theme } from "@/ui/stitches.config";
 
-export const Divider = styled("hr", {
+export const Divider = styled(motion.hr, {
   border: 0,
   borderTop: "1px solid transparent",
 
