@@ -5,7 +5,7 @@ import * as S from "./OurServices.styles";
 
 export function OurServices() {
   return (
-    <S.Container direction="horizontal" component="section">
+    <S.Container>
       <S.Content>
         <LeftSide />
         <RightSide />
