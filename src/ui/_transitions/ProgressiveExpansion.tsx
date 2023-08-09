@@ -1,5 +1,7 @@
+import { ElementType, ReactNode } from "react";
 import { Target, TargetAndTransition, motion } from "framer-motion";
-import { ReactNode } from "react";
+
+type Direction = "horizontal" | "vertical";
 
 type Props = {
   children: ReactNode;
@@ -7,6 +9,8 @@ type Props = {
   delay?: number;
   initial?: Target;
   animate?: TargetAndTransition;
+  direction?: Direction;
+  component?: ElementType;
 };
 
 export function ProgressiveExpansion({
@@ -15,17 +19,22 @@ export function ProgressiveExpansion({
   delay = 0,
   initial = {},
   animate = {},
+  direction = "horizontal",
+  component = "div",
   ...rest
 }: Props) {
+  const MotionComponent = motion(component);
+  const cssKey = direction === "horizontal" ? "width" : "height";
+
   return (
-    <motion.div
-      initial={{ width: 0, ...initial }}
-      animate={{ width: "100%", ...animate }}
+    <MotionComponent
+      initial={{ [cssKey]: 0, ...initial }}
+      animate={{ [cssKey]: "100%", ...animate }}
       transition={{ duration, delay }}
       {...rest}
     >
       {children}
-    </motion.div>
+    </MotionComponent>
   );
 }
 
@@ -35,17 +44,22 @@ ProgressiveExpansion.WhileInView = function WhileInView({
   delay = 0,
   initial = {},
   animate = {},
+  direction = "horizontal",
+  component = "div",
   ...rest
 }: Props) {
+  const MotionComponent = motion(component);
+  const cssKey = direction === "horizontal" ? "width" : "height";
+
   return (
-    <motion.div
-      initial={{ width: 0, ...initial }}
-      whileInView={{ width: "100%", ...animate }}
+    <MotionComponent
+      initial={{ [cssKey]: 0, ...initial }}
+      whileInView={{ [cssKey]: "100%", ...animate }}
       viewport={{ once: true }}
       transition={{ duration, delay }}
       {...rest}
     >
       {children}
-    </motion.div>
+    </MotionComponent>
   );
 };

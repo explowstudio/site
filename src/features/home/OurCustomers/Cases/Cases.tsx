@@ -56,6 +56,19 @@ export function Cases() {
         </S.Tags>
       </S.CaseItem>
       <S.CaseItem>
+        <S.CaseItemImage src="/cases/skina.svg" alt="Skina" />
+        <S.CaseItemTitle>Skina</S.CaseItemTitle>
+        <S.CaseItemDescription>
+          A Skina é um aplicativo de e-commerce onde consumidores vão fazer
+          compras em grupo para conseguir descontos em conjunto.
+        </S.CaseItemDescription>
+        <S.Tags>
+          <S.CaseTag>UI Design</S.CaseTag>
+          <S.CaseTag>UX Design</S.CaseTag>
+          <S.CaseTag>Aplicativo</S.CaseTag>
+        </S.Tags>
+      </S.CaseItem>
+      <S.CaseItem>
         <S.CaseItemImage
           src="/cases/easygroup.svg"
           alt="EasyGroup"
@@ -75,6 +88,32 @@ export function Cases() {
         </S.Tags>
       </S.CaseItem>
       <S.CaseItem>
+        <S.CaseItemImage src="/cases/adv.svg" alt="adv.co" />
+        <S.CaseItemTitle>adv.co</S.CaseItemTitle>
+        <S.CaseItemDescription>
+          Sistema de gerenciamento de documentos e assinaturas de um escritório
+          de advocacia.
+        </S.CaseItemDescription>
+        <S.Tags>
+          <S.CaseTag>UI Design</S.CaseTag>
+          <S.CaseTag>UX Design</S.CaseTag>
+          <S.CaseTag>Sistema</S.CaseTag>
+        </S.Tags>
+      </S.CaseItem>
+      <S.CaseItem>
+        <S.CaseItemImage src="/cases/sweepy.svg" alt="Sweepy" />
+        <S.CaseItemTitle>Sweepy</S.CaseItemTitle>
+        <S.CaseItemDescription>
+          Aplicativo onde consumidores compram cupons de desconto que são
+          escaneados por QR Code nas lojas fisicas.
+        </S.CaseItemDescription>
+        <S.Tags>
+          <S.CaseTag>UI Design</S.CaseTag>
+          <S.CaseTag>UX Design</S.CaseTag>
+          <S.CaseTag>Aplicativo</S.CaseTag>
+        </S.Tags>
+      </S.CaseItem>
+      <S.CaseItem>
         <S.CaseItemImage src="/cases/finbits.svg" alt="Finbits - Blog" />
         <S.CaseItemTitle>Finbits - Blog</S.CaseItemTitle>
         <S.CaseItemDescription>
@@ -86,19 +125,6 @@ export function Cases() {
           <S.CaseTag>UX Design</S.CaseTag>
           <S.CaseTag>Webflow</S.CaseTag>
           <S.CaseTag>Blog</S.CaseTag>
-        </S.Tags>
-      </S.CaseItem>
-      <S.CaseItem>
-        <S.CaseItemImage src="/cases/skina.svg" alt="Skina" />
-        <S.CaseItemTitle>Skina</S.CaseItemTitle>
-        <S.CaseItemDescription>
-          A Skina é um aplicativo de e-commerce onde consumidores vão fazer
-          compras em grupo para conseguir descontos em conjunto.
-        </S.CaseItemDescription>
-        <S.Tags>
-          <S.CaseTag>UI Design</S.CaseTag>
-          <S.CaseTag>UX Design</S.CaseTag>
-          <S.CaseTag>Aplicativo</S.CaseTag>
         </S.Tags>
       </S.CaseItem>
       <S.CaseItem>
@@ -129,19 +155,6 @@ export function Cases() {
         </S.Tags>
       </S.CaseItem>
       <S.CaseItem>
-        <S.CaseItemImage src="/cases/sweepy.svg" alt="Sweepy" />
-        <S.CaseItemTitle>Sweepy</S.CaseItemTitle>
-        <S.CaseItemDescription>
-          Aplicativo onde consumidores compram cupons de desconto que são
-          escaneados por QR Code nas lojas fisicas.
-        </S.CaseItemDescription>
-        <S.Tags>
-          <S.CaseTag>UI Design</S.CaseTag>
-          <S.CaseTag>UX Design</S.CaseTag>
-          <S.CaseTag>Aplicativo</S.CaseTag>
-        </S.Tags>
-      </S.CaseItem>
-      <S.CaseItem>
         <S.CaseItemImage
           src="/cases/btg-finbits.svg"
           alt="Finbits - BTG Empresas"
@@ -156,19 +169,6 @@ export function Cases() {
           <S.CaseTag>UX Design</S.CaseTag>
           <S.CaseTag>Webflow</S.CaseTag>
           <S.CaseTag>Landing Page</S.CaseTag>
-        </S.Tags>
-      </S.CaseItem>
-      <S.CaseItem>
-        <S.CaseItemImage src="/cases/adv.svg" alt="adv.co" />
-        <S.CaseItemTitle>adv.co</S.CaseItemTitle>
-        <S.CaseItemDescription>
-          Sistema de gerenciamento de documentos e assinaturas de um escritório
-          de advocacia.
-        </S.CaseItemDescription>
-        <S.Tags>
-          <S.CaseTag>UI Design</S.CaseTag>
-          <S.CaseTag>UX Design</S.CaseTag>
-          <S.CaseTag>Sistema</S.CaseTag>
         </S.Tags>
       </S.CaseItem>
     </S.Container>

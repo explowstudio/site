@@ -17,6 +17,14 @@ const testimonials = [
   },
   {
     content:
+      '"Além de mim, todo o pessoal da Captei também adorou o resultado das entregas da Explow, captaram bem a ideia que queríamos passar para os usuários dos nosso produtos."',
+    person: {
+      title: "Leonardo Fabra",
+      description: "Co-founder & CEO at Captei",
+    },
+  },
+  {
+    content:
       "”Incrível em todos os sentidos com suas entregas com qualidade, e assertividade. Recomento para todas as pessoas que me perguntam sobre a mesma.”",
     person: {
       title: "Gabriella Araújo",
@@ -33,10 +41,10 @@ const testimonials = [
   },
   {
     content:
-      '"Além de mim, todo o pessoal da Captei também adorou o resultado das entregas da Explow, captaram bem a ideia que queríamos passar para os usuários dos nosso produtos."',
+      "“Sabemos que com o tempo o projeto acaba ficando cansativo e vai perdendo a euforia do início. Com a Explow nem consegui perceber, tudo fluiu muito bem, conseguiram extrair todas as informações, requisitos necessários e essência para o desenvolver o projeto com excelência.”",
     person: {
-      title: "Leonardo Fabra",
-      description: "Co-founder & CEO at Captei",
+      title: "Willian Pinho",
+      description: "Founder at Willian Pinho Consultoria",
     },
   },
 ];
