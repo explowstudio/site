@@ -20,7 +20,7 @@ export const Whatsapp = styled(Link, {
   color: "$black",
   transition: "$default",
 
-  "&:hover": {
+  "&:hover, &:focus": {
     backgroundColor: "$black",
     color: "$white",
     transition: "$default",
