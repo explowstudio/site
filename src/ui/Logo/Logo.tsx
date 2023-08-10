@@ -1,4 +1,4 @@
-import Link from "next/link";
+import * as S from "./Logo.styles";
 
 type Props = {
   color?: string;
@@ -6,7 +6,7 @@ type Props = {
 
 export function Logo({ color = "black" }: Props) {
   return (
-    <Link href="/" style={{ display: "grid", placeItems: "center" }}>
+    <S.Root href="/">
       <svg
         width="122"
         height="33"
@@ -32,6 +32,6 @@ export function Logo({ color = "black" }: Props) {
           fill={color}
         />
       </svg>
-    </Link>
+    </S.Root>
   );
 }
