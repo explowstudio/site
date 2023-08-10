@@ -93,10 +93,18 @@ export const DotButton = styled(motion.button, {
 
   transition: "$default",
 
+  "&:hover": {
+    background: "$gray200",
+  },
+
+  "&:focus": {
+    background: "$gray400",
+  },
+
   variants: {
     active: {
       true: {
-        background: "$black",
+        background: "$black !important",
       },
     },
   },
