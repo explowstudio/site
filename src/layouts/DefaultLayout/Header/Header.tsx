@@ -1,6 +1,7 @@
 import { ComponentProps } from "react";
 import { ArrowRight } from "@phosphor-icons/react";
 import NextLink from "next/link";
+import { useRouter } from "next/router";
 
 import { Button, Link, Logo } from "@/ui";
 import { useDispatchEvent } from "@/lib";
@@ -12,6 +13,8 @@ export function Header({
   color = "primary",
   ...rest
 }: ComponentProps<typeof S.Container>) {
+  const { pathname } = useRouter();
+
   const { dispatchEvent } = useDispatchEvent();
 
   const headerStyles = useHeader({
@@ -20,16 +23,16 @@ export function Header({
 
   function handleFocus(label: string) {
     dispatchEvent({
-      name: "Header Focus Link",
-      category: "Focus",
+      name: "header_focus_link",
+      category: `Focus in ${pathname}`,
       label,
     });
   }
 
   function handleClick(label: string) {
     dispatchEvent({
-      name: "Header Click Link",
-      category: "Redirect",
+      name: "header_click_link",
+      category: `Redirect from ${pathname}`,
       label,
     });
   }
