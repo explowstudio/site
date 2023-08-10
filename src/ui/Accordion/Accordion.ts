@@ -33,7 +33,7 @@ export const Trigger = styled(RadixAccordion.Trigger, {
     width: 0,
   },
 
-  '&[data-state="open"] strong::before': {
+  '&[data-state="open"] strong::before, &:focus strong::before': {
     width: "50px",
     marginRight: "$3",
   },
