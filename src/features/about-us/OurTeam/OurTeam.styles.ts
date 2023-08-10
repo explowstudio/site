@@ -3,10 +3,10 @@ import { styled } from "@/ui/stitches.config";
 export const Container = styled("section", {
   background: "$black",
   paddingBlock: "$36 $20",
+  marginBottom: "$20",
 
   "@md": {
     paddingBlock: "$20 $28",
-    marginBottom: "$20",
   },
 });
 

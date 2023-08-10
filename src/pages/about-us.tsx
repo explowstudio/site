@@ -6,7 +6,6 @@ import {
   Introduction,
   OurCulture,
   OurTeam,
-  WhatWeDoForYou,
 } from "@/features/about-us";
 import { SEO } from "@/lib";
 
@@ -19,7 +18,6 @@ export default function AboutUs() {
         <Companies />
         <OurCulture />
         <OurTeam />
-        <WhatWeDoForYou />
         <Grid as="section">
           <Faq />
         </Grid>
