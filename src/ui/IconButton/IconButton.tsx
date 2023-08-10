@@ -15,7 +15,7 @@ export const IconButton = styled("button", {
 
   transition: "$default",
 
-  "&:hover": {
+  "&:hover, &:focus": {
     background: "$black",
     color: "$white",
   },
