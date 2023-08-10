@@ -1,7 +1,7 @@
 import { ArrowRight } from "@phosphor-icons/react";
-import Link from "next/link";
 
-import { Button, Divider, SmallTitle } from "@/ui";
+import { Divider, SmallTitle } from "@/ui";
+import { ContactButton } from "@/features/contact";
 import { FadeIn, ProgressiveExpansion } from "@/ui/_transitions";
 
 import * as S from "./OurStory.styles";
@@ -36,10 +36,7 @@ export function OurStory() {
       </ProgressiveExpansion.WhileInView>
       <S.CallToAction>
         <FadeIn.WhileInView initial={{ x: -20 }} animate={{ x: 0 }} delay={1.4}>
-          <Button as={Link} href="/contact">
-            Conheça a Explow
-            <ArrowRight />
-          </Button>
+          <ContactButton />
         </FadeIn.WhileInView>
         <FadeIn.WhileInView
           initial={{ x: 20 }}

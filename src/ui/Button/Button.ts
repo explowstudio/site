@@ -1,4 +1,5 @@
 import { styled } from "@/ui/stitches.config";
+import { ComponentProps } from "react";
 
 export const Button = styled("button", {
   display: "flex",
@@ -43,3 +44,5 @@ export const Button = styled("button", {
     variant: "primary",
   },
 });
+
+export type ButtonProps = ComponentProps<typeof Button>;

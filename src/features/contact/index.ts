@@ -1,3 +1,4 @@
+export * from "./ContactButton";
 export * from "./ContactForm";
 export * from "./ContactInformation";
 export * from "./Introduction";

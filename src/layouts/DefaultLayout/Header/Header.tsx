@@ -1,10 +1,9 @@
 import { ComponentProps } from "react";
-import { ArrowRight } from "@phosphor-icons/react";
-import NextLink from "next/link";
 import { useRouter } from "next/router";
 
 import { Button, Link, Logo } from "@/ui";
 import { useDispatchEvent } from "@/lib";
+import { ContactButton } from "@/features/contact";
 
 import { useHeader } from "./useHeader";
 import * as S from "./Header.styles";
@@ -23,7 +22,7 @@ export function Header({
 
   function handleFocus(label: string) {
     dispatchEvent({
-      name: "header_focus_link",
+      name: "contact_focus_link",
       category: `Focus in ${pathname}`,
       label,
     });
@@ -31,7 +30,7 @@ export function Header({
 
   function handleClick(label: string) {
     dispatchEvent({
-      name: "header_click_link",
+      name: "contact_click_link",
       category: `Redirect from ${pathname}`,
       label,
     });
@@ -57,21 +56,14 @@ export function Header({
             </Link>
           </S.NavigationList>
         </nav>
-        <Button
+        <ContactButton
           variant={color}
-          as={NextLink}
-          href="/contact"
           css={{
             "@md": {
               display: "none",
             },
           }}
-          onFocus={() => handleFocus("Conheça a Explow")}
-          onClick={() => handleClick("Conheça a Explow")}
-        >
-          Conheça a Explow
-          <ArrowRight size={18} weight="bold" />
-        </Button>
+        />
       </S.Content>
     </S.Container>
   );
