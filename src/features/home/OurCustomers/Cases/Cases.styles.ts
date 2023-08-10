@@ -36,6 +36,8 @@ export const CaseItemImage = styled("img", {
   width: "550px",
   height: "640px",
 
+  pointerEvents: "none",
+
   "@md": {
     width: "350px",
     height: "406px",
