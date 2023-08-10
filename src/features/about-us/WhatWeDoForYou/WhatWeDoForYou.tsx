@@ -9,12 +9,12 @@ const services = [
     "Protótipos / Style Guide / UX Research",
   ],
   [
-    "Websites e landing pages / product development",
-    "Web e mobile apps / e-commerce / front-end",
+    "Websites e Landing pages",
+    "Web e Mobile apps / E-commerce / Front-end",
     "Plataformas e Sistemas / Back-end / No-code",
   ],
   [
-    "Logos / papelaria / identidade visual / branding",
+    "Logos / Papelaria / Identidade visual / Branding",
     "Copywriting / Social Media / Apresentações",
     "Pitch de Vendas / Banners / Proposta Comercial",
   ],
