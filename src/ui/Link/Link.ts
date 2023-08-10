@@ -19,7 +19,7 @@ export const Link = styled(NextLink, {
   variants: {
     linkUnderline: {
       true: {
-        "&:hover::after": {
+        "&:hover::after, &:focus::after": {
           transform: "scale(1)",
           transformOrigin: "left",
         },

@@ -19,6 +19,9 @@ export const Button = styled("button", {
 
   transition: "$default",
 
+  outline: "2px solid transparent",
+  outlineOffset: "4px",
+
   variants: {
     variant: {
       primary: {
@@ -28,6 +31,10 @@ export const Button = styled("button", {
         "&:hover": {
           background: "$gray800",
         },
+
+        "&:focus": {
+          outlineColor: "$black",
+        },
       },
       secondary: {
         color: "$black",
@@ -35,6 +42,10 @@ export const Button = styled("button", {
 
         "&:hover": {
           background: "$gray100",
+        },
+
+        "&:focus": {
+          outlineColor: "$white",
         },
       },
     },
