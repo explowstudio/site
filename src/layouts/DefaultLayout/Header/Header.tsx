@@ -3,6 +3,7 @@ import { ArrowRight } from "@phosphor-icons/react";
 import NextLink from "next/link";
 
 import { Button, Link, Logo } from "@/ui";
+import { useDispatchEvent } from "@/lib";
 
 import { useHeader } from "./useHeader";
 import * as S from "./Header.styles";
@@ -11,9 +12,27 @@ export function Header({
   color = "primary",
   ...rest
 }: ComponentProps<typeof S.Container>) {
+  const { dispatchEvent } = useDispatchEvent();
+
   const headerStyles = useHeader({
     color,
   });
+
+  function handleFocus(label: string) {
+    dispatchEvent({
+      name: "Header Focus Link",
+      category: "Focus",
+      label,
+    });
+  }
+
+  function handleClick(label: string) {
+    dispatchEvent({
+      name: "Header Click Link",
+      category: "Redirect",
+      label,
+    });
+  }
 
   return (
     <S.Container color={color} style={headerStyles} {...rest}>
@@ -44,6 +63,8 @@ export function Header({
               display: "none",
             },
           }}
+          onFocus={() => handleFocus("Conheça a Explow")}
+          onClick={() => handleClick("Conheça a Explow")}
         >
           Conheça a Explow
           <ArrowRight size={18} weight="bold" />
