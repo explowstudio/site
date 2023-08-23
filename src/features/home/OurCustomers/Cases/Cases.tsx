@@ -1,7 +1,6 @@
-import Image from "next/image";
+import { MouseEvent, useRef, useState } from "react";
 
 import * as S from "./Cases.styles";
-import { MouseEvent, useRef, useState } from "react";
 
 export function Cases() {
   const ref = useRef<HTMLUListElement>(null);
@@ -66,25 +65,6 @@ export function Cases() {
           <S.CaseTag>UI Design</S.CaseTag>
           <S.CaseTag>UX Design</S.CaseTag>
           <S.CaseTag>Aplicativo</S.CaseTag>
-        </S.Tags>
-      </S.CaseItem>
-      <S.CaseItem>
-        <S.CaseItemImage
-          src="/cases/easygroup.svg"
-          alt="EasyGroup"
-          width={550}
-          height={640}
-        />
-        <S.CaseItemTitle>EasyGroup</S.CaseItemTitle>
-        <S.CaseItemDescription>
-          A EasyGroup é um grupo que nasceu com o objetivo de ser um catalisador
-          da transformação digital de grandes empresas.
-        </S.CaseItemDescription>
-        <S.Tags>
-          <S.CaseTag>UI Design</S.CaseTag>
-          <S.CaseTag>UX Design</S.CaseTag>
-          <S.CaseTag>Front-End</S.CaseTag>
-          <S.CaseTag>Site</S.CaseTag>
         </S.Tags>
       </S.CaseItem>
       <S.CaseItem>

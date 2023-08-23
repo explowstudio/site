@@ -68,19 +68,6 @@ export function OurPartners() {
             mapeando melhorias de usabilidade e passando mais profissionalismo.
           </S.PartnerDescription>
         </S.Partner>
-        <S.Partner as={FadeIn.WhileInView} delay={1}>
-          <Image
-            src="/partners/easygroup.svg"
-            alt="EasyGroup"
-            width={167}
-            height={33}
-          />
-          <S.PartnerDescription>
-            Tivemos o prazer de participar da criação de 4 landing pages
-            abordando os serviços prestados por cada uma das empresas do grupo
-            Easy.
-          </S.PartnerDescription>
-        </S.Partner>
         <S.Partner as={FadeIn.WhileInView} delay={1.2}>
           <Image
             src="/partners/eztraordinario.svg"

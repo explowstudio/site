@@ -9,14 +9,6 @@ import * as S from "./Testimonials.styles";
 const testimonials = [
   {
     content:
-      "“Do atendimento personalizado até o desenvolvimento do projeto só tenho elogios a fazer pelo excelente trabalho que me prestaram, o projeto ficou melhor do que eu imaginei que seria, superou minhas expectativas.”",
-    person: {
-      title: "Renan Mittelstaedt",
-      description: "Founder at EasyGroup",
-    },
-  },
-  {
-    content:
       '"Além de mim, todo o pessoal da Captei também adorou o resultado das entregas da Explow, captaram bem a ideia que queríamos passar para os usuários dos nosso produtos."',
     person: {
       title: "Leonardo Fabra",

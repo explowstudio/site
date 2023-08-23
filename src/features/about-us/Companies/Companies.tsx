@@ -11,7 +11,6 @@ export function Companies() {
           <S.PartnerLogo src="/partners/captei.svg" alt="Captei" />
           <S.PartnerLogo src="/partners/advco.svg" alt="adv.co" />
           <S.PartnerLogo src="/partners/skina.svg" alt="skina" />
-          <S.PartnerLogo src="/partners/easygroup.svg" alt="EasyGroup" />
           <S.PartnerLogo
             src="/partners/eztraordinario.svg"
             alt="Eztraordinario"
