@@ -17,7 +17,7 @@ export function Footer() {
     <S.Wrapper>
       <Grid>
         <S.Box>
-          <h1>Vamos fazer sua marca decolar no digital</h1>
+          <h1>Vamos fazer sua empresa decolar no digital juntos</h1>
           <Button variant="secondary" as={NextLink} href="/contact">
             Iniciar projeto
             <ArrowRight />

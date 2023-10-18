@@ -17,7 +17,10 @@ import { SEO } from "@/lib";
 export default function Home() {
   return (
     <>
-      <SEO title="Explow | Studio design e tecnologia" />
+      <SEO
+        title="Explow | Design e tecnologia"
+        description="Nós somos o braço que sua empresa precisa para decolar no digital hoje"
+      />
       <DefaultLayout>
         <Introduction />
         <OurStory />

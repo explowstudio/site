@@ -12,7 +12,10 @@ import { SEO } from "@/lib";
 export default function AboutUs() {
   return (
     <>
-      <SEO title="Explow | Studio design e tecnologia" />
+      <SEO
+        title="Explow | Design e tecnologia"
+        description="Conheça o time que vai ser seu parceiro nos negócios"
+      />
       <DefaultLayout>
         <Introduction />
         <Companies />

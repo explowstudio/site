@@ -4,8 +4,8 @@ export function RightSide() {
   return (
     <>
       <S.Title>
-        A Explow revoluciona negócios com seus desenvolvimentos de produtos
-        digitais.
+        Nós somos o braço que sua empresa precisa para decolar no digital hoje
+        🛸
       </S.Title>
       <div>
         <S.Description>
@@ -14,13 +14,14 @@ export function RightSide() {
           destacarem no digital.
         </S.Description>
         <S.Description>
-          Utilizamos uma <b>abordagem centrada no usuário</b>, combinada com
-          expertise técnica em design de interfaces intuitivas e programação
-          prezando pela melhor performance e fidelidade ao layout.
+          Adotamos uma abordagem<b> centrada no usuário</b>, combinando nossa
+          expertise em programação para assegurar alto desempenho e a
+          preservação da fidelidade aos layouts e designs de interfaces
+          intuitivas.
         </S.Description>
         <S.Description>
-          Toda marca precisa de uma manifestação que declare sua visão, seus
-          valores e essência, estamos aqui para isso.
+          Toda marca precisa de uma manifestação que declare sua visão, valores
+          e essência. E estamos aqui para isso.
         </S.Description>
       </div>
     </>

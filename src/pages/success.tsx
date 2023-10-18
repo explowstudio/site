@@ -5,7 +5,7 @@ import { SEO } from "@/lib";
 export default function Contact() {
   return (
     <>
-      <SEO title="Explow | Contato enviado!" />
+      <SEO title="Explow | Contato enviado" />
       <ContactLayout>
         <Introduction />
       </ContactLayout>

@@ -5,7 +5,10 @@ import { ContactForm, Introduction, Rules } from "@/features/contact";
 export default function Contact() {
   return (
     <>
-      <SEO title="Explow | Faça um orçamento" />
+      <SEO
+        title="Explow | Faça um orçamento"
+        description="Vamos discutir o investimento necessário para impulsionar o seu negócio"
+      />
       <ContactLayout>
         <Introduction />
         <ContactLayout.Section>

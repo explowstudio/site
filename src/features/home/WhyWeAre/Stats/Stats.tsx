@@ -30,7 +30,7 @@ export function Stats() {
       </S.StatItem>
       <S.StatItem>
         <S.StatItemAmount>
-          10
+          15
           <S.StatsItemIcon css={{ transform: "translateX(-12px)" }}>
             <Package size={24} />
           </S.StatsItemIcon>

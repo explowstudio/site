@@ -105,7 +105,7 @@ export const Box = styled("div", {
   },
 
   "> h1": {
-    fontSize: "$6xl",
+    fontSize: "$5xl",
     lineHeight: "$6xl",
     fontWeight: "$semiBold",
     color: "$white",

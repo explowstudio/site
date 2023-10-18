@@ -25,11 +25,11 @@ export function OurStory() {
         delay={0.4}
         duration={1.2}
       >
-        A Explow revoluciona empresas com produtos <span>digitais</span>{" "}
-        poderosos. Nossas interfaces inovadoras aprimoram a experiência dos{" "}
-        <span>usuários</span>, agregando valor em todas as etapas da jornada do
-        cliente. Pesquisa, foco no usuário e desenvolvimento criativo garantem{" "}
-        <span>resultados</span> impactantes.
+        A Explow <span>transforma</span> empresas por meio de produtos digitais
+        impactantes. Nossas interfaces elevam a <span>experiência</span> do
+        usuário, gerando valor em todas as fases da jornada do cliente. Com
+        pesquisa, foco no usuário e desenvolvimento estruturado, garantimos{" "}
+        <span>resultados</span> significativos.
       </S.Content>
       <ProgressiveExpansion.WhileInView delay={0.8}>
         <Divider css={{ marginBlock: "$16", "@md": { marginBlock: "$8" } }} />

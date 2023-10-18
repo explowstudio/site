@@ -37,7 +37,7 @@ export function Introduction() {
           <FadeIn initial={{ x: 20 }} animate={{ x: 0 }} delay={0.4}>
             <S.Description>
               <h2>
-                Estamos aqui para transformar problemas em soluções singulares.
+                Somos o braço que sua empresa precisa para decolar no digital
               </h2>
               <p>
                 E não paramos até entregar um resultado que seja nada menos que

@@ -102,6 +102,11 @@ export const BottomSide = styled("div", {
   },
 });
 
+export const Video = styled("video", {
+  objectFit: "cover",
+  height: "330px",
+});
+
 export const TextureGroup = styled("div", {
   display: "flex",
   flexDirection: "column",

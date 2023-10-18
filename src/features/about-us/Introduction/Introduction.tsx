@@ -9,12 +9,12 @@ export function Introduction() {
     <S.Container>
       <S.Content>
         <S.UpSide>
-          <S.SmallTitle>Queremos ser seus parceiros 🛸</S.SmallTitle>
+          <S.SmallTitle>
+            Queremos ser seus parceiros para toda hora 🛸
+          </S.SmallTitle>
           <S.TextGroup>
             <S.Title>
-              Somos uma equipe enxuta,
-              <br />
-              de mentes inquietas e criativas.
+              Somos uma equipe de <br /> mentes inquietas e criativas.
             </S.Title>
             <S.DescriptionGroup>
               <S.Description>
@@ -36,7 +36,9 @@ export function Introduction() {
             direction={{ "@initial": "column", "@1xl": "row" }}
           />
 
-          <img src="/textures/explow.svg" alt="Explow" />
+          <S.Video autoPlay width="100%" controls={false} loop muted>
+            <source src="/textures/logo+motion.mp4" type="video/mp4" />
+          </S.Video>
         </S.BottomSide>
         <S.FromSPToWorld>
           <Heart size={18} />

@@ -20,7 +20,7 @@ function useOrigin() {
 
 export function SEO({
   title,
-  description = "Somos um estúdio de design e tecnologia, nosso objetivo é encontrar as melhores soluções criativas para seus projetos.",
+  description = "Nós somos o braço que sua empresa precisa para decolar no digital hoje",
   keywords = [
     "design",
     "designer",
