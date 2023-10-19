@@ -109,6 +109,25 @@ export function OurTeam() {
               intuitivo e centrado no usuário.
             </S.Description>
           </S.TeamListItem>
+
+          <S.TeamListItem>
+            <img src="/team/jefté.png" alt="Jefté" />
+            <S.FullName>
+              Jefté Medeiros
+              <Link
+                href="https://www.linkedin.com/in/jeftemedeiros"
+                target="_blank"
+              >
+                <LinkedinLogo size={20} />
+              </Link>
+            </S.FullName>
+            <S.Role>Front-End Developer</S.Role>
+
+            <S.Description>
+              Desenvolve códigos funcionais para aplicações, garantindo uma
+              experiência positiva para os usuários.
+            </S.Description>
+          </S.TeamListItem>
         </S.TeamList>
       </Grid>
     </S.Container>
