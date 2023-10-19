@@ -17,10 +17,10 @@ const testimonials = [
   },
   {
     content:
-      "”Incrível em todos os sentidos com suas entregas com qualidade, e assertividade. Recomento para todas as pessoas que me perguntam sobre a mesma.”",
+      '"Tínhamos um prazo curto para lançar o novo site da Labmine e recebemos uma entrega muito além do esperado e antes do prazo. Estamos extremamente satisfeitos pela entrega, pelo atendimento e pela parceria com a Explow."',
     person: {
-      title: "Gabriella Araújo",
-      description: "Co-founder at Be Tech",
+      title: "Daniel Tavares",
+      description: "CEO at Labmine",
     },
   },
   {
