@@ -18,7 +18,7 @@ export function Stats() {
       </S.StatItem>
       <S.StatItem>
         <S.StatItemAmount>
-          7
+          8
           <S.StatsItemIcon>
             <Users size={24} />
           </S.StatsItemIcon>

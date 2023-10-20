@@ -17,6 +17,14 @@ const testimonials = [
   },
   {
     content:
+      '"Foi fundamental no sucesso das mudanças no aplicativo da Setfin, transformando complexidade em intuitividade e elevando o engajamento dos nossos usuários. Seu compromisso com a excelência superou expectativas. Essa parceria com a Setfin ainda tem uma estrada muito longa."',
+    person: {
+      title: "Luan Marcondes",
+      description: "Founder & CEO at Setfin",
+    },
+  },
+  {
+    content:
       '"Tínhamos um prazo curto para lançar o novo site da Labmine e recebemos uma entrega muito além do esperado e antes do prazo. Estamos extremamente satisfeitos pela entrega, pelo atendimento e pela parceria com a Explow."',
     person: {
       title: "Daniel Tavares",
