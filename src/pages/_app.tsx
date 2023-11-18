@@ -1,6 +1,6 @@
 import type { AppProps } from "next/app";
+import { Analytics } from "@vercel/analytics/react";
 
-import { GoogleAnalytics } from "@/lib";
 import { globalStyles } from "@/ui/stitches.config";
 
 export default function App({ Component, pageProps }: AppProps) {
@@ -8,7 +8,7 @@ export default function App({ Component, pageProps }: AppProps) {
 
   return (
     <>
-      <GoogleAnalytics />
+      <Analytics />
       <Component {...pageProps} />
     </>
   );
