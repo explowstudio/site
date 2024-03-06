@@ -83,3 +83,13 @@ The `ui` folder is used for the global components.
     - Component.test.tsx
   - index.ts
 ```
+
+### TODO
+
+- [] Seção "Como podemos ajudar o seu negócio"
+- [] Atualizar logos de parceiros
+- [] Nova seção de projetos
+  - [] Página de detalhes do projeto
+  - [] Upload de projetos (CMS)
+- [] Atualizar seção de testimonials
+- [] Atualizar footer

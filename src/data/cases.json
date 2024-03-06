@@ -1,0 +1,74 @@
+{
+  "certimine": {
+    "slug": "certimine",
+    "card": {
+      "thumbnail": "/cases/certimine/thumbnail.svg",
+      "title": "Certimine",
+      "description": "Mineração com conformidade legal e responsável."
+    }
+  },
+  "labmine": {
+    "slug": "labmine",
+    "card": {
+      "thumbnail": "/cases/labmine/thumbnail.svg",
+      "title": "Labmine",
+      "description": "Conectando o minerador a experts do mercado"
+    }
+  },
+  "minery": {
+    "slug": "minery",
+    "card": {
+      "thumbnail": "/cases/minery/thumbnail.svg",
+      "title": "Minery",
+      "description": "Transformando o mercado de mineração global."
+    }
+  },
+  "robotip": {
+    "slug": "robotip",
+    "card": {
+      "thumbnail": "/cases/robotip/thumbnail.svg",
+      "title": "Robôtip",
+      "description": "Apostas esportivas de futebol para jogadores."
+    }
+  },
+  "compre_ou_alugue": {
+    "slug": "compre_ou_alugue",
+    "card": {
+      "thumbnail": "/cases/compre_ou_alugue/thumbnail.svg",
+      "title": "Compre ou alugue",
+      "description": "Encontre o imóvel ideal para você e sua família."
+    }
+  },
+  "captei": {
+    "slug": "captei",
+    "card": {
+      "thumbnail": "/cases/captei/thumbnail.svg",
+      "title": "Captei",
+      "description": "Tecnologia para busca inteligente de proprietário"
+    }
+  },
+  "finbits": {
+    "slug": "finbits",
+    "card": {
+      "thumbnail": "/cases/finbits/thumbnail.svg",
+      "title": "Finbits",
+      "description": "Gerenciamento de pagamentos sem esforço."
+    }
+  },
+  "skina": {
+    "slug": "skina",
+    "card": {
+      "thumbnail": "/cases/skina/thumbnail.svg",
+      "title": "Skina",
+      "description": "E-commerce de descontos em conjunto."
+    }
+  },
+  "adv": {
+    "slug": "adv",
+    "card": {
+      "thumbnail": "/cases/adv/thumbnail.svg",
+      "title": "Adv.co",
+      "description": "Gestão desburocatizada para documentos."
+    }
+  }
+}
