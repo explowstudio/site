@@ -37,6 +37,44 @@
       "thumbnail": "/cases/compre_ou_alugue/thumbnail.svg",
       "title": "Compre ou alugue",
       "description": "Encontre o imóvel ideal para você e sua família."
+    },
+    "detail": {
+      "hero": {
+        "title": "Compre ou alugue",
+        "description": "Encontre o imóvel ideal para você e sua família.",
+        "image": "/cases/compre_ou_alugue/hero.svg"
+      },
+      "generalInformation": {
+        "country": "Brasil",
+        "state": "Santa Catarina",
+        "tags": ["Identidade visual", "UI Design", "UX Design", "Copywriting", "Programação"],
+        "description": [
+          "Startup do ramo imobiliário situada em Florianópolis, Santa Catarina. Nasceu com a proposta  de ajudar corretores e imobiliárias na busca por imóveis, tornando o processo 100% digital e facilitado através de sua ferramenta.",
+          "Devido ao crescimento acelerado, a Captei entendeu que precisava subir de nível e criar um portal de imóveis para ajudar pessoas a encontrarem seus imóveis dos sonhos e assim nasceu a Compre e alugue."
+        ]
+      },
+      "images": [
+        {
+          "id": "timeline",
+          "source": "/cases/compre_ou_alugue/timeline.svg"
+        },
+        {
+          "id": "identity",
+          "source": "/cases/compre_ou_alugue/identity.svg"
+        },
+        {
+          "id": "home",
+          "source": "/cases/compre_ou_alugue/home.svg"
+        },
+        {
+          "id": "search",
+          "source": "/cases/compre_ou_alugue/search.svg"
+        },
+        {
+          "id": "detail",
+          "source": "/cases/compre_ou_alugue/detail.svg"
+        }
+      ]
     }
   },
   "captei": {
