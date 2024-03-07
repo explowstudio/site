@@ -11,15 +11,16 @@ export function OurCustomers() {
     <S.Container as="section" id="cases">
       <S.Header>
         <S.SectionTitle>
-          <Section.SmallTitle>Nossos clientes</Section.SmallTitle>
-          <Section.Title>Conheça nossos projetos</Section.Title>
+          <Section.SmallTitle>Nosso trabalho</Section.SmallTitle>
+          <Section.Title>Veja alguns projetos selecionados</Section.Title>
           <Section.Description
             css={{
               "@md": { fontSize: "$md", lineHeight: "$md", maxWidth: "353px" },
             }}
           >
-            Designers e desenvolvedores trabalhando lado a lado para entregarem
-            projetos com excelência.
+            Time de especialistas digitais trabalhando lado a lado para
+            entregarem projetos com excelência. Esse é o nível de entrega
+            Explow.
           </Section.Description>
         </S.SectionTitle>
         <Button css={{ "@sm": { display: "none" } }}>
