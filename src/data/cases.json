@@ -29,6 +29,61 @@
       "thumbnail": "/cases/robotip/thumbnail.svg",
       "title": "Robôtip",
       "description": "Apostas esportivas de futebol para jogadores."
+    },
+    "detail": {
+      "hero": {
+        "title": "Robôtip",
+        "description": "Encontre o imóvel ideal para você e sua família.",
+        "image": "/cases/compre_ou_alugue/hero.svg"
+      },
+      "generalInformation": {
+        "country": "Brasil",
+        "state": "Santa Catarina",
+        "tags": ["Identidade visual", "UI Design", "UX Design", "Copywriting", "Programação"],
+        "description": [
+          "Startup do ramo imobiliário situada em Florianópolis, Santa Catarina. Nasceu com a proposta  de ajudar corretores e imobiliárias na busca por imóveis, tornando o processo 100% digital e facilitado através de sua ferramenta.",
+          "Devido ao crescimento acelerado, a Captei entendeu que precisava subir de nível e criar um portal de imóveis para ajudar pessoas a encontrarem seus imóveis dos sonhos e assim nasceu a Compre e alugue."
+        ]
+      },
+      "images": [
+        {
+          "id": "timeline",
+          "source": "/cases/compre_ou_alugue/timeline.svg"
+        },
+        {
+          "id": "identity",
+          "source": "/cases/compre_ou_alugue/identity.svg"
+        },
+        {
+          "id": "home",
+          "source": "/cases/compre_ou_alugue/home.svg"
+        },
+        {
+          "id": "search",
+          "source": "/cases/compre_ou_alugue/search.svg"
+        },
+        {
+          "id": "detail",
+          "source": "/cases/compre_ou_alugue/detail.svg"
+        }
+      ],
+      "impact": {
+        "title": "Como a Robôtip foi impulsionada com as soluções da Explow?",
+        "items": [
+          {
+            "title": "Experiência em primeiro lugar",
+            "description": "Criamos uma jornada agradável e memorável para o usuário e impulsionamos ainda mais a Captei com o crescimento dos negócios focando no cliente."
+          },
+          {
+            "title": "Produtos digitais de qualidade",
+            "description": "Projetamos e desenvolvemos produtos pensando 100% em qualidade, excelência e agilidade."
+          },
+          {
+            "title": "Zero dor de cabeça",
+            "description": "A Explow atua em todas as frentes fazendo com que o cliente não tenha nenhum tipo de dor de cabeça com o desenvolvimento. Aqui tarefa dada é tarefa cumprida."
+          }
+        ]
+      }
     }
   },
   "compre_ou_alugue": {
@@ -74,7 +129,24 @@
           "id": "detail",
           "source": "/cases/compre_ou_alugue/detail.svg"
         }
-      ]
+      ],
+      "impact": {
+        "title": "Como a Compre e Alugue foi impulsionada com as soluções da Explow?",
+        "items": [
+          {
+            "title": "Experiência em primeiro lugar",
+            "description": "Criamos uma jornada agradável e memorável para o usuário e impulsionamos ainda mais a Captei com o crescimento dos negócios focando no cliente."
+          },
+          {
+            "title": "Produtos digitais de qualidade",
+            "description": "Projetamos e desenvolvemos produtos pensando 100% em qualidade, excelência e agilidade."
+          },
+          {
+            "title": "Zero dor de cabeça",
+            "description": "A Explow atua em todas as frentes fazendo com que o cliente não tenha nenhum tipo de dor de cabeça com o desenvolvimento. Aqui tarefa dada é tarefa cumprida."
+          }
+        ]
+      }
     }
   },
   "captei": {
