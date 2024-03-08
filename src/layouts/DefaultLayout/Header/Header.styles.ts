@@ -24,6 +24,9 @@ export const Container = styled(motion.header, {
       secondary: {
         background: "$black",
       },
+      transparent: {
+        background: "transparent",
+      },
     },
   },
 

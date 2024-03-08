@@ -1,63 +1,64 @@
 import { ComponentProps } from "react";
-import { useRouter } from "next/router";
+import { motion } from "framer-motion";
 
-import { Button, Link, Logo } from "@/ui";
-import { useDispatchEvent } from "@/lib";
+import { Link, Logo } from "@/ui";
 import { ContactButton } from "@/features/contact";
 
 import { useHeader } from "./useHeader";
 import * as S from "./Header.styles";
 
+const BUTTON_COLOR = {
+  primary: "primary",
+  secondary: "secondary",
+  transparent: "secondary",
+} as any;
+
 export function Header({
   color = "primary",
   ...rest
 }: ComponentProps<typeof S.Container>) {
-  const { pathname } = useRouter();
-
-  const { dispatchEvent } = useDispatchEvent();
-
   const headerStyles = useHeader({
     color,
   });
 
-  function handleFocus(label: string) {
-    dispatchEvent({
-      name: "contact_focus_link",
-      category: `Focus in ${pathname}`,
-      label,
-    });
-  }
-
-  function handleClick(label: string) {
-    dispatchEvent({
-      name: "contact_click_link",
-      category: `Redirect from ${pathname}`,
-      label,
-    });
-  }
-
   return (
     <S.Container color={color} style={headerStyles} {...rest}>
       <S.Content>
-        <Logo color={color === "primary" ? "black" : "white"} />
+        <Logo color={headerStyles.logoColor} />
         <nav>
           <S.NavigationList>
-            <Link href="/" color={color}>
+            <Link
+              as={motion.a}
+              href="/"
+              style={{ color: headerStyles.logoColor }}
+            >
               Home
             </Link>
-            <Link href="/about-us" color={color}>
+            <Link
+              as={motion.a}
+              href="/about-us"
+              style={{ color: headerStyles.logoColor }}
+            >
               Quem somos
             </Link>
-            <Link href="/expertise" color={color}>
+            <Link
+              as={motion.a}
+              href="/expertise"
+              style={{ color: headerStyles.logoColor }}
+            >
               Expertise
             </Link>
-            <Link href="/#cases" color={color}>
+            <Link
+              as={motion.a}
+              href="/#cases"
+              style={{ color: headerStyles.logoColor }}
+            >
               Cases
             </Link>
           </S.NavigationList>
         </nav>
         <ContactButton
-          variant={color}
+          variant={BUTTON_COLOR[color as any]}
           css={{
             "@md": {
               display: "none",

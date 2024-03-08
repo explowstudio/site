@@ -5,7 +5,7 @@ import {
   RocketLaunch,
 } from "@phosphor-icons/react";
 
-import { Divider, Grid, IconOnTitle, SocialButtonGroup } from "@/ui";
+import { Divider, Grid, SocialButtonGroup } from "@/ui";
 import { FadeIn, ProgressiveExpansion } from "@/ui/_transitions";
 
 import * as S from "./Introduction.styles";
@@ -15,10 +15,7 @@ export function Introduction() {
     <S.Container>
       <Grid>
         <FadeIn initial={{ y: -40 }} animate={{ y: 0 }}>
-          <S.Title>
-            Estúdio de
-            <IconOnTitle />
-          </S.Title>
+          <S.Title>Especialistas em</S.Title>
           <S.Title css={{ "@md": { marginTop: "-$3" } }}>
             design e tecnologia
           </S.Title>
@@ -37,18 +34,23 @@ export function Introduction() {
           <FadeIn initial={{ x: 20 }} animate={{ x: 0 }} delay={0.4}>
             <S.Description>
               <h2>
-                Somos o braço que sua empresa precisa para decolar no digital
+                Desenvolvimento de branding, sistemas, plataformas, aplicativos
+                e muito mais
               </h2>
               <p>
-                E não paramos até entregar um resultado que seja nada menos que
-                excelente.
+                Estamos aqui para descomplicar o complicado trazendo soluções
+                que façam com que seu negócio decole no digital.
               </p>
             </S.Description>
           </FadeIn>
         </S.Content>
         <ProgressiveExpansion delay={1.2}>
           <Divider
-            css={{ marginBlock: "$20 $10", "@md": { marginBlock: "$8" } }}
+            css={{
+              marginBlock: "$20 $10",
+              "@md": { marginBlock: "$8" },
+              borderColor: "rgba(248, 248, 248, 0.20)",
+            }}
           />
         </ProgressiveExpansion>
         <S.BaseRow initial={{ y: 20 }} animate={{ y: 0 }} delay={2}>
@@ -57,7 +59,17 @@ export function Introduction() {
             <span>Continue explorando</span>
           </S.KeepExploring>
 
-          <SocialButtonGroup />
+          <SocialButtonGroup
+            css={{
+              svg: { color: "$white" },
+              "a:hover": {
+                background: "$white",
+                svg: {
+                  color: "$gray800",
+                },
+              },
+            }}
+          />
         </S.BaseRow>
       </Grid>
     </S.Container>

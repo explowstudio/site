@@ -64,8 +64,8 @@ export const TitleIcon = styled("div", {
 });
 
 export const AsteriskIcon = styled(Asterisk, {
-  width: "28px",
-  height: "28px",
+  width: "44px",
+  height: "44px",
   color: "$white",
 
   "@md": {

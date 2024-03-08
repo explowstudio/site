@@ -2,11 +2,12 @@ import { FadeIn } from "@/ui/_transitions";
 import { styled } from "@/ui/stitches.config";
 
 export const Container = styled("section", {
-  background: "$gray50",
-  paddingBlock: "$20 $10",
+  background: "url(/textures/hero.png)",
+  paddingBlock: "$40 $10",
+  backgroundSize: "cover",
 
   "@md": {
-    paddingBlock: "$10",
+    paddingBlock: "$40 $20",
   },
 });
 
@@ -17,6 +18,7 @@ export const Title = styled("h1", {
 
   display: "inline-flex",
   alignItems: "flex-end",
+  color: "$white",
 
   "@md": {
     fontSize: "$2xl",
@@ -60,6 +62,7 @@ export const DesignAndCodeAndBusiness = styled("div", {
   display: "flex",
   alignItems: "center",
   gap: "$4",
+  color: "$white",
 
   "@sm": {
     width: "100%",
@@ -85,6 +88,7 @@ export const Description = styled("div", {
   display: "flex",
   flexDirection: "column",
   gap: "$3",
+  color: "$white",
 
   maxWidth: "515px",
 
@@ -93,8 +97,8 @@ export const Description = styled("div", {
   },
 
   "> h2": {
-    fontSize: "$2xl",
-    lineHeight: "$2xl",
+    fontSize: "$1xl",
+    lineHeight: "$1xl",
     fontWeight: "$semiBold",
 
     "@md": {
@@ -104,7 +108,6 @@ export const Description = styled("div", {
   },
 
   "> p": {
-    color: "$gray600",
     fontSize: "$lg",
     lineHeight: "$lg",
 
@@ -120,7 +123,7 @@ export const KeepExploring = styled("div", {
   alignItems: "center",
   gap: "$4",
 
-  color: "$gray700",
+  color: "$white",
 
   "> span": {
     fontSize: "$sm",

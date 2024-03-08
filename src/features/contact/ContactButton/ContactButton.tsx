@@ -9,7 +9,7 @@ import { useDispatchEvent } from "@/lib";
 type Props = {
   variant?: ButtonProps["variant"];
   css?: ButtonProps["css"];
-};
+} & Omit<ButtonProps, "as">;
 
 export function ContactButton(props: Props) {
   const { pathname } = useRouter();
@@ -34,7 +34,7 @@ export function ContactButton(props: Props) {
 
   return (
     <Button
-      as={NextLink}
+      as={NextLink as any}
       href="/contact"
       onFocus={handleFocus}
       onClick={handleClick}

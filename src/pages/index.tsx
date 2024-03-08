@@ -21,7 +21,7 @@ export default function Home() {
         title="Explow | Design e tecnologia"
         description="Nós somos o braço que sua empresa precisa para decolar no digital hoje"
       />
-      <DefaultLayout>
+      <DefaultLayout color="transparent" css={{ marginTop: "0" }}>
         <Introduction />
         <OurStory />
         <OurPartners />

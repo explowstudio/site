@@ -1,4 +1,5 @@
 import { ComponentProps } from "react";
+import { Variants } from "framer-motion";
 
 import Link from "next/link";
 import { InstagramLogo } from "@phosphor-icons/react";
@@ -7,7 +8,6 @@ import { IconButton } from "@/ui";
 import { LinkedInLogo, MediumLogo } from "@/ui/_icons";
 
 import * as S from "./SocialButtonGroup.styles";
-import { Variants, motion } from "framer-motion";
 
 const parentVariants: Variants = {
   hidden: {
@@ -19,15 +19,6 @@ const parentVariants: Variants = {
       staggerChildren: 0.2,
       delayChildren: 0.3,
     },
-  },
-};
-
-const buttonVariants: Variants = {
-  hidden: {
-    opacity: 0,
-  },
-  show: {
-    opacity: 1,
   },
 };
 
