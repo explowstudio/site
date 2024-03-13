@@ -4,9 +4,7 @@ import { DefaultLayout, Faq } from "@/layouts";
 import {
   Introduction,
   OurCustomers,
-  OurMethodology,
   OurPartners,
-  OurServices,
   OurStory,
   Testimonials,
   WhyWeAre,
@@ -25,11 +23,9 @@ export default function Home() {
         <Introduction />
         <OurStory />
         <OurPartners />
-        <Testimonials />
-        <OurServices />
-        <OurMethodology />
         <WhyWeAre />
         <OurCustomers />
+        <Testimonials />
         <Grid as="section">
           <Faq />
         </Grid>

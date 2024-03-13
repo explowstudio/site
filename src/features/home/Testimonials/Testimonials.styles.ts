@@ -1,15 +1,11 @@
-import { motion } from "framer-motion";
-
-import { Grid } from "@/ui";
 import { Quote } from "@/ui/_icons/Quote";
 import { styled } from "@/ui/stitches.config";
 import { FadeIn } from "@/ui/_transitions";
 
-export const Container = styled(Grid, {
-  display: "flex",
-  flexDirection: "column",
-  gap: "$8",
-  paddingBlock: "$24",
+export const Container = styled("section", {
+  paddingBlock: "$24 $6",
+  background: "$black",
+  marginBottom: "$28",
 
   "@md": {
     paddingBlock: "$10",
@@ -25,7 +21,7 @@ export const Content = styled(FadeIn.WhileInView, {
 export const QuoteIcon = styled(Quote, {
   width: "55px",
   height: "55px",
-  color: "$gray100",
+  color: "$white",
 
   "@md": {
     width: "32px",
@@ -36,12 +32,14 @@ export const QuoteIcon = styled(Quote, {
 export const Description = styled("p", {
   fontSize: "$3xl",
   lineHeight: "$3xl",
-
+  color: "$white",
   maxWidth: "90%",
+  minHeight: "220px",
 
   "@md": {
-    fontSize: "$md",
-    lineHeight: "$md",
+    fontSize: "$1xl",
+    lineHeight: "$1xl",
+    minHeight: "auto",
   },
 
   "@media (min-width: 667px) and (max-width: 888px)": {
@@ -50,10 +48,23 @@ export const Description = styled("p", {
   },
 });
 
+export const PersonRoot = styled("div", {
+  display: "flex",
+  alignItems: "center",
+  gap: "$6",
+});
+
+export const PersonAvatar = styled("img", {
+  height: "90px",
+  width: "90px",
+  borderRadius: "50%",
+  objectFit: "cover",
+});
+
 export const Person = styled("div", {
   display: "flex",
   flexDirection: "column",
-  gap: "$8",
+  gap: "$2",
 
   "@md": {
     gap: "$3",
@@ -64,6 +75,7 @@ export const PersonTitle = styled("strong", {
   fontSize: "$3xl",
   lineHeight: "$3xl",
   fontWeight: "$medium",
+  color: "$white",
 
   "@md": {
     fontSize: "$2xl",
@@ -74,38 +86,47 @@ export const PersonTitle = styled("strong", {
 export const PersonDescription = styled("span", {
   fontSize: "$lg",
   lineHeight: "$lg",
-  color: "$gray500",
+  color: "$white",
 });
 
-export const DotsHorizontal = styled(motion.div, {
+export const PaginationRoot = styled("div", {
   display: "flex",
   alignItems: "center",
   gap: "$3",
+  color: "$white",
+
+  "> button": {
+    background: "transparent",
+    border: "1px solid $gray700",
+    height: "54px",
+    width: "54px",
+    borderRadius: "50%",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    color: "$white",
+    transition: "all 0.3s ease-in-out",
+
+    "&:hover": {
+      background: "$white",
+      color: "$black",
+    },
+  },
 });
 
-export const DotButton = styled(motion.button, {
-  height: "10px",
-  width: "10px",
+export const BottomRoot = styled("div", {
+  display: "flex",
+  alignItems: "center",
+  gap: "$6",
 
-  border: 0,
-  borderRadius: "50%",
-  background: "$gray100",
-
-  transition: "$default",
-
-  "&:hover": {
-    background: "$gray200",
+  "@md": {
+    display: "none",
   },
 
-  "&:focus": {
-    background: "$gray400",
-  },
-
-  variants: {
-    active: {
-      true: {
-        background: "$black !important",
-      },
-    },
+  strong: {
+    color: "$white",
+    fontSize: "72px",
+    lineHeight: "108px",
+    fontWeight: "$medium",
   },
 });
