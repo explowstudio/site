@@ -1,8 +1,9 @@
 import { Grid } from "@/ui";
 import { styled } from "@/ui/stitches.config";
 
-export const Container = styled(Grid, {
+export const Container = styled("div", {
   paddingBlock: "$24",
+  background: "$black",
 
   "@md": {
     paddingBlock: "$8",
@@ -10,9 +11,9 @@ export const Container = styled(Grid, {
 });
 
 export const Partners = styled("ul", {
-  display: "grid",
-  gridTemplateColumns: "repeat(3, 1fr)",
-  columnGap: "$40",
+  display: "flex",
+  flexWrap: "wrap",
+  columnGap: "70px",
   rowGap: "$24",
   marginTop: "$32",
 
@@ -35,5 +36,5 @@ export const Partner = styled("li", {
 });
 
 export const PartnerDescription = styled("p", {
-  color: "$gray600",
+  color: "$white",
 });
