@@ -3,8 +3,8 @@ import { styled } from "@/ui/stitches.config";
 
 export const Container = styled("section", {
   background: "url(/textures/hero.png)",
-  paddingBlock: "$40 $10",
   backgroundSize: "cover",
+  paddingBlock: "$40 $10",
 
   "@md": {
     paddingBlock: "$40 $20",

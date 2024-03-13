@@ -31,6 +31,7 @@ export function Header({
               as={motion.a}
               href="/"
               style={{ color: headerStyles.logoColor }}
+              color="quarter"
             >
               Home
             </Link>
@@ -38,6 +39,7 @@ export function Header({
               as={motion.a}
               href="/about-us"
               style={{ color: headerStyles.logoColor }}
+              color="quarter"
             >
               Quem somos
             </Link>
@@ -45,6 +47,7 @@ export function Header({
               as={motion.a}
               href="/expertise"
               style={{ color: headerStyles.logoColor }}
+              color="quarter"
             >
               Expertise
             </Link>
@@ -52,6 +55,7 @@ export function Header({
               as={motion.a}
               href="/#cases"
               style={{ color: headerStyles.logoColor }}
+              color="quarter"
             >
               Cases
             </Link>

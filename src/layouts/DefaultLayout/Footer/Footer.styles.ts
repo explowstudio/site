@@ -1,22 +1,35 @@
-import { Grid } from "@/ui";
 import { styled } from "@/ui/stitches.config";
 
 export const Wrapper = styled("footer", {
-  paddingTop: "$20",
+  padding: "$10",
+  background: "url(/textures/hero.png)",
+  backgroundSize: "cover",
+  marginTop: "$20",
+
+  "@md": {
+    padding: "$5",
+  },
 });
 
 export const Container = styled("div", {
   paddingBlock: "$28 $8",
 });
 
-export const UpSide = styled("div", {
-  display: "flex",
-  alignItems: "flex-start",
-  justifyContent: "space-between",
+export const Box = styled("div", {
+  position: "relative",
+
+  background: "$white",
+  borderRadius: "16px",
+  paddingBlock: "65px",
+});
+
+export const LogoOversized = styled("img", {
+  position: "relative",
+  transform: "translateY(74px)",
+  width: "100%",
 
   "@md": {
-    flexDirection: "column",
-    gap: "$14",
+    display: "none",
   },
 });
 
@@ -44,6 +57,18 @@ export const Document = styled("div", {
     color: "$gray500",
     fontSize: "$sm",
     lineHeight: "$sm",
+
+    "&.copyright strong": {
+      color: "$black",
+    },
+  },
+
+  "@md": {
+    textAlign: "center",
+
+    "> small.copyright": {
+      display: "none",
+    },
   },
 });
 
@@ -52,7 +77,7 @@ export const Navigation = styled("nav", {
   gap: "$48",
   marginRight: "$40",
 
-  "@md": {
+  "@lg": {
     marginRight: 0,
     gap: "$16",
   },
@@ -64,35 +89,7 @@ export const NavigationList = styled("ul", {
   gap: "$6",
 });
 
-export const DownSide = styled("div", {
-  display: "flex",
-  alignItems: "center",
-  justifyContent: "space-between",
-
-  "@md": {
-    flexDirection: "column-reverse",
-    textAlign: "center",
-    gap: "$6",
-  },
-
-  "> small": {
-    fontSize: "$sm",
-    lineHeight: "$sm",
-    color: "$gray500",
-
-    "> b": {
-      color: "$black",
-
-      "@md": {
-        fontWeight: "$semiBold",
-      },
-    },
-  },
-});
-
-export const Box = styled("div", {
-  background: "$black",
-
+export const TitleRoot = styled("div", {
   display: "grid",
   placeItems: "center",
   textAlign: "center",
@@ -117,5 +114,24 @@ export const Box = styled("div", {
       fontSize: "$2xl",
       lineHeight: "$2xl",
     },
+  },
+});
+
+export const LetsWorkRoot = styled("svg", {
+  position: "absolute",
+  top: "-80px",
+  right: "45px",
+
+  "@md": {
+    width: "90px",
+    height: "90px",
+    top: "-40px",
+    right: "10px",
+  },
+
+  "@media (min-width: 667px) and (max-width: 888px)": {
+    width: "100px",
+    height: "100px",
+    top: "-50px",
   },
 });

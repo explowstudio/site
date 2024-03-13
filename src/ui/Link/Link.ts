@@ -35,7 +35,6 @@ export const Link = styled(NextLink, {
           transformOrigin: "right",
           transition: "transform .4s $easeOutCubic",
           willChange: "transform",
-          background: "$white",
         },
       },
     },
@@ -59,6 +58,11 @@ export const Link = styled(NextLink, {
 
         "&::after": {
           background: "$gray500",
+        },
+      },
+      quarter: {
+        "&::after": {
+          background: "$white",
         },
       },
     },
