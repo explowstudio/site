@@ -9,7 +9,7 @@ export const Container = styled(Grid, {
   display: "flex",
   flexDirection: "column",
   gap: "$8",
-  paddingBottom: "$24",
+  paddingBlock: "$24",
 
   "@md": {
     paddingBlock: "$10",
