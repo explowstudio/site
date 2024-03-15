@@ -3,9 +3,37 @@ import { GeneralInformation, Impact, Introduction } from "@/features/cases";
 import { DefaultLayout, Faq } from "@/layouts";
 import { SEO } from "@/lib";
 import { Grid } from "@/ui";
+import { GetStaticPaths, GetStaticProps } from "next";
 
-export default function CaseFromSlug() {
-  const caseFromSlug = cases.compre_ou_alugue;
+export const getStaticPaths = (async () => {
+  return {
+    paths: Object.keys(cases).map((key) => {
+      return {
+        params: {
+          slug: key,
+        },
+      };
+    }),
+    fallback: false,
+  };
+}) satisfies GetStaticPaths;
+
+export const getStaticProps = (async (context) => {
+  const slug = context.params?.slug as keyof typeof cases;
+
+  const caseFromSlug = cases[slug];
+
+  return {
+    props: {
+      case: caseFromSlug,
+    },
+  };
+}) satisfies GetStaticProps;
+
+export default function CaseFromSlug(inProps: {
+  case: typeof cases.compre_ou_alugue;
+}) {
+  const { case: caseFromSlug } = inProps;
 
   return (
     <>
