@@ -6,6 +6,12 @@ export const Container = styled(Grid, {
   justifyContent: "space-between",
   alignItems: "center",
   paddingBlock: "124px 86px",
+
+  "@md": {
+    flexDirection: "column",
+    alignItems: "flex-start",
+    rowGap: "$10",
+  },
 });
 
 export const Box = styled("div", {

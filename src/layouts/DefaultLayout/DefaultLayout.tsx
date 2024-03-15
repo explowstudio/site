@@ -7,7 +7,7 @@ import { WhatsAppButton } from "./WhatsappButton";
 
 import * as S from "./DefaultLayout.styles";
 
-type Props = { color?: "primary" | "transparent" } & ComponentProps<
+type Props = { color?: "primary" | "transparent" | "white" } & ComponentProps<
   typeof S.Root
 >;
 

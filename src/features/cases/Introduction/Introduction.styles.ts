@@ -12,6 +12,11 @@ export const Title = styled("h1", {
   fontSize: "$4xl",
   lineHeight: "$4xl",
   fontWeight: "$semiBold",
+
+  "@md": {
+    fontSize: "$2xl",
+    lineHeight: "$2xl",
+  },
 });
 
 export const Description = styled("h2", {
@@ -20,6 +25,11 @@ export const Description = styled("h2", {
   fontWeight: "$regular",
   color: "$gray500",
   marginTop: "$1",
+
+  "@md": {
+    fontSize: "$md",
+    lineHeight: "$md",
+  },
 });
 
 export const ScrollRoot = styled("div", {
@@ -40,6 +50,10 @@ export const SloganRoot = styled("div", {
   display: "flex",
   flexDirection: "column",
   textAlign: "center",
+
+  "@md": {
+    display: "none",
+  },
 });
 
 export const Slogan = styled("span", {

@@ -13,10 +13,12 @@ type Props = {
 const BACKGROUND_COLOR = {
   initial: {
     transparent: "transparent",
+    white: theme.colors.white.value,
     primary: theme.colors.gray50.value,
     secondary: theme.colors.black.value,
   },
   animate: {
+    white: theme.colors.white.value,
     transparent: theme.colors.white.value,
     primary: theme.colors.white.value,
     secondary: theme.colors.black.value,
@@ -25,11 +27,13 @@ const BACKGROUND_COLOR = {
 
 const COLOR = {
   initial: {
+    white: theme.colors.black.value,
     transparent: theme.colors.white.value,
     primary: theme.colors.black.value,
     secondary: theme.colors.white.value,
   },
   animate: {
+    white: theme.colors.black.value,
     transparent: theme.colors.black.value,
     primary: theme.colors.black.value,
     secondary: theme.colors.white.value,
@@ -38,11 +42,13 @@ const COLOR = {
 
 const BORDER_COLOR = {
   initial: {
+    white: "transparent",
     transparent: "rgba(248, 248, 248, 0.20)",
     primary: "transparent",
     secondary: "transparent",
   },
   animate: {
+    white: theme.colors.gray100.value,
     transparent: theme.colors.gray100.value,
     primary: theme.colors.gray100.value,
     secondary: theme.colors.gray800.value,

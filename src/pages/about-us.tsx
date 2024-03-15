@@ -1,12 +1,7 @@
 import { Grid } from "@/ui";
 import { DefaultLayout, Faq } from "@/layouts";
 
-import {
-  Companies,
-  Introduction,
-  OurCulture,
-  OurTeam,
-} from "@/features/about-us";
+import { Companies, Introduction, OurTeam } from "@/features/about-us";
 import { SEO } from "@/lib";
 
 export default function AboutUs() {
@@ -19,7 +14,6 @@ export default function AboutUs() {
       <DefaultLayout>
         <Introduction />
         <Companies />
-        <OurCulture />
         <OurTeam />
         <Grid as="section">
           <Faq />

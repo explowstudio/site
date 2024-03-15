@@ -14,7 +14,7 @@ export default function CaseFromSlug() {
         description={caseFromSlug.card.description}
         keywords={caseFromSlug.detail.generalInformation.tags}
       />
-      <DefaultLayout>
+      <DefaultLayout color="white">
         <Introduction />
         <GeneralInformation {...caseFromSlug.detail.generalInformation} />
         <Grid
