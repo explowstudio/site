@@ -43,7 +43,7 @@ export default function CaseFromSlug(inProps: {
         keywords={caseFromSlug.detail.generalInformation.tags}
       />
       <DefaultLayout color="white">
-        <Introduction />
+        <Introduction {...caseFromSlug.detail.hero} />
         <GeneralInformation {...caseFromSlug.detail.generalInformation} />
         <Grid
           css={{
