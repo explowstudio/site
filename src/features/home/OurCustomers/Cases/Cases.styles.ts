@@ -16,6 +16,8 @@ export const CaseItem = styled("li", {
 
   maxWidth: "368px",
   width: "100%",
+
+  cursor: "pointer",
 });
 
 export const CaseItemInfo = styled("div", {
