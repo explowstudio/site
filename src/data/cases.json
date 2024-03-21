@@ -5,6 +5,62 @@
       "thumbnail": "/cases/certimine/thumbnail.svg",
       "title": "Certimine",
       "description": "Mineração com conformidade legal e responsável."
+    },
+    "detail": {
+      "hero": {
+        "title": "Certimine",
+        "description": "Mineração com conformidade legal e responsável.",
+        "image": "/cases/certimine/hero.svg"
+      },
+      "generalInformation": {
+        "country": "Brasil",
+        "state": "São Paulo",
+        "tags": ["UI Design", "UX Design", "Copywriting", "Programação", "Banners para mídias"],
+        "description": [
+          "Startup do ramo de mineração que nasceu com a proposta  de construir uma mineração forte, socialmente responsável, economicamente viável e ambientalmente consciente.",
+          "O Certimine tinha um site em que as informações estavam bagunçadas. Nosso papel foi fortalecer a mensagem que a empresa queria passar.",
+          "Reformulamos pensando em modernidade, passar uma mensagem clara e explicar direto ao ponto a importância da certificação mineraria."
+        ]
+      },
+      "images": [
+        {
+          "id": "timeline",
+          "source": "/cases/certimine/timeline.svg"
+        },
+        {
+          "id": "identity",
+          "source": "/cases/certimine/identity.svg"
+        },
+        {
+          "id": "home",
+          "source": "/cases/certimine/home.svg"
+        },
+        {
+          "id": "search",
+          "source": "/cases/certimine/search.svg"
+        },
+        {
+          "id": "detail",
+          "source": "/cases/certimine/detail.svg"
+        }
+      ],
+      "impact": {
+        "title": "Como o Certimine foi impulsionado com as soluções da Explow?",
+        "items": [
+          {
+            "title": "Experiência em primeiro lugar",
+            "description": "Criamos uma jornada agradável e memorável para o usuário e impulsionamos ainda mais a Certimine com o crescimento dos negócios focando no cliente."
+          },
+          {
+            "title": "Fortalecemos a marca",
+            "description": "Mostramos o melhor da sua marca no digital para que ela alcance uma presença digital mais elevada, expandindo a visibilidade e engajamento para alcançar um público mais amplo."
+          },
+          {
+            "title": "Zero dor de cabeça",
+            "description": "A Explow atua em todas as frentes fazendo com que o cliente não tenha nenhum tipo de dor de cabeça com o desenvolvimento. Aqui tarefa dada é tarefa cumprida."
+          }
+        ]
+      }
     }
   },
   "labmine": {
@@ -13,7 +69,63 @@
       "thumbnail": "/cases/labmine/thumbnail.svg",
       "title": "Labmine",
       "description": "Conectando o minerador a experts do mercado"
-    }
+    },
+    "detail": {
+      "hero": {
+        "title": "Labmine",
+        "description": "Conectando o minerador a experts do mercado.",
+        "image": "/cases/labmine/hero.svg"
+      },
+      "generalInformation": {
+        "country": "Brasil",
+        "state": "São Paulo",
+        "tags": ["UI Design", "UX Design", "Copywriting", "Programação", "Banners para mídias"],
+        "description": [
+          "Startup do ramo de mineração que nasceu com a proposta  de conectar projetos excepcionais a especialistas de mineração.",
+          "A Labmine tinha um site em que as informações estavam bagunçadas. Nosso papel foi fortalecer a mensagem que a empresa queria passar.",
+          "Reformulamos pensando em modernidade, passar uma mensagem clara e explicar direto ao ponto a consultoria mineral."
+        ]
+      },
+      "images": [
+        {
+          "id": "timeline",
+          "source": "/cases/labmine/timeline.svg"
+        },
+        {
+          "id": "identity",
+          "source": "/cases/labmine/identity.svg"
+        },
+        {
+          "id": "home",
+          "source": "/cases/labmine/home.svg"
+        },
+        {
+          "id": "search",
+          "source": "/cases/labmine/search.svg"
+        },
+        {
+          "id": "detail",
+          "source": "/cases/labmine/detail.svg"
+        }
+      ],
+      "impact": {
+        "title": "Como a Labmine foi impulsionada com as soluções da Explow?",
+        "items": [
+          {
+            "title": "Experiência em primeiro lugar",
+            "description": "Criamos uma jornada agradável e memorável para o usuário e impulsionamos ainda mais a Labmine com o crescimento dos negócios focando no cliente."
+          },
+          {
+            "title": "Fortalecemos a marca",
+            "description": "Mostramos o melhor da sua marca no digital para que ela alcance uma presença digital mais elevada, expandindo a visibilidade e engajamento para alcançar um público mais amplo."
+          },
+          {
+            "title": "Zero dor de cabeça",
+            "description": "A Explow atua em todas as frentes fazendo com que o cliente não tenha nenhum tipo de dor de cabeça com o desenvolvimento. Aqui tarefa dada é tarefa cumprida."
+          }
+        ]
+      }
+  }
   },
   "minery": {
     "slug": "minery",
@@ -21,7 +133,63 @@
       "thumbnail": "/cases/minery/thumbnail.svg",
       "title": "Minery",
       "description": "Transformando o mercado de mineração global."
-    }
+    },
+    "detail": {
+      "hero": {
+        "title": "Minery",
+        "description": "Transformando o mercado de mineração global.",
+        "image": "/cases/minery/hero.svg"
+      },
+      "generalInformation": {
+        "country": "Brasil",
+        "state": "São Paulo",
+        "tags": ["UI Design", "UX Design", "Copywriting", "Programação", "Banners para mídias"],
+        "description": [
+          "Startup do ramo de mineração que nasceu com a missão de ser a solução para mineração, sempre com inovação e tecnologia.",
+          "A Minery tinha um site em que as informações estavam bagunçadas. Nosso papel foi fortalecer a mensagem que a empresa queria passar.",
+          "Reformulamos pensando em modernidade, passar uma mensagem clara e explicar direto ao ponto sobre a holding."
+        ]
+      },
+      "images": [
+        {
+          "id": "timeline",
+          "source": "/cases/minery/timeline.svg"
+        },
+        {
+          "id": "identity",
+          "source": "/cases/minery/identity.svg"
+        },
+        {
+          "id": "home",
+          "source": "/cases/minery/home.svg"
+        },
+        {
+          "id": "search",
+          "source": "/cases/minery/search.svg"
+        },
+        {
+          "id": "detail",
+          "source": "/cases/minery/detail.svg"
+        }
+      ],
+      "impact": {
+        "title": "Como a Minery foi impulsionada com as soluções da Explow?",
+        "items": [
+          {
+            "title": "Experiência em primeiro lugar",
+            "description": "Criamos uma jornada agradável e memorável para o usuário e impulsionamos ainda mais a Minery com o crescimento dos negócios focando no cliente."
+          },
+          {
+            "title": "Fortalecemos a marca",
+            "description": "Mostramos o melhor da sua marca no digital para que ela alcance uma presença digital mais elevada, expandindo a visibilidade e engajamento para alcançar um público mais amplo."
+          },
+          {
+            "title": "Zero dor de cabeça",
+            "description": "A Explow atua em todas as frentes fazendo com que o cliente não tenha nenhum tipo de dor de cabeça com o desenvolvimento. Aqui tarefa dada é tarefa cumprida."
+          }
+        ]
+      }
+  }
   },
   "robotip": {
     "slug": "robotip",
@@ -33,46 +201,47 @@
     "detail": {
       "hero": {
         "title": "Robôtip",
-        "description": "Encontre o imóvel ideal para você e sua família.",
-        "image": "/cases/compre_ou_alugue/hero.svg"
+        "description": "Apostas esportivas de futebol para jogadores.",
+        "image": "/cases/robotip/hero.svg"
       },
       "generalInformation": {
         "country": "Brasil",
-        "state": "Santa Catarina",
-        "tags": ["Identidade visual", "UI Design", "UX Design", "Copywriting", "Programação"],
+        "state": "Minas Gerais",
+        "tags": ["UI Design", "UX Design", "Copywriting"],
         "description": [
-          "Startup do ramo imobiliário situada em Florianópolis, Santa Catarina. Nasceu com a proposta  de ajudar corretores e imobiliárias na busca por imóveis, tornando o processo 100% digital e facilitado através de sua ferramenta.",
-          "Devido ao crescimento acelerado, a Captei entendeu que precisava subir de nível e criar um portal de imóveis para ajudar pessoas a encontrarem seus imóveis dos sonhos e assim nasceu a Compre e alugue."
+          "Startup do ramo de apostas esportivas que equipa os entusiastas com uma ferramenta analítica avançada.",
+          "A plataforma é alimentada por inteligência artificial e aprendizado de máquina, o robô é programado para processar um vasto conjunto de dados para que as apostas sejam mais assertivas.",
+          "A ferramenta tinha um visual ultrapassado e muitos dados poluindo e trazendo confusão para o usuário. Nossa missão foi trabalhar um visual clean e moderno junto da hierarquia das informações."
         ]
       },
       "images": [
         {
           "id": "timeline",
-          "source": "/cases/compre_ou_alugue/timeline.svg"
+          "source": "/cases/robotip/timeline.svg"
         },
         {
           "id": "identity",
-          "source": "/cases/compre_ou_alugue/identity.svg"
+          "source": "/cases/robotip/identity.svg"
         },
         {
           "id": "home",
-          "source": "/cases/compre_ou_alugue/home.svg"
+          "source": "/cases/robotip/home.svg"
         },
         {
           "id": "search",
-          "source": "/cases/compre_ou_alugue/search.svg"
+          "source": "/cases/robotip/search.svg"
         },
         {
           "id": "detail",
-          "source": "/cases/compre_ou_alugue/detail.svg"
+          "source": "/cases/robotip/detail.svg"
         }
       ],
       "impact": {
-        "title": "Como a Robôtip foi impulsionada com as soluções da Explow?",
+        "title": "Como o Robôtip foi impulsionado com as soluções da Explow?",
         "items": [
           {
             "title": "Experiência em primeiro lugar",
-            "description": "Criamos uma jornada agradável e memorável para o usuário e impulsionamos ainda mais a Captei com o crescimento dos negócios focando no cliente."
+            "description": "Criamos uma jornada agradável e memorável para o usuário e impulsionamos ainda mais o Robôtip com o crescimento dos negócios focando no cliente."
           },
           {
             "title": "Produtos digitais de qualidade",
@@ -155,14 +324,125 @@
       "thumbnail": "/cases/captei/thumbnail.svg",
       "title": "Captei",
       "description": "Tecnologia para busca inteligente de proprietário"
+    },
+    "detail": {
+      "hero": {
+        "title": "Captei",
+        "description": "Tecnologia para busca inteligente de proprietário.",
+        "image": "/cases/captei/hero.svg"
+      },
+      "generalInformation": {
+        "country": "Brasil",
+        "state": "Santa Catarina",
+        "tags": ["UI Design", "UX Design", "Copywriting", "Programação"],
+        "description": [
+          "Startup do ramo imobiliário situada em Florianópolis, Santa Catarina. Nasceu com a proposta  de ajudar corretores e imobiliárias na busca por imóveis, tornando o processo 100% digital e facilitado através de sua ferramenta.",
+          "A Captei entendeu que precisava subir de nível e para isso trabalhamos na melhoria da experiência dos usuários e modernizamos o visual da ferramenta para que todos os dados e informações sejam facilmente acessados e entendidos."
+        ]
+      },
+      "images": [
+        {
+          "id": "timeline",
+          "source": "/cases/captei/timeline.svg"
+        },
+        {
+          "id": "identity",
+          "source": "/cases/captei/identity.svg"
+        },
+        {
+          "id": "home",
+          "source": "/cases/captei/home.svg"
+        },
+        {
+          "id": "search",
+          "source": "/cases/captei/search.svg"
+        },
+        {
+          "id": "detail",
+          "source": "/cases/captei/detail.svg"
+        }
+      ],
+      "impact": {
+        "title": "Como a Captei foi impulsionada com as soluções da Explow?",
+        "items": [
+          {
+            "title": "Experiência em primeiro lugar",
+            "description": "Criamos uma jornada agradável e memorável para o usuário e impulsionamos ainda mais a Compre e alugue com o crescimento dos negócios focando no cliente."
+          },
+          {
+            "title": "Produtos digitais de qualidade",
+            "description": "Projetamos e desenvolvemos produtos pensando 100% em qualidade, excelência e agilidade."
+          },
+          {
+            "title": "Zero dor de cabeça",
+            "description": "A Explow atua em todas as frentes fazendo com que o cliente não tenha nenhum tipo de dor de cabeça com o desenvolvimento. Aqui tarefa dada é tarefa cumprida."
+          }
+        ]
+      }
     }
   },
-  "finbits": {
-    "slug": "finbits",
+  "setfin": {
+    "slug": "setfin",
     "card": {
-      "thumbnail": "/cases/finbits/thumbnail.svg",
-      "title": "Finbits",
-      "description": "Gerenciamento de pagamentos sem esforço."
+      "thumbnail": "/cases/setfin/thumbnail.svg",
+      "title": "Setfin",
+      "description": "Gestão completa para o microempreendedor."
+    },
+    "detail": {
+      "hero": {
+        "title": "Setfin",
+        "description": "Gestão completa para o microempreendedor.",
+        "image": "/cases/setfin/hero.svg"
+      },
+      "generalInformation": {
+        "country": "Brasil",
+        "state": "São Paulo",
+        "tags": ["UI Design", "UX Design", "Copywriting", "Programação"],
+        "description": [
+          "A Setfin facilita diversas tarefas administrativas e financeiras, como a emissão automática de notas fiscais, automação de impostos e declarações anuais, controle de estoque, geração de orçamentos e agendamento de serviços.",
+          "A missão da Explow foi refazer toda a experiência e os fluxos pensando na melhor jornada do usuário junto com um visual clean e de fácil entendimento.",
+          "O resultado disso foi o aumento significativo nas vendas e engajamento do usuário, gerando assim mais faturamento para a empresa."
+        ]
+      },
+      "images": [
+        {
+          "id": "timeline",
+          "source": "/cases/setfin/timeline.svg"
+        },
+        {
+          "id": "identity",
+          "source": "/cases/setfin/identity.svg"
+        },
+        {
+          "id": "home",
+          "source": "/cases/setfin/home.svg"
+        },
+        {
+          "id": "search",
+          "source": "/cases/setfin/search.svg"
+        },
+        {
+          "id": "detail",
+          "source": "/cases/setfin/detail.svg"
+        }
+      ],
+      "impact": {
+        "title": "Como a Setfin foi impulsionada com as soluções da Explow?",
+        "items": [
+          {
+            "title": "Experiência em primeiro lugar",
+            "description": "Criamos uma jornada agradável e memorável para o usuário e impulsionamos ainda mais a Setfin com o crescimento dos negócios focando no cliente."
+          },
+          {
+            "title": "Produtos digitais de qualidade",
+            "description": "Projetamos e desenvolvemos produtos pensando 100% em qualidade, excelência e agilidade."
+          },
+          {
+            "title": "Aumento nas vendas",
+            "description": "Com um desenvolvimento bem estruturado, planejado e centrado no usuário conseguimos aumentar as vendas e pessoas interessadas em fazer a utilização do app consequentemente aumentando o faturamento."
+          }
+        ]
+      }
     }
   },
   "skina": {
@@ -171,6 +451,61 @@
       "thumbnail": "/cases/skina/thumbnail.svg",
       "title": "Skina",
       "description": "E-commerce de descontos em conjunto."
+    },
+    "detail": {
+      "hero": {
+        "title": "Skina",
+        "description": "E-commerce de descontos em conjunto.",
+        "image": "/cases/skina/hero.svg"
+      },
+      "generalInformation": {
+        "country": "Brasil",
+        "state": "Paraná",
+        "tags": ["UI Design", "UX Design", "Copywriting"],
+        "description": [
+          "Startup situada em Curitiba, Paraná. Nasceu com a proposta  de facilitar a vida dos consumidores e aumentar a lucratividade e eficiência dos negócios.",
+          "A Skina veio até a Explow para desenharmos o aplicativo totalmente do zero, focando na melhor experiência das três jornadas dentro do aplicativo: o consumidor, a empresa e o influenciador que divulga os produtos e ganha comissão por isso."
+        ]
+      },
+      "images": [
+        {
+          "id": "timeline",
+          "source": "/cases/skina/timeline.svg"
+        },
+        {
+          "id": "identity",
+          "source": "/cases/skina/identity.svg"
+        },
+        {
+          "id": "home",
+          "source": "/cases/skina/home.svg"
+        },
+        {
+          "id": "search",
+          "source": "/cases/skina/search.svg"
+        },
+        {
+          "id": "detail",
+          "source": "/cases/skina/detail.svg"
+        }
+      ],
+      "impact": {
+        "title": "Como a Skina foi impulsionada com as soluções da Explow?",
+        "items": [
+          {
+            "title": "Experiência em primeiro lugar",
+            "description": "Criamos uma jornada agradável e memorável para o usuário e impulsionamos ainda mais a Skina com o crescimento dos negócios focando no cliente."
+          },
+          {
+            "title": "Produtos digitais de qualidade",
+            "description": "Projetamos e desenvolvemos produtos pensando 100% em qualidade, excelência e agilidade."
+          },
+          {
+            "title": "Zero dor de cabeça",
+            "description": "A Explow atua em todas as frentes fazendo com que o cliente não tenha nenhum tipo de dor de cabeça com o desenvolvimento. Aqui tarefa dada é tarefa cumprida."
+          }
+        ]
+      }
     }
   },
   "adv": {
@@ -179,6 +514,61 @@
       "thumbnail": "/cases/adv/thumbnail.svg",
       "title": "Adv.co",
       "description": "Gestão desburocatizada para documentos."
+    },
+    "detail": {
+      "hero": {
+        "title": "Adv.co",
+        "description": "Gestão desburocatizada para documentos.",
+        "image": "/cases/adv/hero.svg"
+      },
+      "generalInformation": {
+        "country": "Brasil",
+        "state": "São Paulo",
+        "tags": ["UI Design", "UX Design", "Copywriting"],
+        "description": [
+          "Startup de estratégia jurídica produzida pela colaboração entre advogados e empreendedores de impacto. Nasceu com a proposta  de empoderar  empresas e outros escritórios de advocacia em seus negócios.",
+          "A adv.co mantinha todos seus processos de forma manual até que a Explow criou uma plataforma onde todos os fluxos e documentos eram centralizados em um único lugar digital."
+        ]
+      },
+      "images": [
+        {
+          "id": "timeline",
+          "source": "/cases/adv/timeline.svg"
+        },
+        {
+          "id": "identity",
+          "source": "/cases/adv/identity.svg"
+        },
+        {
+          "id": "home",
+          "source": "/cases/adv/home.svg"
+        },
+        {
+          "id": "search",
+          "source": "/cases/adv/search.svg"
+        },
+        {
+          "id": "detail",
+          "source": "/cases/adv/detail.svg"
+        }
+      ],
+      "impact": {
+        "title": "Como a Adv.co foi impulsionada com as soluções da Explow?",
+        "items": [
+          {
+            "title": "Experiência em primeiro lugar",
+            "description": "Criamos uma jornada agradável e memorável para o usuário e impulsionamos ainda mais a Adv com o crescimento dos negócios focando no cliente."
+          },
+          {
+            "title": "Produtos digitais de qualidade",
+            "description": "Projetamos e desenvolvemos produtos pensando 100% em qualidade, excelência e agilidade."
+          },
+          {
+            "title": "Zero dor de cabeça",
+            "description": "A Explow atua em todas as frentes fazendo com que o cliente não tenha nenhum tipo de dor de cabeça com o desenvolvimento. Aqui tarefa dada é tarefa cumprida."
+          }
+        ]
+      }
     }
   }
 }
