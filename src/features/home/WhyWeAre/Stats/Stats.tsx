@@ -6,38 +6,38 @@ export function Stats() {
     <S.Container>
       <S.StatItem>
         <S.StatItemAmount>
-          27
+          2023
           <S.StatsItemIcon>
             <GlobeSimple size={24} />
           </S.StatsItemIcon>
         </S.StatItemAmount>
-        <S.StatItemTitle>Anos de experiência</S.StatItemTitle>
+        <S.StatItemTitle>Fundação</S.StatItemTitle>
         <S.StatItemDescription>
-          Juntos, somamos mais de 27 anos de experiência.
+          Unidos, temos mais de 30 anos de experiência
         </S.StatItemDescription>
       </S.StatItem>
       <S.StatItem>
         <S.StatItemAmount>
-          8
+          +11
           <S.StatsItemIcon>
             <Users size={24} />
           </S.StatsItemIcon>
         </S.StatItemAmount>
         <S.StatItemTitle>Especialistas</S.StatItemTitle>
         <S.StatItemDescription>
-          Equipe completa para somar com seu time.
+          Equipe completa para somar com seu negócio
         </S.StatItemDescription>
       </S.StatItem>
       <S.StatItem>
         <S.StatItemAmount>
-          19
+          +19
           <S.StatsItemIcon css={{ transform: "translateX(-12px)" }}>
             <Package size={24} />
           </S.StatsItemIcon>
         </S.StatItemAmount>
         <S.StatItemTitle>Projetos entregues</S.StatItemTitle>
         <S.StatItemDescription>
-          Entregas para empresas que investem em design.
+          Para empresas que investem em qualidade
         </S.StatItemDescription>
       </S.StatItem>
     </S.Container>
