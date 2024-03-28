@@ -29,6 +29,20 @@ export default function Document() {
     })(window, document, "clarity", "script", "kuzd8e6i4p");`,
           }}
         />
+
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-NXS7XDPKJ1"
+        ></script>
+        <script>
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-NXS7XDPKJ1');
+          `}
+        </script>
       </Head>
       <body>
         <Main />
