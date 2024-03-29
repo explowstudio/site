@@ -40,47 +40,27 @@ export const SubTitle = styled("h3", {
 
 export const TeamList = styled("ul", {
   marginTop: "$36",
-  display: "grid",
-  gridTemplateColumns: "repeat(3, 1fr)",
-  columnGap: "$36",
-  rowGap: "$10",
-
-  "@1xl": {
-    columnGap: "$8",
-    gridTemplateColumns: "repeat(2, 1fr)",
-  },
+  display: "flex",
+  flexDirection: "column",
+  rowGap: "100px",
 
   "@md": {
-    gridTemplateColumns: "1fr",
     marginTop: "$24",
   },
 });
 
 export const TeamListItem = styled("li", {
   display: "flex",
+  gap: "$12",
+
+  "@md": {
+    flexDirection: "column",
+  },
+});
+
+export const FounderInfo = styled("div", {
+  display: "flex",
   flexDirection: "column",
-
-  "&:nth-child(3n+2)": {
-    paddingTop: "62px",
-  },
-
-  "&:nth-child(3n+3)": {
-    paddingTop: "110px",
-  },
-
-  "@1xl": {
-    "&:nth-child(1n+2)": {
-      paddingTop: "62px",
-    },
-
-    "&:nth-child(2n)": {
-      paddingTop: "110px",
-    },
-  },
-
-  "@lg": {
-    paddingTop: "0 !important",
-  },
 });
 
 export const FullName = styled("strong", {
@@ -115,7 +95,7 @@ export const Role = styled("small", {
 
 export const Description = styled("p", {
   color: "$gray200",
-  fontSize: "$sm",
-  lineHeight: "$sm",
+  fontSize: "$lg",
+  lineHeight: "$lg",
   marginTop: "$4",
 });

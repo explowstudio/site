@@ -1,6 +1,7 @@
 import { Html, Head, Main, NextScript } from "next/document";
 
 import { getCssText } from "@/ui/stitches.config";
+import Script from "next/script";
 
 export default function Document() {
   return (
@@ -30,10 +31,10 @@ export default function Document() {
           }}
         />
 
-        <script
+        <Script
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-NXS7XDPKJ1"
-        ></script>
+        />
         <script>
           {`
             window.dataLayer = window.dataLayer || [];

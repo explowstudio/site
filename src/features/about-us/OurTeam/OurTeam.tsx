@@ -10,123 +10,64 @@ export function OurTeam() {
     <S.Container>
       <Grid>
         <S.TitleGroup>
-          <Tag>Conheça o time</Tag>
+          <Tag>Conheça os founders</Tag>
           <S.Title>
-            Conheça pessoas talentosas que são apaixonadas pelo que fazem
+            Pessoas que são apaixonados pelo que fazem e os resultados entregues
           </S.Title>
-          <S.SubTitle>
-            Por trás de todo negócio de sucesso, existe um time de sucesso.
-          </S.SubTitle>
         </S.TitleGroup>
         <S.TeamList>
           <S.TeamListItem>
             <img src="/team/giovanna.png" alt="Giovanna" />
-            <S.FullName>
-              Giovanna Souza
-              <Link
-                href="https://linkedin.com/in/eugiovannasouza"
-                target="_blank"
-              >
-                <LinkedinLogo size={20} />
-              </Link>
-            </S.FullName>
-            <S.Role>Fundadora</S.Role>
+            <div>
+              <S.FounderInfo>
+                <S.FullName>Giovanna Souza</S.FullName>
+                <S.Role>Fundadora & CEO</S.Role>
+              </S.FounderInfo>
 
-            <S.Description>
-              Atua junto do cliente desde o primeiro contato até a entrega para
-              garantir que a experiência desenvolvendo o projeto seja excelente.
-            </S.Description>
+              <S.Description>
+                É responsável pelos relacionamentos, satisfação dos clientes e
+                gerenciamento de projetos garantindo que toda a experiência seja
+                excelente.
+                <br />
+                <br />
+                Durante sua carreira transacionou entre programação e design em
+                diversos projetos até encontrar um gap: a frustração dos
+                contratantes com a falta de qualidade, que resultava em dores de
+                cabeça com o desenvolvimento.
+                <br />
+                <br />
+                Tendo a missão de contrariar o baixo nível de qualidade em
+                desenvolvimento através da Explow, começou a criar conteúdo no
+                Linkedin documentando sua caminhada e aprendizados conquistando
+                diversos seguidores.
+              </S.Description>
+            </div>
           </S.TeamListItem>
-          <S.TeamListItem>
+          <S.TeamListItem css={{ "@md": { flexDirection: "column-reverse" } }}>
+            <div>
+              <S.FounderInfo>
+                <S.FullName>Gabriel Teodoro</S.FullName>
+                <S.Role>Co-fundador & Software Engineer Sênior</S.Role>
+              </S.FounderInfo>
+
+              <S.Description>
+                É responsável pela liderança em todas as decisões técnicas
+                cruciais, garantindo o direcionamento estratégico e a excelência
+                técnica da equipe.
+                <br />
+                <br />
+                Sua trajetória no desenvolvimento teve início cedo aos 12 anos,
+                quando mergulhou na programação por conta própria. Ao longo dos
+                últimos 8 anos, acumulou uma rica bagagem de experiência que o
+                capacitou a desempenhar o papel de líder técnico.
+                <br />
+                <br />
+                Sua contribuição impulsionou o aumento no faturamento de
+                diversas empresas, graças à implementação de soluções inovadoras
+                e altamente eficazes.
+              </S.Description>
+            </div>
             <img src="/team/gabriel.png" alt="Gabriel" />
-            <S.FullName>
-              Gabriel Teodoro
-              <Link
-                href="https://linkedin.com/in/oigabrielteodoro"
-                target="_blank"
-              >
-                <LinkedinLogo size={20} />
-              </Link>
-            </S.FullName>
-            <S.Role>Co-Fundador</S.Role>
-
-            <S.Description>
-              É nosso líder técnico, garante que os projetos sejam desenvolvidos
-              com as melhores práticas do mercado.
-            </S.Description>
-          </S.TeamListItem>
-          <S.TeamListItem>
-            <img src="/team/kennedy.png" alt="Kennedy" />
-            <S.FullName>
-              Kennedy Barros
-              <Link
-                href="https://linkedin.com/in/kennedybarros"
-                target="_blank"
-              >
-                <LinkedinLogo size={20} />
-              </Link>
-            </S.FullName>
-            <S.Role>UI/UX Designer | Product Designer</S.Role>
-
-            <S.Description>
-              É responsável por garantir que os projetos proporcionem a melhor
-              experiência para o usuário final.
-            </S.Description>
-          </S.TeamListItem>
-          <S.TeamListItem>
-            <img src="/team/thales.png" alt="Thales" />
-            <S.FullName>
-              Thales Menzner
-              <Link
-                href="https://linkedin.com/in/thales-menzner"
-                target="_blank"
-              >
-                <LinkedinLogo size={20} />
-              </Link>
-            </S.FullName>
-            <S.Role>Front-End Developer</S.Role>
-
-            <S.Description>
-              Atua na construção das interfaces para que elas tenham a melhor
-              performance e fidelidade ao layout.
-            </S.Description>
-          </S.TeamListItem>
-          <S.TeamListItem>
-            <img src="/team/pedro.png" alt="Pedro" />
-            <S.FullName>
-              Pedro Silva
-              <Link
-                href="https://www.linkedin.com/in/pdrosilva/"
-                target="_blank"
-              >
-                <LinkedinLogo size={20} />
-              </Link>
-            </S.FullName>
-            <S.Role>UI/UX Designer | Product Designer </S.Role>
-
-            <S.Description>
-              Atua na construção de interfaces prezando por um visual agradável,
-              intuitivo e centrado no usuário.
-            </S.Description>
-          </S.TeamListItem>
-
-          <S.TeamListItem>
-            <img src="/team/jefté.png" alt="Jefté" />
-            <S.FullName>
-              Jefté Medeiros
-              <Link
-                href="https://www.linkedin.com/in/jeftemedeiros"
-                target="_blank"
-              >
-                <LinkedinLogo size={20} />
-              </Link>
-            </S.FullName>
-            <S.Role>Front-End Developer</S.Role>
-
-            <S.Description>
-              Desenvolve códigos funcionais para aplicações, garantindo uma
-              experiência positiva para os usuários.
-            </S.Description>
           </S.TeamListItem>
         </S.TeamList>
       </Grid>
