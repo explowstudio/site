@@ -99,3 +99,24 @@ export const Description = styled("p", {
   lineHeight: "$lg",
   marginTop: "$4",
 });
+
+export const ImageRoot = styled("div", {
+  position: "relative",
+});
+
+export const LinkedInButton = styled("a", {
+  position: "absolute",
+  right: "22px",
+  top: "22px",
+
+  display: "flex",
+  flexDirection: "column",
+  alignItems: "center",
+  justifyContent: "center",
+
+  color: "$white",
+  background: "$black",
+  borderRadius: "50%",
+  height: "40px",
+  width: "40px",
+});

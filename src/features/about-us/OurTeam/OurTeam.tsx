@@ -1,7 +1,5 @@
-import Link from "next/link";
-
 import { Grid, Tag } from "@/ui";
-import { LinkedinLogo } from "@phosphor-icons/react";
+import { LinkedInLogo } from "@/ui/_icons";
 
 import * as S from "./OurTeam.styles";
 
@@ -17,7 +15,15 @@ export function OurTeam() {
         </S.TitleGroup>
         <S.TeamList>
           <S.TeamListItem>
-            <img src="/team/giovanna.png" alt="Giovanna" />
+            <S.ImageRoot>
+              <img src="/team/giovanna.png" alt="Giovanna" />
+              <S.LinkedInButton
+                href="https://linkedin.com/in/eugiovannasouza"
+                target="_blank"
+              >
+                <LinkedInLogo />
+              </S.LinkedInButton>
+            </S.ImageRoot>
             <div>
               <S.FounderInfo>
                 <S.FullName>Giovanna Souza</S.FullName>
@@ -67,7 +73,15 @@ export function OurTeam() {
                 e altamente eficazes.
               </S.Description>
             </div>
-            <img src="/team/gabriel.png" alt="Gabriel" />
+            <S.ImageRoot>
+              <img src="/team/gabriel.png" alt="Gabriel" />
+              <S.LinkedInButton
+                href="https://linkedin.com/in/oigabrielteodoro"
+                target="_blank"
+              >
+                <LinkedInLogo />
+              </S.LinkedInButton>
+            </S.ImageRoot>
           </S.TeamListItem>
         </S.TeamList>
       </Grid>
