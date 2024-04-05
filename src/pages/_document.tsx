@@ -31,7 +31,7 @@ export default function Document() {
           }}
         />
 
-        <Script
+        <script
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-NXS7XDPKJ1"
         />
