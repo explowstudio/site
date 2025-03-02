@@ -9,6 +9,7 @@ node_modules
 /coverage
 
 # next.js
+.firebase
 .next
 /out/
 
