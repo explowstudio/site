@@ -34,8 +34,8 @@ export function Introduction() {
           <FadeIn initial={{ x: 20 }} animate={{ x: 0 }} delay={0.4}>
             <S.Description>
               <h2>
-                Desenvolvimento de branding, sistemas, plataformas, aplicativos
-                e muito mais
+                Desenvolvimento de sistemas, plataformas, aplicativos e muito
+                mais
               </h2>
               <p>
                 Estamos aqui para descomplicar o complicado trazendo soluções

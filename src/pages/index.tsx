@@ -2,7 +2,6 @@ import Head from "next/head";
 
 import { DefaultLayout, Faq } from "@/layouts";
 import {
-  HelpYourBusiness,
   Introduction,
   OurCustomers,
   OurPartners,
@@ -21,10 +20,10 @@ export default function Home() {
       />
       <DefaultLayout color="transparent" css={{ marginTop: "0" }}>
         <Introduction />
-        <HelpYourBusiness />
-        <OurPartners />
         <WhyWeAre />
-        <OurCustomers />
+        {/* <HelpYourBusiness /> */}
+        <OurPartners />
+        {/* <OurCustomers /> */}
         <Testimonials />
         <Grid as="section">
           <Faq />

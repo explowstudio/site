@@ -18,7 +18,7 @@ export function ExpertiseLayout({ children }: Props) {
         {children}
         <WhatsAppButton />
       </S.Root>
-      <Footer />
+      <Footer style={{ marginTop: 0 }} />
     </>
   );
 }

@@ -53,7 +53,7 @@ export function Header({
             </Link>
             <Link
               as={motion.a}
-              href="/#cases"
+              href="/our-cases"
               style={{ color: headerStyles.logoColor }}
               color="quarter"
             >

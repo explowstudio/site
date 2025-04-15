@@ -1,6 +1,7 @@
 import { SEO } from "@/lib";
-import { ExpertiseLayout } from "@/layouts";
+import { ExpertiseLayout, Faq } from "@/layouts";
 import { WhatWeDoForYou } from "@/features/about-us";
+import { Grid } from "@/ui";
 
 export default function Expertise() {
   return (
@@ -11,6 +12,9 @@ export default function Expertise() {
       />
       <ExpertiseLayout>
         <WhatWeDoForYou />
+        <Grid as="section" style={{ marginBlock: "120px" }}>
+          <Faq />
+        </Grid>
       </ExpertiseLayout>
     </>
   );

@@ -6,17 +6,15 @@ import { Grid, Logo, Link, Divider, Button } from "@/ui";
 import * as S from "./Footer.styles";
 import { LetsWorkIcon } from "./LetsWorkIcon";
 import { ArrowForward } from "@/ui/_icons";
+import { CSSProperties } from "react";
 
-export function Footer() {
-  function handleBackToTop() {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  }
+type Props = {
+  style: CSSProperties;
+};
 
+export function Footer({ style }: Props) {
   return (
-    <S.Wrapper>
+    <S.Wrapper style={style}>
       <S.TitleRoot>
         <h1>Vamos fazer sua empresa decolar no digital juntos</h1>
         <Button variant="secondary" as={NextLink} href="/contact">

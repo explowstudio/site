@@ -3,7 +3,7 @@ import { Grid } from "@/ui";
 import { styled } from "@/ui/stitches.config";
 
 export const Container = styled(Grid, {
-  paddingBottom: "$48",
+  paddingBlock: "$16",
 
   "@md": {
     paddingBlock: "$24",

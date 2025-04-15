@@ -5,11 +5,6 @@ import { styled } from "@/ui/stitches.config";
 export const Container = styled("section", {
   background: "$black",
   paddingBlock: "$20",
-  marginBottom: "$36",
-
-  "@md": {
-    marginBottom: 0,
-  },
 });
 
 export const Row = styled(Grid, {
