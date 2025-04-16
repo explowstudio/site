@@ -9,7 +9,7 @@ import { ArrowForward } from "@/ui/_icons";
 import { CSSProperties } from "react";
 
 type Props = {
-  style: CSSProperties;
+  style?: CSSProperties;
 };
 
 export function Footer({ style }: Props) {
